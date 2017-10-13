@@ -10,31 +10,85 @@ Group the operations devoted to the needs of specific actors. Common
 operations to several actors may be grouped and presented once to avoid redundancy.
 
 
-\section{MyOperation}
-\label{operation:MyOperation}
-The system operator creates and adds a new crisis to the system after being
-informed by a third party (citizen, organization) and selects a crisis handler for the crisis.
+\section{createVMExpert}
+\label{operation:createVMExpert}
+This system operation allows to create a virtual machine for a regular user
+using expert mode.
 
 \begin{description}
 
-\item \textbf{Parameters:} Reporter Personal Information, Crisis Information, Crisis Handler
-\item \textbf{Precondition:} The system operator is logged in and has received information from a reporter.
-\item \textbf{Post-condition:} A new crisis has been added to the system and the new crisis has been assigned to a crisis handler, the Handler has received an automatic notification from the system.
-\item \textbf{Output messages:} The selected Crisis Handler will be notified
-automatically once the crisis has been created.
+\item \textbf{Parameters:} CPU, GPU, RAM, SSD, HDD, SOFTWARE
+\item \textbf{Precondition:} Inorder to create a virtual machine the user must
+be logged in.
+\item \textbf{Post-condition:} A new virtual machine will be created and a new
+request will be sent to an administrator.
+\item \textbf{Output messages:} The operation will send at the end two
+notification one for the administrator and one for the regular user. The first
+message is used for the administrator so that he nows that there is a new
+request for creating a new virtual machine. The second message will tell the
+regular user that his request for the virtual machine was succesfully sent to an
+administrator. 
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item From within the crisis management window fill out the required entries related to the personal information of the reporter such as name and phone number.
-\item Fill out the entries related to the crisis type, impacted area, priority, description, GPS coordinates, address and finally choose a Crisis Handler from the combo box.
-\item Click on the “Submit” button in and add the entry to the database.
+\item Click on one of the radio buttons to choose one component.
+\item Click on the right black arrow to proceed to the new component.
+\item Repeat the two above steps until you arrive at the finish page.
+\item Click on the green arrow to accept or the red cross to cancel the request.
 \end{enumerate}
 
  
 \end{description}
 
  
-\subsection{MyExample1}
+\subsection{createVMExpertExample}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+\section{createVMTemplate}
+\label{operation:createVMTemplate}
+This system operation allows to create a virtual machine for a regular user
+using predifined template.
+
+\begin{description}
+
+\item \textbf{Parameters:} Template
+\item \textbf{Precondition:} Inorder to create a virtual machine the user must
+be logged in.
+\item \textbf{Post-condition:} A new virtual machine will be created and a new
+request will be sent to an administrator.
+\item \textbf{Output messages:} The operation will send on notification to the
+administrator telling which template the user desires to be used for his virtual
+machine. The regular user will see a pop up message telling him that his request
+was succesfully sent.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on one of the radio buttons to answer the question, the left one
+represents 'yes' the right one 'no.
+\item Repeat the first step until you have answer to every question.
+\item Click on next button which is situated at the right corner of the page
+called 'NEXT'.
+\item Wait ten seconds until the system has proposed a template.
+\item Click on the right button at the right corner of the page called 'FINISH'
+to send the request.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{createVMExpertExample}
 Examples should illustrate the use of \textbf{complex operations}.
 
 Each example must show how the actor uses the software operation under
