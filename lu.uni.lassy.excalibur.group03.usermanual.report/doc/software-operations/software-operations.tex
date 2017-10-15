@@ -18,16 +18,13 @@ using expert mode.
 \begin{description}
 
 \item \textbf{Parameters:} CPU, GPU, RAM, SSD, HDD, SOFTWARE
-\item \textbf{Precondition:} Inorder to create a virtual machine the user must
+\item \textbf{Precondition:} Inorder to create a virtual machine the SysAdmin must
 be logged in.
-\item \textbf{Post-condition:} A new virtual machine will be created and a new
-request will be sent to an administrator.
-\item \textbf{Output messages:} The operation will send at the end two
-notification one for the administrator and one for the regular user. The first
-message is used for the administrator so that he nows that there is a new
-request for creating a new virtual machine. The second message will tell the
-regular user that his request for the virtual machine was succesfully sent to an
-administrator. 
+\item \textbf{Post-condition:} A new virtual machine will be created using
+expert mode.
+\item \textbf{Output messages:} The operation will send at the end one
+notification telling the SysAdmin that he succefully created the desired virtual
+machine.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
@@ -57,20 +54,19 @@ It might be required to include GUI screenshots to illustrate the example.
 
 \section{createVMTemplate}
 \label{operation:createVMTemplate}
-This system operation allows to create a virtual machine for a regular user
+This system operation allows to create a virtual machine for a SysAdmin
 using predifined template.
 
 \begin{description}
 
 \item \textbf{Parameters:} Template
-\item \textbf{Precondition:} Inorder to create a virtual machine the user must
+\item \textbf{Precondition:} Inorder to create a virtual machine the SysAdmin must
 be logged in.
-\item \textbf{Post-condition:} A new virtual machine will be created and a new
-request will be sent to an administrator.
-\item \textbf{Output messages:} The operation will send one notification to the
-administrator telling which template the user desires to be used for his virtual
-machine. The regular user will see a pop up message telling him that his request
-was succesfully sent.
+\item \textbf{Post-condition:} A new virtual machine will be created using
+template mode.
+\item \textbf{Output messages:} The operation will send at the end one
+notification telling the SysAdmin that he succefully created the desired virtual
+machine.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
@@ -88,7 +84,7 @@ to send the request.
 \end{description}
 
  
-\subsection{createVMExpertExample}
+\subsection{createVMTemplateExample}
 Examples should illustrate the use of \textbf{complex operations}.
 
 Each example must show how the actor uses the software operation under
@@ -109,16 +105,16 @@ datacenter.
 \begin{description}
 
 \item \textbf{Parameters:} CPU, GPU, RAM, SSD, HDD, SOFTWARE
-\item \textbf{Precondition:} The person must be the administrator and be logged
-in with the administrator account.
-\item \textbf{Post-condition:} The administrator will have an idea of the
+\item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
+in with the super-SysAdmin's account.
+\item \textbf{Post-condition:} The super-SysAdmin will have an idea of the
 overall usage of each component by the virtual achines.
 \item \textbf{Output messages:}
 
 \item \textbf{Triggering:}
 \begin{enumerate}
 \item Click on one of the components to get its overall usage.
-\item Repeat the above step for each component the administrator wants to have a
+\item Repeat the above step for each component the super-SysAdmin wants to have a
 look at.
 \end{enumerate}
 
@@ -140,20 +136,20 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
-\section{createRegularUser}
-\label{operation:createRegularUser}
-This system operation allows an administrator to create a regular user.
+\section{createSysAdmin}
+\label{operation:createSysAdmin}
+This system operation allows the super-SysAdmin to create a SysAdmin.
 
 \begin{description}
 
 \item \textbf{Parameters:} Name, Username, E-mail, Password, Birth date, Phone
 number, Rights
-\item \textbf{Precondition:} The person must be the administrator and be logged
-in with the administrator account.
-\item \textbf{Post-condition:} A new regular user will be created and this
-regular user will be able to access the application.
+\item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
+in with the super-SysAdmin's account.
+\item \textbf{Post-condition:} A new SysAdmin will be created and this
+SysAdmin will be able to access the application.
 \item \textbf{Output messages:} The operation will send one notification to the
-administrator telling that a new regular user has been successfully created.
+super-SysAdmin telling that a SysAdmin user has been successfully created.
 
 
 \item \textbf{Triggering:}
@@ -163,11 +159,11 @@ value.
 \item Make sure that all different textfields has been filled before to
 click on the ''Next step'' button which is situated at the right corner of the
 page.
-\item A new page ''Attribute the rights'' appears to give the administrator the
-power to attribute the new regular user rights about the application.
+\item A new page ''Attribute the rights'' appears to give the SysAdmin the
+power to attribute the new SysAdmin rights about the application.
 \item Click on the right button at the right corner of the page called
-''Create User'' to create the new regular user.
-\item A confirmation message will appears to make sure that a new regular user
+''Create User'' to create the new SysAdmin.
+\item A confirmation message will appears to make sure that a new SysAdmin
 has been created. Click on the ''ok'' button to finish the operation.
 \end{enumerate}
 

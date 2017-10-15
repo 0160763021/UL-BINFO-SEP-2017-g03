@@ -97,7 +97,7 @@ different stages of the process while its is performed by the actor(s).
 Mono-procedures must be grouped by actors.
 
 
-\subsection{Regular user}
+\subsection{SysAdmin}
 
 \subsubsection{Creating a virtual machine using expert mode}
 
@@ -106,13 +106,11 @@ Mono-procedures must be grouped by actors.
 \begin{lyxlist}{PC1}
 \small{
 \item [\textbf{Procedure:}] vmCreationProcess1
-\item [\textbf{Scope:}] allow a regular user to create a virtual machine by
-choosing between the different components. 
-\item [\textbf{Primary Actor}:] regular user John 
-\item [\textbf{Secondary Actor(s)}:] Administrator 
-\item [\textbf{Goal:}] The intention of the regular user John is to proceed
-steps 1 to 8 to create a virtual machine which was created with his components
-that he choosed.
+\item [\textbf{Scope:}] Virtual machine creation
+\item [\textbf{Primary Actor}:] SysAdmin John
+\item [\textbf{Secondary Actor(s)}:] /
+\item [\textbf{Goal:}] The SysAdmin John should be able to create a virtual
+machine which was created with his components that he choosed.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{John} must click on the button ‘virtual machine’ in the main Menu.
@@ -121,7 +119,7 @@ Fig 3.1\\
 3.2\\
 3. \emph{John} must click on the button with a screwdriver called 'own
 settings'. Fig 3.3\\
-4. \emph{John} must enter a name for his virtual machine and a description
+4. \emph{John} must enter a name for the virtual machine and a description
 (optional). Fig 3.4\\
 5. \emph{John} must select a component. Fig 3.5\\
 6. \emph{John} must click on the right arrows which allows him to
@@ -130,8 +128,8 @@ back.\\
 7. \emph{John} must repeat for every component e.g CPU, GPU, HDD, SSD,
 SOFTWARE step 5 and 6. Fig 3.5 - 3.10\\
 8. \emph{John} will be at the finish page, here John has now the option to
-choose if he wants to create the VM, for this he must click on the green check icon,
-and if he wants to abandon the configuration he has to click on the red cross.
+choose if he wants to create the selected VM, for this he must click on the
+green check icon, and if he wants to abandon the configuration he has to click on the red cross.
 Fig 3.11\\
 
 
@@ -232,12 +230,11 @@ Fig 3.11\\
 \begin{lyxlist}{PC1}
 \small{
 \item [\textbf{Procedure:}] vmCreationProcess2
-\item [\textbf{Scope:}] allow a regular user to create a virtual machine by
-choosing between the different templates. 
-\item [\textbf{Primary Actor}:] regular user John 
+\item [\textbf{Scope:}] Virtual machine creation
+\item [\textbf{Primary Actor}:] SysAdmin John 
 \item [\textbf{Secondary Actor(s)}:] Administrator 
-\item [\textbf{Goal:}] The intention of the regular user John is to proceed
-steps 1 to 8 to create a virtual machine which was created using a template.
+\item [\textbf{Goal:}] The SysAdmin John should be able to create a virtual
+machine which was created using a template.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{John} must click on the button ‘virtual machine’ in the main Menu.\\
@@ -261,7 +258,7 @@ consists\\
 \end{lyxlist}
 \hrule
 
-\subsection{Administrator}
+\subsection{super-SysAdmin}
 
 \subsubsection{Overview of the datacenter}
 
@@ -271,8 +268,8 @@ consists\\
 \small{
 \item [\textbf{Procedure:}] DatacenterConfiguration1
 \item [\textbf{Scope:}] Datacenter Management
-\item [\textbf{Primary Actor}:] Administrator Bob
-\item [\textbf{Goal:}] The administrator Bob should be able to get an overview
+\item [\textbf{Primary Actor}:] super-SysAdmin Bob
+\item [\textbf{Goal:}] The super-SysAdmin Bob should be able to get an overview
 of the datacenter
 \item [\textbf{Level}:] Administrator level
 \item [\textbf{Main~Success~Scenario}]:\\
@@ -283,12 +280,13 @@ RAM, HDD, SSD or Software\\
 4. \emph{Bob} gets the overview of the component he chose poping up on the
 rigt side of the screen.\\
 5. \emph{Bob} now can see what has been used and what not.\\
-6. \emph{Bob} after he's done overview the choosen component \emph{Bob} can go
-back to the administrators home screen by clicking on the \emph{Back} button.\\
+6. \emph{Bob} after he's done with overview the choosen component \emph{Bob} can
+go back to the super-SysAdmin home screen by clicking on the \emph{Back}
+button.\\
 
 
 \item [\textbf{Extensions}]:\\
-2.a \emph{Bob} has to be an administrator and has to be logged in in order to
+2.a \emph{Bob} has to be an super-SysAdmin and has to be logged in in order to
 be able to overview the datacenter's usage.\\
 }
 \end{lyxlist}
@@ -301,28 +299,28 @@ be able to overview the datacenter's usage.\\
 \vspace{0.5cm}
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] RegularUserCreation 
-\item [\textbf{Scope:}] Allow the administrator to create a new regular user
-\item [\textbf{Primary Actor}:] Administrator Bob
-\item [\textbf{Goal:}] The administrator Bob should be able to create a new
+\item [\textbf{Procedure:}] SysAdminCreation 
+\item [\textbf{Scope:}] Allow the administrator to create a new SysAdmin
+\item [\textbf{Primary Actor}:] super-SysAdmin Bob
+\item [\textbf{Goal:}] The super-SysAdmin Bob should be able to create a new
 regular user.
 \item [\textbf{Level}:] Administrator level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Bob} has to click on the "CREATE NEW USER '' button in the admin home
+1. \emph{Bob} has to click on the "CREATE NEW USER '' button in the super-SysAdmin home
 screen.\\
 2. \emph{Bob} has to fill the different textfields.\\
 3. \emph After the different texfields have been filled. {Bob} has to click on
 the "next step" button.\\
-4. \emph{Bob} has to attribute the different rights for the Regular user.
+4. \emph{Bob} has to attribute the different rights for the SysAdmin.
 {Bob} need only to click in the litle box if he want to attribute a right.\\
 5. \emph{Bob} only needs now to click on the ``Create user" button for create a
-regular user.
+SysAdmin.
 \\
-6. \emph A new regular user has been created and {Bob} only need to click
+6. \emph A new SysAdmin has been created and {Bob} only needs to click
 on the " ok" button.\\
 
 \item [\textbf{Extensions}]:\\
-2.a \emph{Bob} has to be an administrator and has to be logged in in order to
+2.a \emph{Bob} has to be an super-SysAdmin and has to be logged in in order to
 be able to create a regular user.\\
 }
 \end{lyxlist}
