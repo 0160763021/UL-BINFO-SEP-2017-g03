@@ -101,15 +101,15 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
-\section{DataConfiguration1}
-\label{operation:dataconfiguration}
+\section{DatacenterConfiguration1}
+\label{operation:datacenterconfiguration}
 This system operation allows an administrator to have an overview on the
 datacenter.
 
 \begin{description}
 
 \item \textbf{Parameters:} CPU, GPU, RAM, SSD, HDD, SOFTWARE
-\item \textbf{Precondition:} The person must be the administrator an be logged
+\item \textbf{Precondition:} The person must be the administrator and be logged
 in with the administrator account.
 \item \textbf{Post-condition:} The administrator will have an idea of the
 overall usage of each component by the virtual achines.
@@ -126,7 +126,56 @@ look at.
 \end{description}
 
  
-\subsection{DataConfiguration1Example}
+\subsection{DatacenterConfiguration1Example}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+\section{createRegularUser}
+\label{operation:createRegularUser}
+This system operation allows an administrator to create a regular user.
+
+\begin{description}
+
+\item \textbf{Parameters:} Name, Username, E-mail, Password, Birth date, Phone
+number, Rights
+\item \textbf{Precondition:} The person must be the administrator and be logged
+in with the administrator account.
+\item \textbf{Post-condition:} A new regular user will be created and this
+regular user will be able to access the application.
+\item \textbf{Output messages:} The operation will send one notification to the
+administrator telling that a new regular user has been successfully created.
+
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the differents textfields an fill them with the appropriate
+value.
+\item Make sure that all different textfields has been filled before to
+click on the ''Next step'' button which is situated at the right corner of the
+page.
+\item A new page ''Attribute the rights'' appears to give the administrator the
+power to attribute the new regular user rights about the application.
+\item Click on the right button at the right corner of the page called
+''Create User'' to create the new regular user.
+\item A confirmation message will appears to make sure that a new regular user
+has been created. Click on the ''ok'' button to finish the operation.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{createRegularUser}
 Examples should illustrate the use of \textbf{complex operations}.
 
 Each example must show how the actor uses the software operation under
