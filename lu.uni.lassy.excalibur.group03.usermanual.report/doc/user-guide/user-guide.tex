@@ -200,7 +200,7 @@ needs.\\
 \vspace{0.5cm}
 \begin{lyxlist}{PC1}
 \small{
-\item [\textbf{Procedure:}] DatacenterConfiguration1
+\item [\textbf{Procedure:}] DatacenterOverview
 \item [\textbf{Scope:}] Datacenter Management
 \item [\textbf{Primary Actor}:] super-SysAdmin Bob
 \item [\textbf{Secondary Actor(s)}:] /
@@ -208,7 +208,7 @@ needs.\\
 of the datacenter
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Bob} has to click on the harware button in the home screen.\\
+1. \emph{Bob} has to click on the \emph{Harware} button in the home screen.\\
 2. \emph{Bob} has the choice to overview a component individually.\\
 3. \emph{Bob} clicks on the component he would like to overview e.g. CPU, GPU,
 RAM, HDD, SSD or Software\\
@@ -225,7 +225,42 @@ button.\\
 be able to overview the datacenter's usage.\\
 }
 \end{lyxlist}
+\hrule
 
+
+\subsubsection{Buy new component(s)}
+
+\hrule
+\vspace{0.5cm}
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] ComponentPurchase
+\item [\textbf{Scope:}] Purchase of a/multiple component(s)
+\item [\textbf{Primary Actor}:] super-SysAdmin Bob
+\item [\textbf{Secondary Actor(s)}:] /
+\item [\textbf{Goal:}] The super-SysAdmin Bob should be able to buy new
+component(s)
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Bob} has to click on the \emph{Harware} button in the home screen.\\
+2. \emph{Bob} chooses the component he wants to buy.\\
+3. \emph{Bob} clicks on the component he would like to buy e.g. CPU, GPU,
+RAM, HDD, SSD or Software\\
+4. \emph{Bob} gets the overview of the component and clicks on the \emph{Buy
+new InsertComponentName} button.\\
+5. \emph{Bob} now chooses which material of a component he wants to buy by
+selecting it and gives in the amount.\\
+6. \emph{Bob} clicks on the \emph{Buy} button.\\
+7. \emph{Bob} confirms the purchase.\\
+8. \emph{Bob} clicks on the \emph{Back} button.\\
+
+
+\item [\textbf{Extensions}]:\\
+2.a \emph{Bob} has to be an super-SysAdmin and has to be logged in in order to
+be able to buy a new component(s).\\
+}
+\end{lyxlist}
+\hrule
 
 
 \subsubsection{Creating a SysAdmin}

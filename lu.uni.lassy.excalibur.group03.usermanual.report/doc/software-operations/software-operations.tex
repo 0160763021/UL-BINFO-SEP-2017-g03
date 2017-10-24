@@ -95,9 +95,8 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
-
-\section{DatacenterConfiguration1}
-\label{operation:datacenterconfiguration}
+\section{DatacenterOverview}
+\label{operation:datacenteroverview}
 This system operation allows the super-SysAdmin to have an overview on the
 datacenter.
 
@@ -121,7 +120,7 @@ look at.
 \end{description}
 
  
-\subsection{DatacenterConfiguration1Example}
+\subsection{DatacenterOverviewExample}
 Examples should illustrate the use of \textbf{complex operations}.
 
 Each example must show how the actor uses the software operation under
@@ -129,6 +128,45 @@ description to achieve (at least one of) its expected outcome.
 
 It might be required to include GUI screenshots to illustrate the example.
 
+
+
+
+
+
+\section{ComponentPurchase}
+\label{operation:componentpurchase}
+This system operation allows the super-SysAdmin to buy new component(s) for the
+datacenter.
+
+\begin{description}
+
+\item \textbf{Parameters:} CPU, GPU, RAM, SSD, HDD, SOFTWARE
+\item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
+in with the super-SysAdmin's account.
+\item \textbf{Post-condition:} The SysAdmin will have more components
+available to create virtual machines.
+\item \textbf{Output messages:} A request will be send to the datacenter in
+order to install the new purchased components physically.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Check the box of the material to buy and specify the amount.
+\item Click on the \emph{Buy} button.
+\item Confirm the purchase.
+\item A message confirming that a request has been send to the datacenter
+appears. Click on the \emph{Back} button to finish the operation.
+\end{enumerate}
+
+ 
+\end{description}
+
+\subsection{ComponentPurchaseExample}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
 
 
 
