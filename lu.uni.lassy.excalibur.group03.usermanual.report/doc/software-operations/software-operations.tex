@@ -12,8 +12,8 @@ operations to several actors may be grouped and presented once to avoid redundan
 
 \section{createVMExpert}
 \label{operation:createVMExpert}
-This system operation allow a SysAdmin to create a virtual machine using expert
-mode.
+This system operation allows a SysAdmin to create a virtual machine using expert
+mode. Expert mode means that the SysAdmin can specify each component.
 
 \begin{description}
 
@@ -31,7 +31,7 @@ machine.
 \item Click on one of the radio buttons to choose one component.
 \item Click on the right black arrow to proceed to the new component.
 \item Repeat the two above steps until you arrive at the finish page.
-\item Click on the green arrow to accept or the red cross to cancel the request.
+\item Click on the green arrow to create the desired virtual machine.
 \end{enumerate}
 
  
@@ -52,10 +52,13 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
-\section{createVMTemplate}
-\label{operation:createVMTemplate}
-This system operation allow a SysAdmin to create a virtual machine using
-template mode.
+
+
+\section{createVMTemplateExample}
+\label{operation:createVMTemplateExample}
+This system operation allows a SysAdmin to create a virtual machine using
+template mode. Template mode means the virtual machine is already predifined and
+preconfigured.
 \begin{description}
 
 \item \textbf{Parameters:} Template
@@ -69,14 +72,14 @@ machine.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item Click on one of the radio buttons to answer the question, the left one
-represents 'yes' the right one 'no.
-\item Repeat the first step until you have answer to every question.
-\item Click on next button which is situated at the right corner of the page
+\item Click on one of the radio buttons to answer the
+question, the left radio button represents 'YES' the right one 'NO'.
+\item Repeat the first step for all the questions.
+\item Click on the button which is situated at the right corner of the page
 called 'NEXT'.
 \item Wait ten seconds until the system has proposed a template.
 \item Click on the right button at the right corner of the page called 'FINISH'
-to send the request.
+to create the virtual machine.
 \end{enumerate}
 
  
@@ -90,6 +93,182 @@ Each example must show how the actor uses the software operation under
 description to achieve (at least one of) its expected outcome.
 
 It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+\section{modifyVM}
+\label{operation:modifyVM}
+This system operation allows a SysAdmin to modify a virtual machine. 
+\begin{description}
+
+\item \textbf{Parameters:} CPU, GPU, RAM, SSD, HDD, SOFTWARE
+\item \textbf{Precondition:} Inorder to modify a virtual machine the SysAdmin
+must be logged in and he must have created at least one virtual machine.
+\item \textbf{Post-condition:} The desired virtual machine will be modified
+depending on the new components choosen by the SysAdmin
+\item \textbf{Output messages:} The operation will send at the end one
+notification telling the SysAdmin that he succefully modified the desired
+virtual machine.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on one of the radio buttons to choose one component that you want
+to modify.
+\item Click on the right black arrow to proceed to the new component.
+\item Repeat the two above steps until you arrive at the finish page.
+\item Click on the green check mark to accept the modification.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{modifyVM}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+
+
+
+
+
+\section{deleteVM}
+\label{operation:deleteVM}
+This system operation allows a SysAdmin to delete a virtual machine. 
+\begin{description}
+
+\item \textbf{Parameters:} VirtualMachine
+\item \textbf{Precondition:} Inorder to delete a virtual machine the SysAdmin
+must be logged in and he must have created at least one virtual machine.
+\item \textbf{Post-condition:} The desired virtual machine will be deleted.
+\item \textbf{Output messages:} The operation will send at the end one
+notification telling the SysAdmin that he succefully deleted the desired
+virtual machine.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the green check mark to accept the deletion.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{deleteVM}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+
+
+
+
+\section{hotBackupVM}
+\label{operation:hotBackupVM}
+This system operation allows a SysAdmin to perform a hot backup on a virtual
+machine.
+\begin{description}
+
+\item \textbf{Parameters:} VirtualMachine
+\item \textbf{Precondition:} Inorder to perform a hot backup on a virtual
+machine the SysAdmin must be logged in and he must have created at least one
+virtual machine.
+\item \textbf{Post-condition:} A hot backup will be performed on the selected
+VM.
+\item \textbf{Output messages:} The operation will send at the end one
+notification telling the SysAdmin that he succefully performed a hot backup on
+the desired virtual machine.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the green check mark to accept the operation.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{hotBackupVM}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+
+\section{scheduledBackupVM}
+\label{operation:scheduledBackupVM}
+This system operation allows a SysAdmin to perform a scheduled backup on a
+virtual machine.
+\begin{description}
+
+\item \textbf{Parameters:} VirtualMachine
+\item \textbf{Precondition:} Inorder to perform a scheduled backup on a virtual
+machine the SysAdmin must be logged in and he must have created at least one
+virtual machine.
+\item \textbf{Post-condition:} A scheduled backup will be performed on the
+selected VM.
+\item \textbf{Output messages:} The operation will send at the end one
+notification telling the SysAdmin that he succefully performed a scheduled
+backup on the desired virtual machine.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the description label and add a description. (optional)
+\item Click on the calandar and select a day.
+\item Click on the button named 'PERFORM'.
+\item Click on the button named 'NEXT'.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{scheduledBackupVM}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
 
 
 

@@ -113,12 +113,13 @@ Mono-procedures must be grouped by actors.
 machine which was created with his components that he choosed.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{John} must click on the button ‘virtual machine’ in the main Menu.
+1. \emph{John} must click on the button ‘VIRTUAL MACHINE’ in the main Menu.
 Fig 3.1\\
-2. \emph{John} must click on the button with a plus named ‘create a vm’. Fig
+2. \emph{John} must click on the button with a plus named ‘CREATE VM’. Fig
 3.2\\
-3. \emph{John} must click on the button with a screwdriver called 'own
-settings'. Fig 3.3\\
+3. \emph{John} must click on the button with a screwdriver called 'OWN
+SETTINGS'.
+Fig 3.3\\
 4. \emph{John} must enter a name for the virtual machine and a description
 (optional). Fig 3.4\\
 5. \emph{John} must select a component. Fig 3.5\\
@@ -129,7 +130,8 @@ back.\\
 SOFTWARE step 5 and 6. Fig 3.5 - 3.10\\
 8. \emph{John} will be at the finish page, here John has now the option to
 choose if he wants to create the selected VM, for this he must click on the
-green check icon, and if he wants to abandon the configuration he has to click on the red cross.
+green check mark, and if he wants to abandon the configuration he has to
+click on the red cross.
 Fig 3.11\\
 
 
@@ -172,16 +174,17 @@ Fig 3.11\\
 machine which was created using a template.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{John} must click on the button ‘virtual machine’ in the main Menu.\\
-2. \emph{John} must click on the button with a plus named ‘create a vm’.\\
-3. \emph{John} must click on the red button called 'predifined templates'.\\ 
+1. \emph{John} must click on the button ‘VIRTUAL MACHINE’ in the main Menu.\\
+2. \emph{John} must click on the button with a plus named ‘CREATE VM’.\\
+3. \emph{John} must click on the red button called 'PREDIFINED TEMPLATES'.\\ 
 4. \emph{John} must enter on the top-left of the page a name for his virtual
 machine and a description (optional).\\
 5. \emph{John} must answer the different questions with yes or no.\\
-6. \emph{John} must click on next and wait a couple of seconds.\\
+6. \emph{John} must click on button called 'NEXT' and wait a couple of
+seconds.\\
 7. \emph{John} will see a preconfigured template that perfectly matches his
 needs.\\
-8. \emph{John} must click on finish to accept.
+8. \emph{John} must click on the button called 'FINISH' to accept.
 
 
 \item [\textbf{Extensions}]:\\
@@ -191,6 +194,200 @@ needs.\\
 }
 \end{lyxlist}
 \hrule
+\vspace{0.5cm}
+
+
+
+
+
+
+
+
+\subsubsection{Modifying a virtual machine}
+
+\hrule
+\vspace{0.5cm}
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] vmModificationProcess
+\item [\textbf{Scope:}] Virtual machine modification
+\item [\textbf{Primary Actor}:] SysAdmin John 
+\item [\textbf{Secondary Actor(s)}:] /
+\item [\textbf{Goal:}] The SysAdmin John should be able to modify a virtual
+machine which was already created before.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{John} must click on the button ‘VIEW VM's’ in the main Menu.\\
+2. \emph{John} will see all the virtual machines that he created.\\
+3. \emph{John} must select a virtual machine which he wants to modify by
+clicking on it'.\\
+4. \emph{John} must click now on the left button named `MODIFY`.\\
+5. \emph{John} must now choose which components he wants to modify.
+6. \emph{John} must click on the right black arrow to proceed to the next
+component. 
+7. \emph{John} must repeat step 5 for all the components that he
+wants to change.\\
+8. \emph{John} must now accept the modification(s) by clicking on the green
+check mark.\\
+
+
+\item [\textbf{Extensions}]:\\
+2.a John has to be logged in, in order to create a virtual machine.\\
+2.b John must have created at least one virtual machine before, in case to
+perform a modification.\\
+
+\item [\textbf{GUI screenshot guide}]:\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+
+
+
+
+
+
+
+
+\subsubsection{Deleting a virtual machine}
+
+\hrule
+\vspace{0.5cm}
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] vmDeletionProcess
+\item [\textbf{Scope:}] Virtual machine deletion
+\item [\textbf{Primary Actor}:] SysAdmin John 
+\item [\textbf{Secondary Actor(s)}:] /
+\item [\textbf{Goal:}] The SysAdmin John should be able to delete a virtual
+machine which was already created before.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{John} must click on the button ‘VIEW VM's’ in the main Menu.\\
+2. \emph{John} will see all the virtual machines that he created.\\
+3. \emph{John} must select a virtual machine which he wants to delete by
+clicking on it'.\\
+4. \emph{John} must click now on the middle button named `DELETE`.\\
+5. \emph{John} must now click on the green check mark to delete the selected
+VM.\\
+
+
+
+\item [\textbf{Extensions}]:\\
+2.a John has to be logged in, in order to create a virtual machine.\\
+2.b John must have created at least one virtual machine inorder to perform a
+deletion.\\
+
+\item [\textbf{GUI screenshot guide}]:\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+
+
+
+
+
+
+\subsubsection{Perform a hot backup}
+
+\hrule
+\vspace{0.5cm}
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] vmBackupProcess1
+\item [\textbf{Scope:}] Virtual machine backup
+\item [\textbf{Primary Actor}:] SysAdmin John 
+\item [\textbf{Secondary Actor(s)}:] /
+\item [\textbf{Goal:}] The SysAdmin John should be able to perform a hot backup
+on a selected virtual machine.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{John} must click on the button ‘VIEW VM'S’ in the main Menu.\\
+2. \emph{John} will see all the virtual machines that he created.\\
+3. \emph{John} must select a virtual machine on which he wants to perform a
+hot backup'.\\
+4. \emph{John} must click now on the rightmost button named `BACKUP`.\\
+5. \emph{John} must now click on the button named 'BACKUP NOW'.\\
+6. \emph{John} must click on the green check mark to accept the requested
+operation.\\
+
+
+
+\item [\textbf{Extensions}]:\\
+2.a John has to be logged in, in order to create a virtual machine.\\
+2.b John must have created at least one virtual machine inorder to perform a
+hot backup.\\
+
+\item [\textbf{GUI screenshot guide}]:\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+
+
+
+
+
+
+
+
+
+\subsubsection{Perform a scheduled backup}
+
+\hrule
+\vspace{0.5cm}
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] vmBackupProcess2
+\item [\textbf{Scope:}] Virtual machine backup
+\item [\textbf{Primary Actor}:] SysAdmin John 
+\item [\textbf{Secondary Actor(s)}:] /
+\item [\textbf{Goal:}] The SysAdmin John should be able to perform a
+scheduled backup on a selected virtual machine.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{John} must click on the button ‘VIEW VM's’ in the main Menu.\\
+2. \emph{John} will see all the virtual machines that he created.\\
+3. \emph{John} must select a virtual machine on which he wants to perform a
+hot backup'.\\
+4. \emph{John} must click now on the rightmost button named `BACKUP`.\\
+5. \emph{John} must now click on the button named 'SCHEDULED
+BACKUP'.\\
+6. \emph{John} can add a small description in the description label.\\
+7. \emph{John} must specify a date by clicking on the calender on a specific
+day.\\
+8. \emph{John} must click on the button named 'PERFORM' to perform the backup.\\
+
+
+
+\item [\textbf{Extensions}]:\\
+2.a John has to be logged in, in order to create a virtual machine.\\
+2.b John must have created at least one virtual machine inorder to perform a
+cold/scheduled backup.\\
+
+\item [\textbf{GUI screenshot guide}]:\\
+}
+\end{lyxlist}
+\hrule
+\vspace{0.5cm}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 \subsection{super-SysAdmin}
 
@@ -208,7 +405,7 @@ needs.\\
 of the datacenter
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Bob} has to click on the \emph{Harware} button in the home screen.\\
+1. \emph{Bob} has to click on the \emph{Hardware} button in the home screen.\\
 2. \emph{Bob} has the choice to overview a component individually.\\
 3. \emph{Bob} clicks on the component he would like to overview e.g. CPU, GPU,
 RAM, HDD, SSD or Software\\
