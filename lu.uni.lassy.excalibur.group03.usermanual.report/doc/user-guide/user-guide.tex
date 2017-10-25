@@ -113,22 +113,34 @@ Mono-procedures must be grouped by actors.
 machine which was created with his components that he choosed.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{John} must click on the button ‘VIRTUAL MACHINE’ in the main Menu.
+1. \emph{John} must click on the button ‘CREATE VM’ in the main Menu.
 Fig 3.1\\
-2. \emph{John} must click on the button with a plus named ‘CREATE VM’. Fig
-3.2\\
-3. \emph{John} must click on the button with a screwdriver called 'OWN
+2. \emph{John} must click on the button with a screwdriver called 'OWN
 SETTINGS'.
 Fig 3.3\\
-4. \emph{John} must enter a name for the virtual machine and a description
-(optional). Fig 3.4\\
-5. \emph{John} must select a component. Fig 3.5\\
-6. \emph{John} must click on the right arrows which allows him to
+4. \emph{John} must enter a name for the virtual machine such as 'JOHNsVM'
+and a description 'VM for software engeneering project' (optional). Fig 3.4\\
+5. \emph{John} must select a CPU 'Intel Xeon E3-1630'. Fig 3.5\\
+6. \emph{John} must click on the right arrow which allows him to
 proceed to the next component and the left arrow allows him to go one page
 back.\\
-7. \emph{John} must repeat for every component e.g CPU, GPU, HDD, SSD,
-SOFTWARE step 5 and 6. Fig 3.5 - 3.10\\
-8. \emph{John} will be at the finish page, here John has now the option to
+7. \emph{John} must select how much does he wants '32GB ECC memory'. Fig
+3.5\\
+8. \emph{John} must click on the right arrow which allows him to
+proceed to the next component.
+9. \emph{John} must select a GPU 'NVIDIA QUADRO P4000'. Fig 3.5\\
+10. \emph{John} must click on the right arrow which allows him to
+proceed to the next component.
+11. \emph{John} must select a HDD '4TB 7200 RPM'. Fig 3.5\\
+12. \emph{John} must click on the right arrow which allows him to
+proceed to the next component.
+13. \emph{John} must select a SSD '1 TB SATA SSD'. Fig 3.5\\
+14. \emph{John} must click on the right arrow which allows him to
+proceed to the next component.
+15. \emph{John} must select a SOFTWARE 'autoCAD'. Fig 3.5\\
+16. \emph{John} must click on the right arrow which allows him to
+proceed to the next component.
+17. \emph{John} will be at the finish page, here John has now the option to
 choose if he wants to create the selected VM, for this he must click on the
 green check mark, and if he wants to abandon the configuration he has to
 click on the red cross.
@@ -174,16 +186,16 @@ Fig 3.11\\
 machine which was created using a template.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{John} must click on the button ‘VIRTUAL MACHINE’ in the main Menu.\\
-2. \emph{John} must click on the button with a plus named ‘CREATE VM’.\\
+1. \emph{John} must click on the button ‘CREATE VM’ in the main Menu.\\
 3. \emph{John} must click on the red button called 'PREDIFINED TEMPLATES'.\\ 
-4. \emph{John} must enter on the top-left of the page a name for his virtual
-machine and a description (optional).\\
-5. \emph{John} must answer the different questions with yes or no.\\
+4. \emph{John} must enter a name for his virtual machine 'JOHN'sTEMPLATEVM' and
+a description 'VM for software engeneering project' (optional).\\
+5. \emph{John} must click on the button named 'NEXT'.\\
+5. \emph{John} must answer the different questions with 'YES' or 'NO'.\\
 6. \emph{John} must click on button called 'NEXT' and wait a couple of
 seconds.\\
-7. \emph{John} will see a preconfigured template that perfectly matches his
-needs.\\
+7. \emph{John} will see a preconfigured template that perfectly
+matches his needs.\\
 8. \emph{John} must click on the button called 'FINISH' to accept.
 
 
@@ -213,21 +225,21 @@ needs.\\
 \item [\textbf{Scope:}] Virtual machine modification
 \item [\textbf{Primary Actor}:] SysAdmin John 
 \item [\textbf{Secondary Actor(s)}:] /
-\item [\textbf{Goal:}] The SysAdmin John should be able to modify a virtual
-machine which was already created before.
+\item [\textbf{Goal:}] The SysAdmin John should be able to modify the CPU of
+his virtual machine which \emph{John} created before.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{John} must click on the button ‘VIEW VM's’ in the main Menu.\\
 2. \emph{John} will see all the virtual machines that he created.\\
-3. \emph{John} must select a virtual machine which he wants to modify by
-clicking on it'.\\
+3. \emph{John} must select a virtual machine 'JOHN'sVM' and click on it.\\
 4. \emph{John} must click now on the left button named `MODIFY`.\\
 5. \emph{John} must now choose which components he wants to modify.
-6. \emph{John} must click on the right black arrow to proceed to the next
+6. \emph{John} wants to change his CPU so \emph{John} will select the new CPU
+'Intel XEON PLATINUM 8180M'.
+7. \emph{John} must click on the right black arrow to proceed to the next
 component. 
-7. \emph{John} must repeat step 5 for all the components that he
-wants to change.\\
-8. \emph{John} must now accept the modification(s) by clicking on the green
+8. \emph{John} must repeat step 6 until he arrives at the finish page.\\
+9. \emph{John} must now accept the modification(s) by clicking on the green
 check mark.\\
 
 
@@ -266,8 +278,7 @@ machine which was already created before.
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{John} must click on the button ‘VIEW VM's’ in the main Menu.\\
 2. \emph{John} will see all the virtual machines that he created.\\
-3. \emph{John} must select a virtual machine which he wants to delete by
-clicking on it'.\\
+3. \emph{John} must select a virtual machine 'JOHN'sVM'and click on it'.\\
 4. \emph{John} must click now on the middle button named `DELETE`.\\
 5. \emph{John} must now click on the green check mark to delete the selected
 VM.\\
@@ -302,13 +313,13 @@ deletion.\\
 \item [\textbf{Primary Actor}:] SysAdmin John 
 \item [\textbf{Secondary Actor(s)}:] /
 \item [\textbf{Goal:}] The SysAdmin John should be able to perform a hot backup
-on a selected virtual machine.
+on a selected virtual machine that John created before.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{John} must click on the button ‘VIEW VM'S’ in the main Menu.\\
 2. \emph{John} will see all the virtual machines that he created.\\
-3. \emph{John} must select a virtual machine on which he wants to perform a
-hot backup'.\\
+3. \emph{John} will select the virtual machine 'JOHN'sVM' on which he wants
+to perform a hot backup by clicking on it'.\\
 4. \emph{John} must click now on the rightmost button named `BACKUP`.\\
 5. \emph{John} must now click on the button named 'BACKUP NOW'.\\
 6. \emph{John} must click on the green check mark to accept the requested
@@ -347,19 +358,20 @@ hot backup.\\
 \item [\textbf{Primary Actor}:] SysAdmin John 
 \item [\textbf{Secondary Actor(s)}:] /
 \item [\textbf{Goal:}] The SysAdmin John should be able to perform a
-scheduled backup on a selected virtual machine.
+scheduled backup on a selected virtual machine that John created before.
 \item [\textbf{Level}:] User-goal level
 \item [\textbf{Main~Success~Scenario}]:\\
 1. \emph{John} must click on the button ‘VIEW VM's’ in the main Menu.\\
 2. \emph{John} will see all the virtual machines that he created.\\
-3. \emph{John} must select a virtual machine on which he wants to perform a
-hot backup'.\\
+3. \emph{John} will select the virtual machine 'JOHN'sVM' on which he wants
+to perform a scheduled backup by clicking on it'.\\
 4. \emph{John} must click now on the rightmost button named `BACKUP`.\\
 5. \emph{John} must now click on the button named 'SCHEDULED
 BACKUP'.\\
-6. \emph{John} can add a small description in the description label.\\
-7. \emph{John} must specify a date by clicking on the calender on a specific
-day.\\
+6. \emph{John} will add a small description in the description label such as
+'Backup for version 0.3 of sofware engeneering project.\\
+7. \emph{John} must specify a date '15/10/2017' by clicking on the calender on a
+specific day.\\
 8. \emph{John} must click on the button named 'PERFORM' to perform the backup.\\
 
 
