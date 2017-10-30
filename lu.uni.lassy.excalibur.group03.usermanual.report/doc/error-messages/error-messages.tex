@@ -9,10 +9,10 @@ Contact information for reporting any problems (either with the software or
 this document) should be clearly indicated
 
 
-\section{Unable to create a VM}
+\section{Unable to access VMMS} 
 
 \subsection{Problem identification}
-The faced problem means that the SysAdmin is unable to create a virtual machine.
+The faced problem means that the SysAdmin/super-SysAdmin is unable to access the weboriented-application.
 
 \subsection{Probable cause}
 
@@ -20,8 +20,6 @@ The reason why such a problem has been raised is:\\
 \begin{description}
   \item[$\bullet$] The SysAdmin is not logged in
   \item[$\bullet$] The SysAdmin's login session has espired
-  \item[$\bullet$] The SysAdmin has not selected all the required components
-  \item[$\bullet$] The datacenter lacks of ressources
 \end{description}
 
 
@@ -32,12 +30,44 @@ A correction for the problem is to:\\
   \item[$\bullet$] Log in using your credentials (username/password)
   \item[$\bullet$] Press F5 and refresh the page, the SysAdmin will be redirected to
   the login page where he has to login
-  \item[$\bullet$] The SysAdmin has to make sure that he selected all the required
-  components
   \item[$\bullet$] For further information the SysAdmin should contact the
   super-SysAdmin, contact informations are provided in section 1.8
 \end{description}
 
+
+
+
+
+
+
+\section{Unable to create a VM} 
+
+\subsection{Problem identification}
+The faced problem means that the SysAdmin is unable to create a virtual machine.
+
+\subsection{Probable cause}
+
+The reason why such a problem has been raised is:\\
+\begin{description}
+  \item[$\bullet$] The SysAdmin has not give the virtual machine a name.
+  \item[$\bullet$] The SysAdmin has not selected all the required components
+  \item[$\bullet$] The datacenter lacks of ressources, to be more precise the
+selected component is currently not available.
+\end{description}
+
+
+\subsection{Corrective actions}
+
+A correction for the problem is to:\\
+\begin{description}
+  \item[$\bullet$] The SysAdmin has to make sure that he gave the virtual unique name,
+creating two virtual machines with the same name is not allowed.
+  \item[$\bullet$] The SysAdmin has to make sure that he selected all the required
+  components
+  \item[$\bullet$] The Sys-admin can choose another component which is available or
+contact the super-SysAdmin. For further information contact informations are provided
+in section 1.8
+\end{description}
 
 
 
@@ -60,12 +90,11 @@ machine.
 
 The reason why such a problem has been raised is:\\
 \begin{description}
-  \item[$\bullet$] The SysAdmin is not logged in
-  \item[$\bullet$] The SysAdmin's login session has espired.
   \item[$\bullet$] The SysAdmin's has not clicked on any component, the virtual
   machine is the same as before the modification.
   \item[$\bullet$] The components which he wants to modify are currently not
   available.
+  \item[$\bullet$] The SysAdmin has not accepted the changes.
 \end{description}
 
 
@@ -80,4 +109,117 @@ A correction for the problem is to:\\
   component.
   \item[$\bullet$] The SysAdmin must either choose another component, abandon
   the modification or call the super-SysAdmin for further information.
+  \item[$\bullet$] The SysAdmin has to make sure that he accepted the changes made
+to the virtual machine by clicking on the green checkmark. Further information about
+how to modify a VM can be found in Section 3.2.1.3.
 \end{description}
+
+
+
+
+
+
+\section{Unable to delete a VM}
+
+\subsection{Problem identification}
+The problem occurs when a SysAdmin is unable to delete a virtual
+machine.
+
+\subsection{Probable cause}
+
+The reason why such a problem has been raised is:\\
+\begin{description}
+  \item[$\bullet$] The SysAdmin has not accepted the deletion.
+  \item[$\bullet$] High datacenter resource usage.
+\end{description}
+
+
+\subsection{Corrective actions}
+
+A correction for the problem is to:\\
+\begin{description}
+  \item[$\bullet$] The SysAdmin has to make sure that he accepted the changes made
+to the virtual machine by clicking on the green checkmark. Further information about
+how to modify a VM can be found in Section 3.2.1.4.
+  \item[$\bullet$] The deletion may take some seconds, so it is possible that you see
+the VM in all the created VM's. If this process takes more then 30seconds, please try
+again or contact the super-SysAdmin. Contact information are provided in section 1.8.
+\end{description}
+
+
+
+
+
+
+\section{Unable to perform a hot backup}
+
+\subsection{Problem identification}
+The problem occurs when a SysAdmin is unable to perform a hot
+backup on a selected virtual machine.
+
+\subsection{Probable cause}
+
+The reason why such a problem has been raised is:\\
+\begin{description}
+  \item[$\bullet$] The SysAdmin has not properly performed the operation.
+  \item[$\bullet$] High datacenter resource usage.
+\end{description}
+
+
+\subsection{Corrective actions}
+
+A correction for the problem is to:\\
+\begin{description}
+  \item[$\bullet$] The SysAdmin has to make sure that he corretly performed the operation. 
+Further information about how to perform a hot backup on a selected VM can be found in 
+Section 3.2.1.5.
+  \item[$\bullet$] The datacenter resource usage may currently be higher then normal. Please
+try to perform the backup later. If the problem is still present please contact a super-SysAdmin
+contact information are provided in section 1.8.
+\end{description}
+
+
+
+
+
+
+
+
+\section{Unable to perform a scheduled backup}
+
+\subsection{Problem identification}
+The problem occurs when a SysAdmin is unable to perform a scheduled
+backup on a selected virtual machine.
+
+\subsection{Probable cause}
+
+The reason why such a problem has been raised is:\\
+\begin{description}
+  \item[$\bullet$] The SysAdmin has not properly performed the operation.
+  \item[$\bullet$] On a specific day the total amount of allowed backups are
+  \item[$\bullet$] The selected date is not valid.
+surpassed.
+\end{description}
+
+
+\subsection{Corrective actions}
+
+A correction for the problem is to:\\
+\begin{description}
+  \item[$\bullet$] The SysAdmin has to make sure that he corretly performed the operation. 
+Further information about how to perform a scheduled backup on a selected VM can be found in 
+Section 3.2.1.6.
+  \item[$\bullet$] The SysAdmin should try selecting another day for performing the backup. 
+For further information please contact a super-SysAdmin
+contact information are provided in section 1.8.
+  \item[$\bullet$] The SysAdmin can only select a date between a period of 1-year. If the date
+is over the allowed period, it will be display as grayed out and will not be clickable.
+\end{description}
+
+
+
+
+
+
+
+
