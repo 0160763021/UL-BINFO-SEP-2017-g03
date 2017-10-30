@@ -1,0 +1,21 @@
+/*
+* @author nelson
+* @date Mon Oct 30 14:30:21 CET 2017
+*/
+
+package lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.associations {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+
+
+
+Concept Model {
+	
+	Primary Types {
+	
+	}
+}
+}
