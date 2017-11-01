@@ -9,11 +9,111 @@ import lu.uni.lassy.messir.libraries.calendar
 import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 
 
 
 	Use Case Model {
 		
+	use case system usergoal ugSecurelyUseSystem() {
+		}
+	use case system usergoal ugCreateVMExpert() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfVMDescriptionExpert[1..1]
+		reuse sfVMConfigurationExpert[1..1]
+		reuse sfValidateConfigurationVMExpert[1..1]
+		reuse sfCloseConfigurationVMExpert[1..1]
+		
+		}
+	use case system subfunction sfCloseConfigurationVMExpert() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfVMDescriptionExpert() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfValidateConfigurationVMExpert() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfVMConfigurationExpert() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfVMDescriptionTemplate() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfVMConfigurationTemplate() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfValidateConfigurationVMTemplate() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfCloseConfigurationVMTemplate() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system usergoal ugCreateVMTemplate() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfVMDescriptionTemplate[1..1]
+		reuse sfVMConfigurationTemplate[1..1]
+		reuse sfValidateConfigurationVMTemplate[1..1]
+		reuse sfCloseConfigurationVMTemplate[1..1]
+		
+		}
+	use case system subfunction sfGetVMList() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfSelectVM() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfValidateBackup() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system usergoal ugBackupVMNow() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfGetVMList[1..1]
+		reuse sfSelectVM[1..1]
+		reuse sfValidateBackup[1..1]
+		
+		}
+	use case system subfunction sfBackupDescription() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system subfunction sfSetDate() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system usergoal ugBackupVMPlanified() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfGetVMList[1..1]
+		reuse sfSelectVM[1..1]
+		reuse sfBackupDescription[1..1]
+		reuse sfSetDate[1..1]
+		reuse sfValidateBackup[1..1]
+		
+		}
+	use case system subfunction sfValidateDeletion() {
+			actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin[primary, active]
+		}
+	use case system usergoal ugDeleteVM() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfGetVMList[1..1]
+		reuse sfSelectVM[1..1]
+		reuse sfValidateDeletion[1..1]
+		
+		}
+	use case system summary suVMLifecycle() {
+		actor actSysAdmin[primary, active]
+	
+		reuse ugSecurelyUseSystem[1..*]
+		reuse ugCreateVMExpert[1..*]
+		reuse ugCreateVMTemplate[1..*]
+		reuse ugBackupVMNow[1..*]
+		reuse ugBackupVMPlanified[1..*]
+		reuse ugDeleteVM[1..*]
+		
+		}
 	}
 
 }

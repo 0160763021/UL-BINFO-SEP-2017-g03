@@ -1,0 +1,29 @@
+/*
+@author nelson
+@date Mon Oct 30 20:43:57 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfVMDescriptionTemplate
+@description "
+
+Name		sfVMDescriptionTemplate
+Scope       system
+Level		subfunction
+"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

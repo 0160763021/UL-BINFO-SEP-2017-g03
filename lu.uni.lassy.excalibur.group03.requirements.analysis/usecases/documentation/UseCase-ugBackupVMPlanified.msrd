@@ -1,0 +1,31 @@
+/*
+@author nelson
+@date Mon Oct 30 20:44:08 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugBackupVMPlanified
+@description 
+"
+Name		suBackupVMPlanified
+Scope       system
+Level		usergoal
+
+"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+the sysAdmin is logged in
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

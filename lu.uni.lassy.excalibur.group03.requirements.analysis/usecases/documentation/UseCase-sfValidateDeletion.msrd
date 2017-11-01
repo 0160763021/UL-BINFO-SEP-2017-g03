@@ -1,0 +1,30 @@
+/*
+@author nelson
+@date Mon Oct 30 20:44:09 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfValidateDeletion
+@description "
+
+Name		sfValidateDeletion
+Scope       system
+Level		subfunction
+
+"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

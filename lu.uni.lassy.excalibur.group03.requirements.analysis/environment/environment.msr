@@ -14,5 +14,11 @@ import lu.uni.lassy.messir.libraries.string
 
 Environment Model {
 			
-}
+actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] {
+			input interface inactSysAdmin {
+			}
+			output interface outactSysAdmin {
+			}
+		}
+	}
 }

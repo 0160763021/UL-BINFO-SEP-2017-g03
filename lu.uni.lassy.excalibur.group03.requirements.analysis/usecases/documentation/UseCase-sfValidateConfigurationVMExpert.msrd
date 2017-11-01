@@ -1,0 +1,29 @@
+/*
+@author nelson
+@date Mon Oct 30 20:43:55 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfValidateConfigurationVMExpert
+@description "
+
+Name		sfValidateConfigurationVMExpert
+Scope       system
+Level		subfunction
+"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

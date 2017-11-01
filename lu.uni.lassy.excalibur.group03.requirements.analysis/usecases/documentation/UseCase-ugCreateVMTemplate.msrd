@@ -1,0 +1,29 @@
+/*
+@author nelson
+@date Mon Oct 30 20:44:01 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugCreateVMTemplate
+@description "
+
+Name		ugCreateVMTemplate
+Scope       system
+Level		usergoal
+"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"
