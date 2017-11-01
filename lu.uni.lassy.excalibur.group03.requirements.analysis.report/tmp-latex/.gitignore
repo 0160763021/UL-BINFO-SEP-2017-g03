@@ -9,3 +9,6 @@
 /report.ps
 /report.toc
 /report.xdy
+/.gitignore
+/report.ilg
+/report.ind
