@@ -384,7 +384,201 @@ has been created. Click on the ''ok'' button to finish the operation.
 \end{description}
 
  
-\subsection{createRegularUserExample}
+\subsection{createSysAdminExample}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+
+\section{Change E-mail}
+\label{operation:changeEmail}
+This system operation allows the super-SysAdmin or the SysAdmin to change
+their E-mail.
+
+\begin{description}
+
+\item \textbf{Parameters:} newEmail
+\item \textbf{Precondition:} The person must be the super-SysAdmin or the
+SysAdmin and be logged in with the super-SysAdmin's account for the
+super-SysAdmin or with the SysAdmin's account for the SysAdmin.
+\item \textbf{Post-condition:}The email that is currently active will be
+replaced by a new email that is given by the current user.
+\item \textbf{Output messages:} The operation will send one notification to the
+user telling that the E-mail has successfully been modified.
+
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the "Change Email " icon to begin with the changeEmail operation. 
+\item A new page''Confirm the password'' appears. You need to insert your
+account password in the input text field. 
+\item Make sure that you insert the right password before to click on the
+''confirm'' button otherwise you can not access the next step.
+\item A new page ''Insert your new E-mail!'' appears and allows you to
+insert a new e-mail in the input text field.
+\item Click on the ''confirm'' button to replace the old e-mail by the new one.
+\item A confirmation message will appears to make sure that the e-mail
+has been changed. Click on the ''ok'' button to finish the operation.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{changeEmailExample}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+\section{Change Id}
+\label{operation:changeId}
+This system operation allows the super-SysAdmin or the SysAdmin to change
+their Id.
+
+\begin{description}
+
+\item \textbf{Parameters:} newId
+\item \textbf{Precondition:} The person must be the super-SysAdmin or the
+SysAdmin and be logged in with the super-SysAdmin's account for the
+super-SysAdmin or with the SysAdmin's account for the SysAdmin.
+\item \textbf{Post-condition:}The Id that is currently active will be
+replaced by a new Id that is given by the current user.
+\item \textbf{Output messages:} The operation will send one notification to the
+current user telling that the Id  has successfully been modified.
+
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the "Change ID " icon to begin with the changeId operation. 
+\item A new page''Confirm the password'' appears. You need to insert your
+account password in the input text field. 
+\item Make sure that you insert the right password before to click on the
+''confirm'' button otherwise you can not access the next step.
+\item A new page ''Insert your new Id'' appears and allows you to
+insert a new Id in the input text field.
+\item Click on the ''confirm'' button to replace the old Id by the new one.
+\item A confirmation message will appears to make sure that the Id
+has been changed. Click on the ''ok'' button to finish the operation.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{changeIdExample}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+\section{Change Password}
+\label{operation:changePassword}
+This system operation allows the super-SysAdmin or the SysAdmin to change
+their Password.
+
+\begin{description}
+
+\item \textbf{Parameters:} newPassword
+\item \textbf{Precondition:} The person must be the super-SysAdmin or the
+SysAdmin and be logged in with the super-SysAdmin's account for the
+super-SysAdmin or with the SysAdmin's account for the SysAdmin.
+\item \textbf{Post-condition:}The password that is currently active will be
+replaced by a new password that is given by the current user.
+\item \textbf{Output messages:} The operation will send one notification to the
+current user telling that the password  has successfully been modified.
+
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the "Change Password " icon to begin with the changePassword
+operation.
+\item A new page''Confirm the password'' appears. You need to insert your old
+account password in the input text field. 
+\item Make sure that you insert the right password before to click on the
+''confirm'' button otherwise you can not access the next step.
+\item A new page ''Insert your new Password'' appears and allows you to
+insert a new password in the input text field.
+\item Click on the ''confirm'' button to replace the old password by the new
+one.
+\item A confirmation message will appears to make sure that the password
+has been changed. Click on the ''ok'' button to finish the operation.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{changePasswordExample}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+\section{Delete account}
+\label{operation:deletAccount}
+This system operation allows the SysAdmin to delete his account.
+
+\begin{description}
+
+\item \textbf{Parameters:} SysadminAccount
+\item \textbf{Precondition:} The person must be a SysAdmin and be logged in with
+his SysAdmin's account.
+\item \textbf{Post-condition:}The account that is currently active and used by
+the SysAdmin will be deleted and the SysAdmin will no longer have access to his
+account.
+\item \textbf{Output messages:} The operation will send one notification to the
+current user telling that his account has been deleted.
+
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the "Delete Account " icon to begin with the DeletAccount
+operation.
+\item A new page''Confirm the password'' appears. You need to insert your
+account password in the input text field. 
+\item Make sure that you insert the right password before to click on the
+''confirm'' button otherwise you can not access the next step.
+\item A new confirmation page appears and ask you if you really want to delete
+your account.
+\item If you really want to delete your account you have to click on the
+''Yes'' button. You have to take note that all your personal data will be
+deleted and you will also no longer have access to your account.
+\item If you click on the ''Yes'' button you account is delete and a
+confirmation message will appears to make sure that the account has been
+deleted. Click on the ''ok'' button to finish the operation.
+\item If you click on the ''No'' button your account is not delete and the
+operation will finish.
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{DeleteAccount}
 Examples should illustrate the use of \textbf{complex operations}.
 
 Each example must show how the actor uses the software operation under
