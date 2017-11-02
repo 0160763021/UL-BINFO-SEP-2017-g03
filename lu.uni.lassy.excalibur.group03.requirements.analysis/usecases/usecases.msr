@@ -114,6 +114,10 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		reuse ugDeleteVM[1..*]
 		
 		}
+	use case system summary suDatacenterConf() {
+		actor actSuperSysAdmin[primary, active]
+		
+		}
 	}
 
 }

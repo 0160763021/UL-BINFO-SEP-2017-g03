@@ -20,5 +20,11 @@ actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] {
 			output interface outactSysAdmin {
 			}
 		}
+	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] {
+			input interface inactSuperSysAdmin {
+			}
+			output interface outactSuperSysAdmin {
+			}
+		}
 	}
 }
