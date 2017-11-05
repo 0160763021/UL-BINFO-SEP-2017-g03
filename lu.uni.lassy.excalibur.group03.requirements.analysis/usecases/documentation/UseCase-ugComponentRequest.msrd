@@ -1,0 +1,32 @@
+/*
+@author Dany-
+@date Sun Nov 05 13:28:07 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugComponentRequest
+@description 
+"
+
+Name		ugComponentRequest
+Scope       system
+Level		usergoal
+
+"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+the superSysAdmin is logged in
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

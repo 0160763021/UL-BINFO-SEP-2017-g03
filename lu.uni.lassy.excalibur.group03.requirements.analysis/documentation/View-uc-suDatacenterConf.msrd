@@ -1,0 +1,10 @@
+/*
+@author Dany-
+@date Sun Nov 05 13:33:54 CET 2017
+*/
+
+
+@@view uc-suDatacenterConf
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suDatacenterConf
+@description ""
+@caption ""

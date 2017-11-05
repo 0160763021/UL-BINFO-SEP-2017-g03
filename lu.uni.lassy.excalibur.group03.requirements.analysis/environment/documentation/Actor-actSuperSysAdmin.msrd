@@ -1,0 +1,12 @@
+/*
+@author Dany-
+@date Sun Nov 05 13:31:27 CET 2017
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin
+@description "represents the actor responsible to control the whole application"
+//input events
+
+//output events
+

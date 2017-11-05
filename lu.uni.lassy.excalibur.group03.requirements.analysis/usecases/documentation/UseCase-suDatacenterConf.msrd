@@ -1,0 +1,31 @@
+/*
+@author Dany-
+@date Sun Nov 05 13:32:25 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suDatacenterConf
+@description 
+"
+
+Name		suDatacenterConf
+Scope       system
+Level		summary
+
+"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

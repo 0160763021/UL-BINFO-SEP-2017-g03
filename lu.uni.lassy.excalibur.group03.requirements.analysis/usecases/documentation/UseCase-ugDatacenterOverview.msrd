@@ -1,0 +1,31 @@
+/*
+@author Dany-
+@date Sun Nov 05 13:29:05 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugDatacenterOverview
+@description 
+"
+
+Name		ugDatacenterOverview
+Scope       system
+Level		usergoal
+
+"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"
