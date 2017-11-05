@@ -1,0 +1,10 @@
+/*
+@author dylan
+@date Sun Nov 05 19:17:44 CET 2017
+*/
+
+
+@@view uc-ugChangeEmail
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugChangeEmail 
+@description "The goal is to permit the actor to change is e-mail"
+@caption ""

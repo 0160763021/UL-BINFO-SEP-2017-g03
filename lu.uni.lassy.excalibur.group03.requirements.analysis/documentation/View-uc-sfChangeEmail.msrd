@@ -1,0 +1,10 @@
+/*
+@author dylan
+@date Sun Nov 05 19:19:39 CET 2017
+*/
+
+
+@@view uc-sfChangeEmail
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfChangeEmail 
+@description "shows the sfChangeEmail subfunction use-case and its primary actor actSuperSysAdmin"
+@caption ""

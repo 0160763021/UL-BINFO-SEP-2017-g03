@@ -159,9 +159,11 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		
 		reuse ugSysAdminCreation[1..*] 
 		reuse ugChangeId[1..*]
+		reuse ugChangeEmail[1..*]
 		
 		step a: actSuperSysAdmin executes ugSysAdminCreation()
 		step b: actSuperSysAdmin executes ugChangeId()
+		step c: actSuperSysAdmin executes ugChangeEmail()
 		
 		
 		}
@@ -183,6 +185,15 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		}
 		
 	use case system subfunction sfChangeId() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system usergoal ugChangeEmail() {
+		actor actSuperSysAdmin[primary, active]
+		reuse sfChangeEmail[1..*]
+		step a: actSuperSysAdmin executes sfChangeEmail()
+		
+		}
+	use case system subfunction sfChangeEmail() {
 			actor actSuperSysAdmin[primary, active]
 		}
 	}
