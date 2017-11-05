@@ -1,0 +1,10 @@
+/*
+@author dylan
+@date Sun Nov 05 20:02:34 CET 2017
+*/
+
+
+@@view uc-ugDeleteAcc
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugDeleteAcc 
+@description "The goal is to permit the actor to delete his account"
+@caption ""

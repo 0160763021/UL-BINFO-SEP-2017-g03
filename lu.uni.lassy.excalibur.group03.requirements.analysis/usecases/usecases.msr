@@ -156,14 +156,20 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	
 	use case system summary suUserManagement() {
 		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary,active]
+		
 		
 		reuse ugSysAdminCreation[1..*] 
 		reuse ugChangeId[1..*]
 		reuse ugChangeEmail[1..*]
+		reuse ugChangePw[1..*]
+		reuse ugDeleteAcc[1..1]
 		
 		step a: actSuperSysAdmin executes ugSysAdminCreation()
 		step b: actSuperSysAdmin executes ugChangeId()
 		step c: actSuperSysAdmin executes ugChangeEmail()
+		step d: actSuperSysAdmin executes ugChangePw()
+		step e: actSysAdmin executes ugDeleteAcc()
 		
 		
 		}
@@ -178,23 +184,54 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system subfunction sfCreateSysAdmin() {
 			actor actSuperSysAdmin[primary, active]
 		}
+		
+		
 	use case system usergoal ugChangeId() {
 		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary,active]
 		reuse sfChangeId[1..*]
 		step a: actSuperSysAdmin executes sfChangeId()
 		}
 		
 	use case system subfunction sfChangeId() {
 			actor actSuperSysAdmin[primary, active]
+			
+			
 		}
+		
+		
 	use case system usergoal ugChangeEmail() {
 		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary,active]
 		reuse sfChangeEmail[1..*]
 		step a: actSuperSysAdmin executes sfChangeEmail()
 		
 		}
+		
+		
 	use case system subfunction sfChangeEmail() {
 			actor actSuperSysAdmin[primary, active]
+		}
+		
+		
+	use case system usergoal ugChangePw() {
+		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary,active]
+		reuse sfChangePw[1..*]
+		step a: actSuperSysAdmin executes sfChangePw()
+		}
+		
+		
+	use case system subfunction sfChangePw() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system usergoal ugDeleteAcc() {
+		actor actSysAdmin[primary,active]
+		reuse sfDeleteAcc[1..1]
+		step a: actSysAdmin executes sfDeleteAcc()
+		}
+	use case system subfunction sfDeleteAcc() {
+			actor actSysAdmin[primary, active]
 		}
 	}
 

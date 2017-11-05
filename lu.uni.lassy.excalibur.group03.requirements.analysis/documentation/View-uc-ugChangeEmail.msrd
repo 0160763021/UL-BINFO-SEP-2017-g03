@@ -6,5 +6,5 @@
 
 @@view uc-ugChangeEmail
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugChangeEmail 
-@description "The goal is to permit the actor to change is e-mail"
+@description "The goal is to permit the actor to change his e-mail"
 @caption ""

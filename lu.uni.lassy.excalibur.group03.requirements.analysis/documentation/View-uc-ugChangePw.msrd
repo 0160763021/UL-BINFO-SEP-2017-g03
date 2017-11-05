@@ -1,0 +1,10 @@
+/*
+@author dylan
+@date Sun Nov 05 19:50:58 CET 2017
+*/
+
+
+@@view uc-ugChangePw
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugChangePw 
+@description "The goal is to permit the actor to change his password"
+@caption ""
