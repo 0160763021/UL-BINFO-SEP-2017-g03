@@ -1,0 +1,10 @@
+/*
+@author dylan
+@date Sun Nov 05 19:04:07 CET 2017
+*/
+
+
+@@view uc-sfChangeId
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfChangeId 
+@description "shows the sfChangeID subfunction use-case and its primary actor actSuperSysAdmin"
+@caption ""
