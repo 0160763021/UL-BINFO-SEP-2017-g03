@@ -1,0 +1,10 @@
+/*
+@author Dany-
+@date Sun Nov 05 13:45:34 CET 2017
+*/
+
+
+@@view suVMLifecycle
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suVMLifecycle
+@description ""
+@caption ""
