@@ -6,5 +6,5 @@
 
 @@view suVMLifecycle
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suVMLifecycle
-@description ""
+@description "the actSysAdmin's goal is to create and manage the virtual machines."
 @caption ""

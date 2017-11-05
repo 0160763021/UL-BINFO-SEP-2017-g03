@@ -16,6 +16,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	Use Case Model {
 		
 	use case system usergoal ugSecurelyUseSystem() {
+		actor actSysAdmin[primary, active]
 		}
 	use case system usergoal ugCreateVMExpert() {
 		actor actSysAdmin[primary, active]
@@ -64,16 +65,19 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		reuse ugBackupVMPlanified[1..*]
 		reuse ugDeleteVM[1..*]
 		
-		step a: actSysAdmin executes ugCreateVMExpert()
-		step b: actSysAdmin executes ugCreateVMTemplate()
-		step c: actSysAdmin executes ugBackupVMNow()
-		step d: actSysAdmin executes ugBackupVMPlanified()
-		step e: actSysAdmin executes ugDeleteVM()
+		step a: actSysAdmin executes ugSecurelyUseSystem()
+		step b: actSysAdmin executes ugCreateVMExpert()
+		step c: actSysAdmin executes ugCreateVMTemplate()
+		step d: actSysAdmin executes ugBackupVMNow()
+		step e: actSysAdmin executes ugBackupVMPlanified()
+		step f: actSysAdmin executes ugDeleteVM()
 		
 		ordering constraint
-		"step (c) and (d) can only be executed if step (a) or (b) was executed"
+		"step (a) needs to be done first"
 		ordering constraint
-		"step (e) can only be executed if step (a) or (b) was executed"		
+		"step (d) and (e) can only be executed if step (b) or (c) was executed"
+		ordering constraint
+		"step (f) can only be executed if step (b) or (c) was executed"		
 		}
 	use case system summary suDatacenterConf() {
 		actor actSuperSysAdmin[primary, active]
