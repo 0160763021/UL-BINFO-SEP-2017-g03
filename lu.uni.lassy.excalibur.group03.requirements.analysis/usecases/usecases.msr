@@ -106,8 +106,47 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		}
 	use case system usergoal ugDatacenterOverview() {
 			actor actSuperSysAdmin[primary, active]
+			
+			reuse sfOverviewCPU[1..*]
+			reuse sfOverviewRAM[1..*]
+			reuse sfOverviewGPU[1..*]
+			reuse sfOverviewHDD[1..*]
+			reuse sfOverviewSSD[1..*]
+			reuse sfOverviewSoftware[1..*]
+			
+			step a: actSuperSysAdmin executes sfOverviewCPU()
+			step b: actSuperSysAdmin executes sfOverviewRAM()
+			step c: actSuperSysAdmin executes sfOverviewGPU()
+			step d: actSuperSysAdmin executes sfOverviewHDD()
+			step e: actSuperSysAdmin executes sfOverviewSSD()
+			step f: actSuperSysAdmin executes sfOverviewSoftware()
 		}
 	use case system usergoal ugComponentRequest() {
+			actor actSuperSysAdmin[primary, active]
+			
+			reuse sfComponentRequest[1..*]
+			
+			step a: actSuperSysAdmin executes sfComponentRequest()
+		}
+	use case system subfunction sfOverviewCPU() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewRAM() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewGPU() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewHDD() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewSSD() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewSoftware() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfComponentRequest() {
 			actor actSuperSysAdmin[primary, active]
 		}
 	}

@@ -1,0 +1,26 @@
+/*
+@author Dany-
+@date Sun Nov 05 14:22:57 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfOverviewSoftware
+@description "gives the overview of the Software and the availability of the Software models"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+the superSysAdmin has to be logged in
+"
+@endPreConditions
+@postCondition
+"
+overall overview of the Software
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"
