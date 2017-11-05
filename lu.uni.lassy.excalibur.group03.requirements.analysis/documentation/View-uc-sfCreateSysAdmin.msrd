@@ -1,0 +1,10 @@
+/*
+@author dylan
+@date Sun Nov 05 15:54:07 CET 2017
+*/
+
+
+@@view uc-sfCreateSysAdmin
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfCreateSysAdmin 
+@description "shows the sfCreateSysadmin subfunction use-case and its primary actor actSuperSysAdmin"
+@caption ""

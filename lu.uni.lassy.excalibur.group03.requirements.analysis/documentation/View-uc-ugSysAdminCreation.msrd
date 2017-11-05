@@ -1,0 +1,10 @@
+/*
+@author dylan
+@date Sun Nov 05 16:11:42 CET 2017
+*/
+
+
+@@view uc-ugSysAdminCreation
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugSysAdminCreation 
+@description "The SuperSysAdmin's goal is to be able to create new SysAdmin's"
+@caption ""

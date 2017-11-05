@@ -153,6 +153,13 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system subfunction sfComponentRequest() {
 			actor actSuperSysAdmin[primary, active]
 		}
+	use case system summary suUserManagement() {
+		}
+	use case system usergoal ugSysAdminCreation() {
+		}
+	use case system subfunction sfCreateSysAdmin() {
+			actor actSuperSysAdmin[primary, active]
+		}
 	}
 
 }

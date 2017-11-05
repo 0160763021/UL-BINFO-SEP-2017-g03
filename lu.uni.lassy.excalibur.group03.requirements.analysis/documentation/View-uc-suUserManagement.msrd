@@ -1,0 +1,10 @@
+/*
+@author dylan
+@date Sun Nov 05 15:45:17 CET 2017
+*/
+
+
+@@view uc-suUserManagement
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suUserManagement 
+@description "the actSuperSysAdmin goal is to creating the credentials and profiles of the other SysAdmin’s."
+@caption ""
