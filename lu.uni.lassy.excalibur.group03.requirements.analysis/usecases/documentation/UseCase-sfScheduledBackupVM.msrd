@@ -5,7 +5,13 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfScheduledBackupVM
-@description ""
+@description "
+
+Name		sfScheduledBackupVM
+Scope       system
+Level		subfunction
+
+"
 @protocolCondition
 "
 "

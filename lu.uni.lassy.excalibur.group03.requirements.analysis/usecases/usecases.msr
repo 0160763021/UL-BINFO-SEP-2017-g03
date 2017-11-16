@@ -21,15 +21,32 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system usergoal ugCreateVMExpert() {
 		actor actSysAdmin[primary, active]
 		
-		reuse sfCreateVMExpert[1..*]
-		step a: actSysAdmin executes sfCreateVMExpert()
+		reuse sfCheckVMDescription[1..1]
+		reuse sfGetAvailableComponents[1..1]
+		reuse sfCreateVMExpert[0..1]
+		
+		step a: actSysAdmin executes sfCheckVMDescription()
+		step b: actSysAdmin executes sfGetAvailableComponents()
+		step c: actSysAdmin executes sfCreateVMExpert()
+		
 		}
 	
 	use case system usergoal ugCreateVMTemplate() {
 		actor actSysAdmin[primary, active]
 		
-		reuse sfCreateVMTemplate[1..*]
-		step a: actSysAdmin executes sfCreateVMTemplate()
+		reuse sfCheckVMDescription[1..1]
+		reuse sfGetQuestions[1..1]
+		reuse sfGetAvailableComponents[1..1]
+		reuse sfProposeVM[1..1]
+		reuse sfModifyVM[0..1]
+		reuse sfCreateVMTemplate[0..1]
+		
+		
+		step a: actSysAdmin executes sfGetQuestions()
+		step b: actSysAdmin executes sfGetAvailableComponents()
+		step c: actSysAdmin executes sfProposeVM()
+		step d: actSysAdmin executes sfModifyVM()
+		step e: actSysAdmin executes sfCreateVMTemplate()
 		}
 	
 	
@@ -45,8 +62,11 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system usergoal ugBackupVMPlanified() {
 		actor actSysAdmin[primary, active]
 		
-		reuse sfScheduledBackupVM[1..*]
-		step a: actSysAdmin executes sfScheduledBackupVM()
+		reuse sfGetCalendar[1..1]
+		reuse sfScheduledBackupVM[1..1]
+		
+		step a: actSysAdmin executes sfGetCalendar()
+		step b: actSysAdmin executes sfScheduledBackupVM()
 		}
 	
 	use case system usergoal ugDeleteVM() {
@@ -91,6 +111,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		}
 	use case system subfunction sfCreateVMExpert() {
 			actor actSysAdmin[primary, active]
+			
+			
 		}
 	use case system subfunction sfCreateVMTemplate() {
 			actor actSysAdmin[primary, active]
@@ -232,6 +254,29 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		}
 	use case system subfunction sfDeleteAcc() {
 			actor actSysAdmin[primary, active]
+		}
+	use case system subfunction sfCheckVMDescription() {
+			actor actSysAdmin[primary, active]
+		}
+	use case system subfunction sfGetAvailableComponents() {
+			actor actSysAdmin[primary, active]
+		}
+	use case system subfunction sfGetQuestions() {
+			actor actSysAdmin[primary, active]
+		}
+	use case system subfunction sfProposeVM() {
+			actor actSysAdmin[primary, active]
+		}
+	use case system subfunction sfGetCalendar() {
+			actor actSysAdmin[primary, active]
+		}
+	use case system usergoal ugModifyVM() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfGetAvailableComponents[1..1]
+		reuse sfModifyVM[1..1]
+		step a: actSysAdmin executes sfGetAvailableComponents()
+		step b: actSysAdmin executes sfModifyVM()
 		}
 	}
 

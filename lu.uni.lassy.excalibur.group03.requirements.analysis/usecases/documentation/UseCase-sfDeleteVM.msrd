@@ -5,7 +5,13 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfDeleteVM
-@description ""
+@description "
+
+Name		sfDeleteVM
+Scope       system
+Level		subfunction
+
+"
 @protocolCondition
 "
 "
