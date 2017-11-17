@@ -6,13 +6,7 @@
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugDatacenterOverview
 @description 
-"
-
-Name		ugDatacenterOverview
-Scope       system
-Level		usergoal
-
-"
+"The SuperSysAdmin's goal is to be able to overview the components of the datacenter and their models"
 @protocolCondition
 "
 "

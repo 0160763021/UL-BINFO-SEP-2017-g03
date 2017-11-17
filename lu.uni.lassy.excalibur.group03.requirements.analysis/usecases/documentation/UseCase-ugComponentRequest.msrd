@@ -8,11 +8,7 @@
 @description 
 "
 
-Name		ugComponentRequest
-Scope       system
-Level		usergoal
-
-"
+The SuperSysAdmin's goal is to be able to request the datacenter to make more components available for virtual machines"
 @protocolCondition
 "
 "

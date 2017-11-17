@@ -6,5 +6,5 @@
 
 @@view ugBackupVMPlanified
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugBackupVMPlanified 
-@description "The sysAdmins procedure is to follow a procedure which should allow him perform a planified backup on a selected virtual machine."
+@description "ugBackupVMPlanified user goal use case"
 @caption ""

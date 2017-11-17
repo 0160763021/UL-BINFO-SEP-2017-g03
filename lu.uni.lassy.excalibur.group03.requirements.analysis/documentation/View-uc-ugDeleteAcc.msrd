@@ -6,5 +6,5 @@
 
 @@view uc-ugDeleteAcc
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugDeleteAcc 
-@description "The goal is to permit the actor to delete his account"
+@description "ugDeleteAcc user goal use case"
 @caption ""

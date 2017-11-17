@@ -6,5 +6,5 @@
 
 @@view uc-sfChangeEmail
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfChangeEmail 
-@description "shows the sfChangeEmail subfunction use-case and its primary actor actSuperSysAdmin"
+@description "suDeployAndRun summary use case"
 @caption ""

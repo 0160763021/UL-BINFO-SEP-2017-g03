@@ -6,12 +6,8 @@
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugBackupVMPlanified
 @description 
-"
-Name		suBackupVMPlanified
-Scope       system
-Level		usergoal
+"The sysAdmins goal is to follow a procedure which should allow him perform a planified backup on a selected virtual machine."
 
-"
 @protocolCondition
 "
 "

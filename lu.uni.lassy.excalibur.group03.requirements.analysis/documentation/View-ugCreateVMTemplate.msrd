@@ -6,6 +6,6 @@
 
 @@view ugCreateVMTemplate
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugCreateVMTemplate 
-@description "The sysAdmin's goal is to follow a procedure which should allow to create a virtual machine by choosing between predifined and preconfigured virtual machines."
+@description "ugCreateVMTemplate user goal use case"
 @caption ""
 

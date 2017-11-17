@@ -6,5 +6,5 @@
 
 @@view uc-suDatacenterConf
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suDatacenterConf
-@description "the actSuperSysAdminThis goal is to manage the ressources of the Datacenter"
+@description "suDatacenterConf summary use case"
 @caption ""

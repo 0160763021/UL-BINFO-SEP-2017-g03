@@ -5,11 +5,10 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugDeleteVM
-@description "
-Name		ugDeleteVM
-Scope       system
-Level		usergoal
-"
+@description 
+"The sysAdmin's goal is to follow a procedure which should allow him to delete a selected virtual machine."
+
+
 @protocolCondition
 "
 "

@@ -6,13 +6,7 @@
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suVMLifecycle
 @description 
-"
-Name		suVMLifecycle
-Scope       system
-Level		summary
-
-
-"
+"the actSysAdmin's goal is to create and manage the virtual machines."
 @protocolCondition
 "
 the VMMS system has been deployed

@@ -6,5 +6,5 @@
 
 @@view ugBackupVMNow
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugBackupVMNow 
-@description "The sysAdmin's goal is to follow a procedure which allows him to perform a backup on a selected virtual machine."
+@description "ugBackupVMNow user goal use case"
 @caption ""

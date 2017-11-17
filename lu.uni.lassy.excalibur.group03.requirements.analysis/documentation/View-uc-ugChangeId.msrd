@@ -6,5 +6,5 @@
 
 @@view uc-ugChangeId
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugChangeId 
-@description "The goal is to permit the actor to change his id"
+@description "ugChangeId user goal use case"
 @caption ""

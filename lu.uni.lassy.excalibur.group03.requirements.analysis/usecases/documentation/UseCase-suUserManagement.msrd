@@ -5,7 +5,9 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suUserManagement
-@description ""
+@description "The SuperSysAdmin's goal is to be able to create new SysAdmin's"
+
+
 @protocolCondition
 "
 "

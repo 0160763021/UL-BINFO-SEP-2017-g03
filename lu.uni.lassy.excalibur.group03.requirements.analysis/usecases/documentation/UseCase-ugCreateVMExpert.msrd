@@ -7,10 +7,7 @@
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugCreateVMExpert
 @description "
 
-Name		ugCreateVMExpert
-Scope       system
-Level		usergoal
-"
+The sysAdmin's goal is to follow this procedure which should allow to create a virtual machine by choosing each component individual."
 @protocolCondition
 "
 "

@@ -5,7 +5,7 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugSysAdminCreation
-@description ""
+@description "the actSuperSysAdmin goal is to create the credentials and profiles of the other SysAdmin’s."
 @protocolCondition
 "
 "

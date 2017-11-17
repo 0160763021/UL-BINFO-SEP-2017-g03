@@ -6,12 +6,8 @@
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugBackupVMNow
 @description 
-"
-Name		suBackupVMNow
-Scope       system
-Level		usergoal
+"The sysAdmin's goal is to follow a procedure which allows him to perform a backup on a selected virtual machine."
 
-"
 @protocolCondition
 "
 the VMMS system has been deployed

@@ -5,14 +5,9 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suDatacenterConf
-@description 
-"
+@description "the actSuperSysAdminThis goal is to manage the ressources of the Datacenter"
 
-Name		suDatacenterConf
-Scope       system
-Level		summary
 
-"
 @protocolCondition
 "
 "

@@ -6,5 +6,5 @@
 
 @@view ugComponentRequest
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugComponentRequest
-@description "The SuperSysAdmin's goal is to be able to request the datacenter to make more components available for virtual machines"
+@description "ugComponentRequest user goal use case"
 @caption ""
