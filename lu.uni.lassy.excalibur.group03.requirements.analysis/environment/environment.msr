@@ -16,6 +16,7 @@ Environment Model {
 			
 actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] {
 			input interface inactSysAdmin {
+			operation ieDescriptionAlert():ptBoolean
 			}
 			output interface outactSysAdmin {
 			}
