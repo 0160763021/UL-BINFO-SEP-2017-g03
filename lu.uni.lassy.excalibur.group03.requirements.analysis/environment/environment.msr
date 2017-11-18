@@ -19,6 +19,7 @@ actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] {
 			operation ieDescriptionAlert():ptBoolean
 			}
 			output interface outactSysAdmin {
+			operation sfModifyVM():ptBoolean
 			}
 		}
 	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] {
