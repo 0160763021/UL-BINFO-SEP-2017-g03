@@ -1,0 +1,26 @@
+/*
+@author Dany-
+@date Sat Nov 18 18:26:02 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfChooseModels
+@description "enables the SuperSysAdmin to choose the different component's model(s) to request to the datacenter"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+the superSysAdmin has to be logged in
+"
+@endPreConditions
+@postCondition
+"
+overall overview of the CPU
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"
