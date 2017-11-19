@@ -18,6 +18,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			actor actSysAdmin[primary, active]
 			
 			returned messages {
+				ieModifyVM() returned to actSysAdmin
 				ieMessage() returned to actSysAdmin
 			}
 		}	
@@ -30,6 +31,13 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		}	
 	use case system usergoal ugSecurelyUseSystem() {
 		actor actSysAdmin[primary, active]
+		
+		reuse sfLogin[1..1]
+		reuse sfLogout[1..1]
+		
+		step a: actSysAdmin executes sfLogin()
+		step b: actSysAdmin executes sfLogout()
+		
 		}
 	use case system usergoal ugCreateVMExpert() {
 		actor actSysAdmin[primary, active]
@@ -146,20 +154,34 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system subfunction sfCreateVMExpert() {
 			actor actSysAdmin[primary, active]
 			
-			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin
+			}
 		}
 	use case system subfunction sfCreateVMTemplate() {
 			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin			
+			}
 		}
 	use case system subfunction sfDeleteVM() {
 			actor actSysAdmin[primary, active]
 		}
 	use case system subfunction sfHotBackupVM() {
 			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin
+			}
 		}
 	
 	use case system subfunction sfScheduledBackupVM() {
 			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin
+			}
 		}
 	use case system usergoal ugDatacenterOverview() {
 			actor actSuperSysAdmin[primary, active]
@@ -337,13 +359,28 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		reuse suUserManagement[1..*]
 		reuse suDatacenterConf[1..*]
 		
-		step a: actSuperSysAdmin executes suDatacenterConf()
-		step b: actSysAdmin executes suVMLifecycle()
-		step c: actSysAdmin executes suUserManagement()
+		step a: actSuperSysAdmin executes sfCreateSystemAndEnvironment()
+		step b: actSuperSysAdmin executes suDatacenterConf()
+		step c: actSysAdmin executes suVMLifecycle()
+		step d: actSysAdmin executes suUserManagement()
 		
 		}
 	use case system subfunction sfCreateSystemAndEnvironment() {
 			actor actSuperSysAdmin[primary, active]
 		}
-}
+use case system subfunction sfLogin() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin
+			}
+		}
+	use case system subfunction sfLogout() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(Message) returned to actSysAdmin
+			}
+		}
+	}
 }

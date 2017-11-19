@@ -16,6 +16,10 @@ Concept Model {
 
 	Primary Types {
    
-	}
+	datatype dtAMessage {
+		
+		attribute value: ptString
+			}
+		}
 }
 }
