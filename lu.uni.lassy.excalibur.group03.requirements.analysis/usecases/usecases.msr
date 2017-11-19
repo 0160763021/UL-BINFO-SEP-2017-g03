@@ -211,7 +211,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system subfunction sfConfirmChoice() {
 			actor actSuperSysAdmin[primary, active]
 		}
-	}
+	
 	
 	use case system summary suUserManagement() {
 		actor actSuperSysAdmin[primary, active]
@@ -345,5 +345,5 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system subfunction sfCreateSystemAndEnvironment() {
 			actor actSuperSysAdmin[primary, active]
 		}
-
+}
 }
