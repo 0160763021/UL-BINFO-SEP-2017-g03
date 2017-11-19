@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Nov 19 21:28:21 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMDescription
+@description "a string which is used to describe the use of the virtual machine"
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMDescription.value
+""
+@endAttributes

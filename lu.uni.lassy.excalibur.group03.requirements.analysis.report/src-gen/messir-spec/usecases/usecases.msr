@@ -1,0 +1,386 @@
+/*
+* @author nelson
+* @date Mon Oct 30 14:30:21 CET 2017
+*/
+
+package lu.uni.lassy.excalibur.group03.requirements.analysis.usecases {
+
+import lu.uni.lassy.messir.libraries.calendar
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
+
+
+
+	Use Case Model {
+	use case system subfunction sfModifyVM() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieModifyVM() returned to actSysAdmin
+				ieMessage() returned to actSysAdmin
+			}
+		}	
+	use case system subfunction sfGetCalendar() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieGetCalendar() returned to actSysAdmin
+			}
+		}	
+	use case system usergoal ugSecurelyUseSystem() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfLogin[1..1]
+		reuse sfLogout[1..1]
+		
+		step a: actSysAdmin executes sfLogin()
+		step b: actSysAdmin executes sfLogout()
+		
+		}
+	use case system usergoal ugCreateVMExpert() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfCheckVMDescription[0..*]
+		reuse sfGetAvailableComponents[0..*]
+		reuse sfCreateVMExpert[0..*]
+		
+		step a: actSysAdmin executes sfCheckVMDescription()
+		step b: actSysAdmin executes sfGetAvailableComponents()
+		step c: actSysAdmin executes sfCreateVMExpert()
+		
+		
+		ordering constraint
+		"step (a) needs to be done first"
+		ordering constraint
+		"step (b) can only be executed if step (a) was executed"
+		ordering constraint
+		"step (c) can only be executed if step (b) was executed"	
+		}
+	
+	use case system usergoal ugCreateVMTemplate() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfCheckVMDescription[0..*]
+		reuse sfGetQuestions[0..*]
+		reuse sfGetAvailableComponents[0..*]
+		reuse sfProposeVM[0..*]
+		reuse sfModifyVM[0..*]
+		reuse sfCreateVMTemplate[0..1]
+		
+		
+		step a: actSysAdmin executes sfCheckVMDescription()
+		step b: actSysAdmin executes sfGetQuestions()
+		step c: actSysAdmin executes sfGetAvailableComponents()
+		step d: actSysAdmin executes sfProposeVM()
+		step e: actSysAdmin executes sfModifyVM()
+		step f: actSysAdmin executes sfCreateVMTemplate()
+		
+		ordering constraint
+		"step (a) needs to be done first"
+		ordering constraint
+		"step (b) can only be executed if step (a) was executed"
+		ordering constraint
+		"step (c) can only be executed if step (b) was executed"
+		}
+	
+	
+	
+	use case system usergoal ugBackupVMNow() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfHotBackupVM[1..*]
+		step a: actSysAdmin executes sfHotBackupVM()
+		}
+	
+	
+	use case system usergoal ugBackupVMPlanified() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfGetCalendar[0..*]
+		reuse sfScheduledBackupVM[0..*]
+		
+		step a: actSysAdmin executes sfGetCalendar()
+		step b: actSysAdmin executes sfScheduledBackupVM()
+		
+		ordering constraint
+		"step (a) needs to be done first"
+		ordering constraint
+		"step (b) can only be executed if step (a) was executed"
+		ordering constraint
+		"step (c) can only be executed if step (b) was executed"
+		}
+	
+	use case system usergoal ugDeleteVM() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfDeleteVM[1..*]
+		step a: actSysAdmin executes sfDeleteVM()
+		}
+	use case system summary suVMLifecycle() {
+		actor actSysAdmin[primary, active]
+	
+		reuse ugSecurelyUseSystem[1..*]
+		reuse ugCreateVMExpert[1..*]
+		reuse ugCreateVMTemplate[1..*]
+		reuse ugBackupVMNow[1..*]
+		reuse ugBackupVMPlanified[1..*]
+		reuse ugDeleteVM[1..*]
+		
+		step a: actSysAdmin executes ugSecurelyUseSystem()
+		step b: actSysAdmin executes ugCreateVMExpert()
+		step c: actSysAdmin executes ugCreateVMTemplate()
+		step d: actSysAdmin executes ugBackupVMNow()
+		step e: actSysAdmin executes ugBackupVMPlanified()
+		step f: actSysAdmin executes ugDeleteVM()
+		
+		ordering constraint
+		"step (a) needs to be done first"
+		ordering constraint
+		"step (d), (e) and (f) can only be executed if step (b) or (c) was executed"
+		
+		}
+	use case system summary suDatacenterConf() {
+		actor actSuperSysAdmin[primary, active]
+		
+		reuse ugDatacenterOverview[1..*]
+		reuse ugComponentRequest[1..*]
+		
+		step a: actSuperSysAdmin executes ugDatacenterOverview()
+		step b: actSuperSysAdmin executes ugComponentRequest()
+		
+		}
+	use case system subfunction sfCreateVMExpert() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin
+			}
+		}
+	use case system subfunction sfCreateVMTemplate() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin			
+			}
+		}
+	use case system subfunction sfDeleteVM() {
+			actor actSysAdmin[primary, active]
+		}
+	use case system subfunction sfHotBackupVM() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin
+			}
+		}
+	
+	use case system subfunction sfScheduledBackupVM() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin
+			}
+		}
+	use case system usergoal ugDatacenterOverview() {
+			actor actSuperSysAdmin[primary, active]
+			
+			reuse sfOverviewCPU[1..*]
+			reuse sfOverviewRAM[1..*]
+			reuse sfOverviewGPU[1..*]
+			reuse sfOverviewHDD[1..*]
+			reuse sfOverviewSSD[1..*]
+			reuse sfOverviewSoftware[1..*]
+			
+			step a: actSuperSysAdmin executes sfOverviewCPU()
+			step b: actSuperSysAdmin executes sfOverviewRAM()
+			step c: actSuperSysAdmin executes sfOverviewGPU()
+			step d: actSuperSysAdmin executes sfOverviewHDD()
+			step e: actSuperSysAdmin executes sfOverviewSSD()
+			step f: actSuperSysAdmin executes sfOverviewSoftware()
+		}
+	use case system usergoal ugComponentRequest() {
+			actor actSuperSysAdmin[primary, active]
+			
+			reuse sfChooseModels[1..1]
+			reuse sfConfirmChoice[1..1]
+		
+			step a: actSuperSysAdmin executes sfChooseModels()
+			step b: actSuperSysAdmin executes sfConfirmChoice()
+		}
+	use case system subfunction sfOverviewCPU() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewRAM() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewGPU() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewHDD() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewSSD() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfOverviewSoftware() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfChooseModels() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system subfunction sfConfirmChoice() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	
+	
+	use case system summary suUserManagement() {
+		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary,active]
+		
+		
+		reuse ugSysAdminCreation[1..*] 
+		reuse ugChangeId[1..*]
+		reuse ugChangeEmail[1..*]
+		reuse ugChangePw[1..*]
+		reuse ugDeleteAcc[1..1]
+		
+		step a: actSuperSysAdmin executes ugSysAdminCreation()
+		step b: actSuperSysAdmin executes ugChangeId()
+		step c: actSuperSysAdmin executes ugChangeEmail()
+		step d: actSuperSysAdmin executes ugChangePw()
+		step e: actSysAdmin executes ugDeleteAcc()
+		
+		
+		}
+	use case system usergoal ugSysAdminCreation() {
+		actor actSuperSysAdmin[primary, active]
+		reuse sfCreateSysAdmin[1..*]
+		
+		step a: actSuperSysAdmin executes sfCreateSysAdmin()
+		}
+		
+		
+	use case system subfunction sfCreateSysAdmin() {
+			actor actSuperSysAdmin[primary, active]
+		}
+		
+		
+	use case system usergoal ugChangeId() {
+		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary,active]
+		reuse sfChangeId[1..*]
+		step a: actSuperSysAdmin executes sfChangeId()
+		}
+		
+	use case system subfunction sfChangeId() {
+			actor actSuperSysAdmin[primary, active]
+			
+			
+		}
+		
+		
+	use case system usergoal ugChangeEmail() {
+		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary,active]
+		reuse sfChangeEmail[1..*]
+		step a: actSuperSysAdmin executes sfChangeEmail()
+		
+		}
+		
+		
+	use case system subfunction sfChangeEmail() {
+			actor actSuperSysAdmin[primary, active]
+		}
+		
+		
+	use case system usergoal ugChangePw() {
+		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary,active]
+		reuse sfChangePw[1..*]
+		step a: actSuperSysAdmin executes sfChangePw()
+		}
+		
+		
+	use case system subfunction sfChangePw() {
+			actor actSuperSysAdmin[primary, active]
+		}
+	use case system usergoal ugDeleteAcc() {
+		actor actSysAdmin[primary,active]
+		reuse sfDeleteAcc[1..1]
+		step a: actSysAdmin executes sfDeleteAcc()
+		}
+	use case system subfunction sfDeleteAcc() {
+			actor actSysAdmin[primary, active]
+		}
+	use case system subfunction sfCheckVMDescription() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages{
+				ieCheckVMDescription() returned to actSysAdmin
+			}
+		}
+	use case system subfunction sfGetAvailableComponents() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieGetAvailableComponents() returned to actSysAdmin
+			}
+		}
+	use case system subfunction sfGetQuestions() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieGetQuestions() returned to actSysAdmin
+			}
+		}
+	use case system subfunction sfProposeVM() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieProposeVM() returned to actSysAdmin
+			}
+		}
+	use case system usergoal ugModifyVM() {
+		actor actSysAdmin[primary, active]
+		
+		reuse sfGetAvailableComponents[0..*]
+		reuse sfModifyVM[0..*]
+		step a: actSysAdmin executes sfGetAvailableComponents()
+		step b: actSysAdmin executes sfModifyVM()
+		}
+	use case system summary suDeployAndRun() {
+		
+		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary, active]
+		
+		reuse suVMLifecycle[1..*]
+		reuse suUserManagement[1..*]
+		reuse suDatacenterConf[1..*]
+		
+		step a: actSuperSysAdmin executes sfCreateSystemAndEnvironment()
+		step b: actSuperSysAdmin executes suDatacenterConf()
+		step c: actSysAdmin executes suVMLifecycle()
+		step d: actSysAdmin executes suUserManagement()
+		
+		}
+	use case system subfunction sfCreateSystemAndEnvironment() {
+			actor actSuperSysAdmin[primary, active]
+		}
+use case system subfunction sfLogin() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(AMessage) returned to actSysAdmin
+			}
+		}
+	use case system subfunction sfLogout() {
+			actor actSysAdmin[primary, active]
+			
+			returned messages {
+				ieMessage(Message) returned to actSysAdmin
+			}
+		}
+	}
+}

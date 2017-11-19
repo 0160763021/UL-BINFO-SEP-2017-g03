@@ -17,9 +17,20 @@ Concept Model {
 	Primary Types {
    
 	datatype dtAMessage {
-		
 		attribute value: ptString
-			}
-		}
+	}
+	datatype dtLogin {
+		attribute value: ptString
+	}
+	datatype dtPassword {
+		attribute value: ptString
+	}
+	datatype dtVMName {
+		attribute value: ptString
+	}
+	datatype dtVMDescription {
+		attribute value: ptString
+	}
+}
 }
 }

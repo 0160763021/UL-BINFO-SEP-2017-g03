@@ -16,10 +16,24 @@ Environment Model {
 			
 actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] {
 			input interface inactSysAdmin {
-			operation ieDescriptionAlert():ptBoolean
+			
+			operation ieMessage():ptBoolean
+			operation ieCreateVMExpert():ptBoolean
+			operation ieCreateVMTemplate():ptBoolean
+			operation ieDeleteVM():ptBoolean
 			}
 			output interface outactSysAdmin {
 			operation sfModifyVM():ptBoolean
+			operation sfCheckVMDescription():ptBoolean
+			operation sfCreateVMExpert():ptBoolean
+			operation sfCreateVMTemplate():ptBoolean
+			operation sfDeleteVM():ptBoolean
+			operation sfGetAvailableComponents():ptBoolean
+			operation sfGetCalendar():ptBoolean
+			operation sfGetQuestions():ptBoolean
+			operation sfHotBackupVM():ptBoolean
+			operation sfProposeVM():ptBoolean
+			operation sfScheduledBackupVM():ptBoolean
 			}
 		}
 	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] {

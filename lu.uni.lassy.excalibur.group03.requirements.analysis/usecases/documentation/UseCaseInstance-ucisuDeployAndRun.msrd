@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Nov 19 20:43:55 CET 2017
+*/
+
+
+@@Instance Use Case usecases.ucisuDeployAndRun.ucisuDeployAndRun
+@description "First part of a use case instance for the summary
+use case suDeployAndRun illustrating a simple and complete interaction scenario
+primarily handled by a sysAdmin in a concrete situation.
+
+"
