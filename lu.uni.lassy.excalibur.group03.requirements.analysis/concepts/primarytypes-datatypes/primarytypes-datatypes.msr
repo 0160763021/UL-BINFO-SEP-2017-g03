@@ -16,21 +16,36 @@ Concept Model {
 
 	Primary Types {
    
-	datatype dtAMessage {
-		attribute value: ptString
+	datatype dtAMessage extends dtString{
+		operation is():ptBoolean
 	}
-	datatype dtLogin {
-		attribute value: ptString
+	datatype dtLogin extends dtString{
+		operation is():ptBoolean
 	}
-	datatype dtPassword {
-		attribute value: ptString
+	datatype dtPassword extends dtString{
+		operation is():ptBoolean
 	}
-	datatype dtVMName {
-		attribute value: ptString
+	datatype dtVMName extends dtString{
+		operation is():ptBoolean
 	}
-	datatype dtVMDescription {
-		attribute value: ptString
+	datatype dtVMDescription extends dtString{
+		operation is():ptBoolean
 	}
+	datatype dtComponentID extends dtString{
+		operation is(): ptBoolean
+		}
+	datatype dtAmount extends dtInteger{
+		operation is(): ptBoolean
+		}
+	datatype dtQuestionID extends dtString{
+		operation is(): ptString
+		}
+	datatype dtVMID extends dtString{
+		operation is(): ptString
+		}
+	
+	
+	
 }
 }
 }

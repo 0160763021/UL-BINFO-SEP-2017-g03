@@ -10,11 +10,12 @@ import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes
 
 
 Environment Model {
 			
-actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] {
+actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actSuperSysAdmin{
 			input interface inactSysAdmin {
 			
 			operation ieMessage():ptBoolean
@@ -23,23 +24,38 @@ actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] {
 			operation ieDeleteVM():ptBoolean
 			}
 			output interface outactSysAdmin {
-			operation sfModifyVM():ptBoolean
-			operation sfCheckVMDescription():ptBoolean
-			operation sfCreateVMExpert():ptBoolean
-			operation sfCreateVMTemplate():ptBoolean
-			operation sfDeleteVM():ptBoolean
+			operation sfModifyVM(AdtVMID: dtVMID):ptBoolean
+			operation sfCheckVMDescription(AdtVMDescription: dtVMDescription, AdtVMName: dtVMName):ptBoolean
+			operation sfCreateVMExpert(AdtVMDescription: dtVMDescription, AdtVMName: dtVMName,
+				AdtComponentID1: dtComponentID, AdtAmount1: dtAmount, AdtComponentID2: dtComponentID, AdtAmount2: dtAmount,
+				AdtComponentID3: dtComponentID, AdtAmount3: dtAmount, AdtComponentID4: dtComponentID, AdtAmount4: dtAmount,
+				AdtComponentID5: dtComponentID, AdtAmount5: dtAmount, AdtComponentID6: dtComponentID)
+			:ptBoolean
+			operation sfCreateVMTemplate(AdtQID1 : dtQuestionID, AdtQID2 : dtQuestionID, AdtQID3 : dtQuestionID,
+				AdtQID4 : dtQuestionID
+			):ptBoolean
+			operation sfDeleteVM(AdtVMID: dtVMID, AdtPassword: dtPassword):ptBoolean
 			operation sfGetAvailableComponents():ptBoolean
-			operation sfGetCalendar():ptBoolean
+			operation sfGetCalendar(AdtDateAndTime: dtDateAndTime):ptBoolean
 			operation sfGetQuestions():ptBoolean
-			operation sfHotBackupVM():ptBoolean
+			operation sfHotBackupVM(AdtDateAndTime: dtDateAndTime):ptBoolean
 			operation sfProposeVM():ptBoolean
-			operation sfScheduledBackupVM():ptBoolean
+			operation sfScheduledBackupVM(AdtDateAndTime: dtDateAndTime):ptBoolean
 			}
 		}
-	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] {
+	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] extends actAuthenticated{
 			input interface inactSuperSysAdmin {
 			}
 			output interface outactSuperSysAdmin {
+			}
+		}
+	actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
+			input interface inactAuthenticated {
+			operation ieMessage(AdtAMessage: dtAMessage):ptBoolean
+			}
+			output interface outactAuthenticated {
+			operation sfLogin(AdtLogin: dtLogin, AdtPassword: dtPassword):ptBoolean
+			operation sfLogout():ptBoolean
 			}
 		}
 	}
