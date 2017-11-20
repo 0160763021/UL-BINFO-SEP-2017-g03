@@ -232,6 +232,10 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		}
 	use case system subfunction sfConfirmChoice() {
 			actor actSuperSysAdmin[primary, active]
+			
+			returned messages{
+				ieMessage(Message) returned to actSuperSysAdmin
+			}
 		}
 	
 	
@@ -318,28 +322,28 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			actor actSysAdmin[primary, active]
 			
 			returned messages{
-				ieCheckVMDescription() returned to actSysAdmin
+				ieMessage(Message) returned to actSysAdmin
 			}
 		}
 	use case system subfunction sfGetAvailableComponents() {
 			actor actSysAdmin[primary, active]
 			
 			returned messages {
-				ieGetAvailableComponents() returned to actSysAdmin
+				ieMessage(Message) returned to actSysAdmin
 			}
 		}
 	use case system subfunction sfGetQuestions() {
 			actor actSysAdmin[primary, active]
 			
 			returned messages {
-				ieGetQuestions() returned to actSysAdmin
+				ieMessage(Message) returned to actSysAdmin
 			}
 		}
 	use case system subfunction sfProposeVM() {
 			actor actSysAdmin[primary, active]
 			
 			returned messages {
-				ieProposeVM() returned to actSysAdmin
+				ieMessage(Message) returned to actSysAdmin
 			}
 		}
 	use case system usergoal ugModifyVM() {
@@ -372,7 +376,7 @@ use case system subfunction sfLogin() {
 			actor actSysAdmin[primary, active]
 			
 			returned messages {
-				ieMessage(AMessage) returned to actSysAdmin
+				ieMessage(Message) returned to actSysAdmin
 			}
 		}
 	use case system subfunction sfLogout() {
@@ -381,6 +385,21 @@ use case system subfunction sfLogin() {
 			returned messages {
 				ieMessage(Message) returned to actSysAdmin
 			}
+		}
+	use case system summary suDeployAndRun2() {
+		
+		actor actSuperSysAdmin[primary, active]
+		actor actSysAdmin[primary, active]
+		
+		reuse suVMLifecycle[1..*]
+		reuse suUserManagement[1..*]
+		reuse suDatacenterConf[1..*]
+		
+		step a: actSuperSysAdmin executes sfCreateSystemAndEnvironment()
+		step b: actSuperSysAdmin executes suDatacenterConf()
+		step c: actSysAdmin executes suVMLifecycle()
+		step d: actSysAdmin executes suUserManagement()
+		
 		}
 	}
 }

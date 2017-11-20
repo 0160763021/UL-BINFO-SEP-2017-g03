@@ -1,0 +1,10 @@
+/*
+@author Dany-
+@date Mon Nov 20 19:57:53 CET 2017
+*/
+
+
+@@view suDeployAndRun2
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suDeployAndRun2 
+@description "suDeployAndRun2 summary use case"
+@caption ""

@@ -1,0 +1,12 @@
+/*
+@author Dany-
+@date Mon Nov 20 20:33:50 CET 2017
+*/
+
+
+@@Instance Use Case usecases.uci.uci
+@description "First part of a use case instance for the summary
+use case suDeployAndRun2 illustrating a simple and complete interaction scenario
+primarily handled by a superSysAdmin in a concrete situation.
+
+"
