@@ -42,10 +42,10 @@ Concept Model {
 		}
 	datatype dtVMID extends dtString{
 		operation is(): ptString
+		}	
+	datatype dtBackupDescription extends dtString{
+		operation is(): ptString
 		}
-	
-	
-	
-}
+	}
 }
 }

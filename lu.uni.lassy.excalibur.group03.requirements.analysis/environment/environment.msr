@@ -18,10 +18,10 @@ Environment Model {
 actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actSuperSysAdmin{
 			input interface inactSysAdmin {
 			
-			operation ieMessage():ptBoolean
-			operation ieCreateVMExpert():ptBoolean
-			operation ieCreateVMTemplate():ptBoolean
-			operation ieDeleteVM():ptBoolean
+			
+			
+			
+			
 			}
 			output interface outactSysAdmin {
 			operation sfModifyVM(AdtVMID: dtVMID):ptBoolean
@@ -31,16 +31,19 @@ actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actSuperSysAdmi
 				AdtComponentID3: dtComponentID, AdtAmount3: dtAmount, AdtComponentID4: dtComponentID, AdtAmount4: dtAmount,
 				AdtComponentID5: dtComponentID, AdtAmount5: dtAmount, AdtComponentID6: dtComponentID)
 			:ptBoolean
-			operation sfCreateVMTemplate(AdtQID1 : dtQuestionID, AdtQID2 : dtQuestionID, AdtQID3 : dtQuestionID,
-				AdtQID4 : dtQuestionID
+			operation sfCreateVMTemplate(AdtVMName: dtVMName, AdtVMDescription: dtVMDescription,
+				AdtComponentID1: dtComponentID, AdtAmount1: dtAmount, AdtComponentID2: dtComponentID, AdtAmount2: dtAmount,
+				AdtComponentID3: dtComponentID, AdtAmount3: dtAmount, AdtComponentID4: dtComponentID, AdtAmount4: dtAmount,
+				AdtComponentID5: dtComponentID, AdtAmount5: dtAmount, AdtComponentID6: dtComponentID
 			):ptBoolean
 			operation sfDeleteVM(AdtVMID: dtVMID, AdtPassword: dtPassword):ptBoolean
-			operation sfGetAvailableComponents():ptBoolean
+			operation sfGetAvailableComponents(AdtDateAndTime: dtDateAndTime):ptBoolean
 			operation sfGetCalendar(AdtDateAndTime: dtDateAndTime):ptBoolean
 			operation sfGetQuestions():ptBoolean
-			operation sfHotBackupVM(AdtDateAndTime: dtDateAndTime):ptBoolean
-			operation sfProposeVM():ptBoolean
-			operation sfScheduledBackupVM(AdtDateAndTime: dtDateAndTime):ptBoolean
+			operation sfHotBackupVM(AdtVMID: dtVMID, AdtDateAndTime: dtDateAndTime):ptBoolean
+			operation sfProposeVM(AdtQID1 : dtQuestionID, AdtQID2 : dtQuestionID, AdtQID3 : dtQuestionID,
+				AdtQID4 : dtQuestionID):ptBoolean
+			operation sfScheduledBackupVM(AdtBackupDescription: dtBackupDescription, AdtVMID: dtVMID, AdtDateAndTime: dtDateAndTime):ptBoolean
 			}
 		}
 	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] extends actAuthenticated{

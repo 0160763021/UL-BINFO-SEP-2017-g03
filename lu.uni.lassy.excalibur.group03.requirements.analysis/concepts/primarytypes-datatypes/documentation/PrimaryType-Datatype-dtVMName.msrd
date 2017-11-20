@@ -1,12 +1,12 @@
 /*
 @author nelson
-@date Sun Nov 19 21:26:58 CET 2017
+@date Mon Nov 20 21:47:37 CET 2017
 */
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMName
-@description "a string which represents the name of the virtual machine"
-@attribute
-lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMName.value
+@description ""
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMName.is
 ""
-@endAttributes
+@endOperations

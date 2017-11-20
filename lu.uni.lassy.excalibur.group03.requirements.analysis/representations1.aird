@@ -326,6 +326,25 @@
     <semanticResources>documentation/View-LocalView01.msrd</semanticResources>
     <semanticResources>documentation/View-em-view3.msrd</semanticResources>
     <semanticResources>documentation/View-em-view2.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtAMessage-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtLogin-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtPassword-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtVMName-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtVMDescription-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtComponentID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtComponentID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtAmount.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtAmount-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtQuestionID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtQuestionID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtVMID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtVMID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtBackupDescription.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtBackupDescription-is.msrd</semanticResources>
+    <semanticResources>environment/documentation/Actor-actAuthenticated.msrd</semanticResources>
+    <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfLogin.msrd</semanticResources>
+    <semanticResources>environment/documentation/Operation-actAuthenticated-outactAuthenticated-sfLogout.msrd</semanticResources>
+    <semanticResources>usecases/documentation/UseCase-suDeployAndRun2.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_fJMFUL12Eee7mbrw4kTqwQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bPLGAL2mEee7mbrw4kTqwQ" name="ugBackupVMNow" repPath="#_bPBVAL2mEee7mbrw4kTqwQ">

@@ -1,14 +1,12 @@
 /*
 @author nelson
-@date Sun Nov 19 20:47:15 CET 2017
+@date Mon Nov 20 21:47:30 CET 2017
 */
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAMessage
-@description "a datatype consisting of a string value used to receive,store and send textual information
-about the different actors and deployed virtual machines
-."
-@attribute
-lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAMessage.value
+@description ""
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAMessage.is
 ""
-@endAttributes
+@endOperations

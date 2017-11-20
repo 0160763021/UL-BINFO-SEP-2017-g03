@@ -1,18 +1,12 @@
 /*
 @author nelson
-@date Sun Nov 19 21:13:33 CET 2017
+@date Mon Nov 20 21:47:32 CET 2017
 */
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLogin
-@description 
-"
-a login string which is used to authentify an
-VMMS user
-
-
-"
-@attribute
-lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLogin.value
+@description ""
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLogin.is
 ""
-@endAttributes
+@endOperations
