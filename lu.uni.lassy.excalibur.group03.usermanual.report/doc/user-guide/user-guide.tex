@@ -386,6 +386,36 @@ cold/scheduled backup.\\
 \vspace{0.5cm}
 
 
+\subsubsection{Delete Account}
+
+\hrule
+\vspace{0.5cm}
+\begin{lyxlist}{PC1}
+\small{
+\item [\textbf{Procedure:}] DeleteAccount 
+\item [\textbf{Scope:}] Allow the the SysAdmin to delete his account.
+\item [\textbf{Primary Actor}:] SysAdmin Tom
+\item [\textbf{Secondary Actor(s)}:] /
+\item [\textbf{Goal:}] The SysAdmin Tom should be able to delete his account.
+\item [\textbf{Level}:] User-goal level
+\item [\textbf{Main~Success~Scenario}]:\\
+1. \emph{Tom} clicks on the "Delete Account'' icon in the Password settings
+section.\\
+2. \emph{Tom} inserts his password in the input text field.\\
+3. \emph{Tom} clicks on the ''Confirm'' button to confirm the password.\\
+4. \emph{Tom} clicks on the ''YES'' button(if he really wants to delete his
+acount.) or clicks on ''NO'' button(if he don't want to delete his account).\\
+5. \emph If {Tom} clicked on the "YES" button, the account is deleted and
+{Tom} clicks on the "ok" button to terminate the procedure.\\
+6. \emph If {Tom} clicked on the "NO" button, the account is not deleted.\\
+
+\item [\textbf{Extensions}]:\\
+2.a \emph{Tom} has to be a SysAdmin and has to be logged in in order to be able
+to delete his account.\\
+}
+\end{lyxlist}
+\hrule
+
 
 
 
@@ -499,7 +529,7 @@ on the " ok" button.\\
 
 \item [\textbf{Extensions}]:\\
 2.a \emph{Bob} has to be an super-SysAdmin and has to be logged in in order to
-be able to create a regular user.\\
+be able to create a sysAdmin.\\
 }
 \end{lyxlist}
 \hrule
@@ -530,7 +560,7 @@ to terminate the procedure.\\
 
 \item [\textbf{Extensions}]:\\
 2.a \emph{Tom} has to be a super-SysAdmin or a SysAdmin and has to be logged
-in in order to be able to create a regular user.\\
+in in order to be able to change his id.\\
 }
 \end{lyxlist}
 \hrule
@@ -561,7 +591,7 @@ terminate the procedure.\\
 
 \item [\textbf{Extensions}]:\\
 2.a \emph{Tom} has to be a super-SysAdmin or a SysAdmin and has to be logged in
-in order to be able to create a regular user.\\
+in order to be able to change his e-mail.\\
 }
 \end{lyxlist}
 \hrule
@@ -592,41 +622,13 @@ to terminate the procedure.\\
 
 \item [\textbf{Extensions}]:\\
 2.a \emph{Tom} has to be a super-SysAdmin or a SysAdmin and has to be logged in
-in order to be able to create a regular user.\\
+in order to be able to change his password.\\
 }
 \end{lyxlist}
 \hrule
 
 
-\subsubsection{Delete Account}
 
-\hrule
-\vspace{0.5cm}
-\begin{lyxlist}{PC1}
-\small{
-\item [\textbf{Procedure:}] DeleteAccount 
-\item [\textbf{Scope:}] Allow the the SysAdmin to delete his account.
-\item [\textbf{Primary Actor}:] SysAdmin Tom
-\item [\textbf{Secondary Actor(s)}:] /
-\item [\textbf{Goal:}] The SysAdmin Tom should be able to delete his account.
-\item [\textbf{Level}:] User-goal level
-\item [\textbf{Main~Success~Scenario}]:\\
-1. \emph{Tom} clicks on the "Delete Account'' icon in the Password settings
-section.\\
-2. \emph{Tom} inserts his password in the input text field.\\
-3. \emph{Tom} clicks on the ''Confirm'' button to confirm the password.\\
-4. \emph{Tom} clicks on the ''YES'' button(if he really wants to delete his
-acount.) or clicks on ''NO'' button(if he don't want to delete his account).\\
-5. \emph If {Tom} clicked on the "YES" button, the account is deleted and
-{Tom} clicks on the "ok" button to terminate the procedure.\\
-6. \emph If {Tom} clicked on the "NO" button, the account is not deleted.\\
-
-\item [\textbf{Extensions}]:\\
-2.a \emph{Tom} has to be a SysAdmin and has to be logged in in order to be able
-to create a regular user.\\
-}
-\end{lyxlist}
-\hrule
 
 \subsection{My-Actor2}
 
