@@ -50,6 +50,7 @@ actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actSuperSysAdmi
 			input interface inactSuperSysAdmin {
 			}
 			output interface outactSuperSysAdmin {
+			operation sfOverviewCPU():ptBoolean
 			}
 		}
 	actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
@@ -59,6 +60,13 @@ actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actSuperSysAdmi
 			output interface outactAuthenticated {
 			operation sfLogin(AdtLogin: dtLogin, AdtPassword: dtPassword):ptBoolean
 			operation sfLogout():ptBoolean
+			}
+		}
+	actor actCreator role rnactCreator cardinality[0 .. *] {
+			input interface inactCreator {
+			}
+			output interface outactCreator {
+			operation sfCreateSystemAndEnvironment():ptBoolean
 			}
 		}
 	}
