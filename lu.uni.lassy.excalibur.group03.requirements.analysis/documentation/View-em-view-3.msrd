@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Tue Nov 21 10:20:18 CET 2017
+*/
+
+
+@@view em-view-3
+@model Environment 
+@level Local
+@number 6
+@description "Environment Model - Local View 03. creator actor environment model view."
+@caption ""
