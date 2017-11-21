@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMName
-@description ""
+@description "a string which represents the name of the virtual machine"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMName.is
 ""

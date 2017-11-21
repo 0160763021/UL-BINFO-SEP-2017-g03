@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Tue Nov 21 10:26:15 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAmount
+@description "an integer value which represents the quantity of a given component"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAmount.is
+""
+@endOperations

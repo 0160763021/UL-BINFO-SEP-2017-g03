@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Tue Nov 21 10:26:17 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtQuestionID
+@description "a string which uniquely identifies a question"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtQuestionID.is
+""
+@endOperations

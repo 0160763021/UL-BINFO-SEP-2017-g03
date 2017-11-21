@@ -1,0 +1,24 @@
+/*
+@author nelson
+@date Tue Nov 21 10:26:36 CET 2017
+*/
+
+
+@@Actor lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actAuthenticated
+@description "abstract actor providing input and output interfaces used for the different actors that need to authenticate
+themselves."
+//input events
+@inputEvent
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actAuthenticated.inactAuthenticated.ieMessage
+""
+
+@endInputEvents
+//output events
+@outputEvent
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actAuthenticated.outactAuthenticated.sfLogin
+""
+@outputEvent
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actAuthenticated.outactAuthenticated.sfLogout
+""
+
+@endOutputEvents

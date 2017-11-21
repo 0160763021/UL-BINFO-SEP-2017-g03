@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Tue Nov 21 10:26:16 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAmount.is
+@description "used to determine which integer values are considered as valid dtAmount.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Tue Nov 21 10:26:11 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMName.is
+@description "used to determine which strings are considered as valid names for the different virtual machines.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

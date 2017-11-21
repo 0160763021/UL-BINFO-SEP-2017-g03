@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Tue Nov 21 10:26:20 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMID.is
+@description "used to determine which strings are considered as valid virtual machine identifiers.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

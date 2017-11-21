@@ -5,7 +5,8 @@
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAMessage
-@description ""
+@description "a datatype consisting of a string value used to receive, store and send textual information
+about the different actors and deployed virtual machines"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAMessage.is
 ""

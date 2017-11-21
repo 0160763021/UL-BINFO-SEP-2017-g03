@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMDescription
-@description ""
+@description "a string which is used to describe the use of the virtual machine"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMDescription.is
 ""

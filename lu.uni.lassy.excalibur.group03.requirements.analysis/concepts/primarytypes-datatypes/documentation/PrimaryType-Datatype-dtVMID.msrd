@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Tue Nov 21 10:26:19 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMID
+@description "a string which uniquely identifies a virtual machines"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMID.is
+""
+@endOperations
