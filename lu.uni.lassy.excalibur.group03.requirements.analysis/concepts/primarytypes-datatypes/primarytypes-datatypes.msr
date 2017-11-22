@@ -38,10 +38,10 @@ Concept Model {
 		operation is(): ptBoolean
 		}
 	datatype dtQuestionID extends dtString{
-		operation is(): ptString
+		operation is(): ptBoolean
 		}
 	datatype dtVMID extends dtString{
-		operation is(): ptString
+		operation is(): ptBoolean
 		}	
 	datatype dtBackupDescription extends dtString{
 		operation is(): ptString

@@ -366,6 +366,16 @@
     <semanticResources>usecases/documentation/UseCase-sfInitVM.msrd</semanticResources>
     <semanticResources>usecases/documentation/UseCase-sfGenerateComponent.msrd</semanticResources>
     <semanticResources>usecases/documentation/UseCase-sfGetProposedVM.msrd</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtAMessage-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtAmount-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtBackupDescription-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtComponentID-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtLogin-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtPassword-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtQuestionID-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtVMDescription-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtVMID-is.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtVMName-is.msr</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_fJMFUL12Eee7mbrw4kTqwQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bPLGAL2mEee7mbrw4kTqwQ" name="ugBackupVMNow" repPath="#_bPBVAL2mEee7mbrw4kTqwQ">

@@ -1,0 +1,15 @@
+package lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.operations.datatypes.dtAmount.is {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAmount.is():ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+
+		}
+	}
+}
