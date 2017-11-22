@@ -17,7 +17,7 @@ the superSysAdmin has to be logged in
 @endPreConditions
 @postCondition
 "
-overall overview of the CPU
+gets chosen models to request
 "
 @endPostConditions
 @additionalInformation

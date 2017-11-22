@@ -1,0 +1,26 @@
+/*
+@author Dany-
+@date Wed Nov 22 19:47:15 CET 2017
+*/
+
+
+@@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfOverviewComponent
+@description "enables the superSysAdmin to overview the component of his choice"
+@protocolCondition
+"
+"
+@endProtocolConditions
+@preCondition
+"
+the superSysAdmin must be logged in
+"
+@endPreConditions
+@postCondition
+"
+the superSysAdmin have an overview of the chosen component
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

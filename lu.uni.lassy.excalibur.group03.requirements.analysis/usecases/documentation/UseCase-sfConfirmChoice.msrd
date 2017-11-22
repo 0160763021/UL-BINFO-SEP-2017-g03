@@ -17,7 +17,7 @@ the superSysAdmin has to be logged in
 @endPreConditions
 @postCondition
 "
-overall overview of the CPU
+the request has been or not send to the datacenter receiver
 "
 @endPostConditions
 @additionalInformation
