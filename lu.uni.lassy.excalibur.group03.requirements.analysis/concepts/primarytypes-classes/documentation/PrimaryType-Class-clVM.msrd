@@ -1,0 +1,22 @@
+/*
+@author nelson
+@date Wed Nov 22 22:14:45 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.Vid
+"a unique identification information."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.Name
+"used to determine the name of the virtual machine."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.Description
+"used as description for the virtual machine."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init
+"used to initialize the current object as a new instance of the clVM type."
+@endOperations

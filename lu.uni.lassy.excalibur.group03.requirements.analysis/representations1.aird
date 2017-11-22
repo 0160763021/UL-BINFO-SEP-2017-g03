@@ -384,6 +384,52 @@
     <semanticResources>documentation/View-cm-view-6.msrd</semanticResources>
     <semanticResources>documentation/View-cm-view-7.msrd</semanticResources>
     <semanticResources>documentation/View-cm-view-8.msrd</semanticResources>
+    <semanticResources>usecases/usecaseinstance-suDeployAndRun-uci.msr</semanticResources>
+    <semanticResources>documentation/View-cm-view-1.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtBID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtCapacity.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtClockSpeed.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtCompName.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtCores.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtLicenseID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtModel.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtSuperSysID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Datatype-dtSysID.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtModel-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtCompName-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtBID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtSysID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtSuperSysID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtCores-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtClockSpeed-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtLicenseID-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-dtCapacity-is.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clAuthenticated.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clBackup.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clVM.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clSysAdmin.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clSuperSysAdmin.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clStorage.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clSoftware.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clProcessUnit.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/PrimaryType-Class-clComponent.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctVMclComponent.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctComponentclProcessUnit.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctComponentclStroage.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctComponentclSoftware.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctSysAdminclVM.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctAuthenticatedactAuthenticated.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctSysAdminactSysAdmin.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctSuperSysAdminactSuperSysAdmin.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clVM-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clComponent-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clAuthenticated-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clSysAdmin-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clSuperSysAdmin-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clProcessUnit-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clStorage-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clSoftware-init.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-classes/documentation/Operation-clBackup-init.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_fJMFUL12Eee7mbrw4kTqwQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bPLGAL2mEee7mbrw4kTqwQ" name="ugBackupVMNow" repPath="#_bPBVAL2mEee7mbrw4kTqwQ">
@@ -463,6 +509,10 @@
         <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid77e3d0e778c340a083a53b5f0e403485"/>
       </ownedRepresentationDescriptors>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_qhhuhc-pEeehXLco8JTWSQ" name="cm-view-8" repPath="#_qhhugM-pEeehXLco8JTWSQ">
+        <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']"/>
+        <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid77e3d0e778c340a083a53b5f0e403485"/>
+      </ownedRepresentationDescriptors>
+      <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_mEomQM_GEeecEp6yGPJ4ig" name="cm-view-1" repPath="#_mEmKAM_GEeecEp6yGPJ4ig">
         <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']"/>
         <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid77e3d0e778c340a083a53b5f0e403485"/>
       </ownedRepresentationDescriptors>
@@ -7635,6 +7685,62 @@
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_qhhuhM-pEeehXLco8JTWSQ"/>
+    <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer"/>
+    <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid77e3d0e778c340a083a53b5f0e403485"/>
+  </diagram:DSemanticDiagram>
+  <diagram:DSemanticDiagram xmi:id="_mEmKAM_GEeecEp6yGPJ4ig" name="cm-view-1">
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_mEmKAc_GEeecEp6yGPJ4ig" source="DANNOTATION_CUSTOMIZATION_KEY">
+      <data xmi:type="diagram:ComputedStyleDescriptionRegistry" xmi:id="_mEmKAs_GEeecEp6yGPJ4ig"/>
+    </ownedAnnotationEntries>
+    <ownedAnnotationEntries xmi:type="description:AnnotationEntry" xmi:id="_mEv7AM_GEeecEp6yGPJ4ig" source="GMF_DIAGRAMS">
+      <data xmi:type="notation:Diagram" xmi:id="_mEv7Ac_GEeecEp6yGPJ4ig" type="Sirius" element="_mEmKAM_GEeecEp6yGPJ4ig" measurementUnit="Pixel">
+        <children xmi:type="notation:Node" xmi:id="_pCh6wM_GEeecEp6yGPJ4ig" type="2003" element="_pCQN8M_GEeecEp6yGPJ4ig">
+          <children xmi:type="notation:Node" xmi:id="_pCp2kM_GEeecEp6yGPJ4ig" type="5007"/>
+          <children xmi:type="notation:Node" xmi:id="_pCqdoM_GEeecEp6yGPJ4ig" type="7004">
+            <children xmi:type="notation:Node" xmi:id="_qeuzAM_GEeecEp6yGPJ4ig" type="3010" element="_qeW_kM_GEeecEp6yGPJ4ig">
+              <styles xmi:type="notation:FontStyle" xmi:id="_qeuzAc_GEeecEp6yGPJ4ig" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_qeuzAs_GEeecEp6yGPJ4ig"/>
+            </children>
+            <children xmi:type="notation:Node" xmi:id="_qevaEM_GEeecEp6yGPJ4ig" type="3010" element="_qeXmoc_GEeecEp6yGPJ4ig">
+              <styles xmi:type="notation:FontStyle" xmi:id="_qevaEc_GEeecEp6yGPJ4ig" fontName="Segoe UI" fontHeight="14"/>
+              <layoutConstraint xmi:type="notation:Location" xmi:id="_qevaEs_GEeecEp6yGPJ4ig"/>
+            </children>
+            <styles xmi:type="notation:SortingStyle" xmi:id="_pCqdoc_GEeecEp6yGPJ4ig"/>
+            <styles xmi:type="notation:FilteringStyle" xmi:id="_pCqdos_GEeecEp6yGPJ4ig"/>
+          </children>
+          <styles xmi:type="notation:ShapeStyle" xmi:id="_pCh6wc_GEeecEp6yGPJ4ig" fontName="Segoe UI" fontHeight="14" bold="true"/>
+          <layoutConstraint xmi:type="notation:Bounds" xmi:id="_pCh6ws_GEeecEp6yGPJ4ig"/>
+        </children>
+        <styles xmi:type="notation:DiagramStyle" xmi:id="_mEv7As_GEeecEp6yGPJ4ig"/>
+      </data>
+    </ownedAnnotationEntries>
+    <ownedDiagramElements xmi:type="diagram:DNodeList" xmi:id="_pCQN8M_GEeecEp6yGPJ4ig" name="ctState">
+      <target xmi:type="messir:Class" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.ctState"/>
+      <semanticElements xmi:type="messir:Class" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.ctState"/>
+      <ownedStyle xmi:type="diagram:FlatContainerStyle" xmi:id="_pCSqMM_GEeecEp6yGPJ4ig" labelSize="14" iconPath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/stateclass.png" borderSize="1" borderSizeComputationExpression="1">
+        <labelFormat>bold</labelFormat>
+        <description xmi:type="style:FlatContainerStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='StateClass']/@style"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:ContainerMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='StateClass']"/>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_qeW_kM_GEeecEp6yGPJ4ig" name="vpStarted : ptBoolean">
+        <target xmi:type="messir:Attribute" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.ctState.vpStarted"/>
+        <semanticElements xmi:type="messir:Attribute" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.ctState.vpStarted"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_qeXmoM_GEeecEp6yGPJ4ig" labelSize="14" iconPath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/attribute.png" labelAlignment="LEFT">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='StateClass']/@subNodeMappings[name='StateClass_Attributes']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='StateClass']/@subNodeMappings[name='StateClass_Attributes']"/>
+      </ownedElements>
+      <ownedElements xmi:type="diagram:DNodeListElement" xmi:id="_qeXmoc_GEeecEp6yGPJ4ig" name="init(AvpStarted: ptBoolean): ptBoolean    ">
+        <target xmi:type="messir:OperationDeclaration" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.ctState.init"/>
+        <semanticElements xmi:type="messir:OperationDeclaration" href="concepts/primarytypes-classes/primarytypes-classes.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.ctState.init"/>
+        <ownedStyle xmi:type="diagram:Square" xmi:id="_qeYNsM_GEeecEp6yGPJ4ig" labelSize="14" iconPath="/lu.uni.lassy.excalibur.dsl.messir.ui/icons/operation.png" labelAlignment="LEFT">
+          <description xmi:type="style:SquareDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='StateClass']/@subNodeMappings[name='StateClass_Operations']/@style"/>
+        </ownedStyle>
+        <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer/@containerMappings[name='StateClass']/@subNodeMappings[name='StateClass_Operations']"/>
+      </ownedElements>
+    </ownedDiagramElements>
+    <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']"/>
+    <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_mEmKBM_GEeecEp6yGPJ4ig"/>
     <activatedLayers xmi:type="description_1:Layer" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Messir%20Diagram']/@defaultLayer"/>
     <target xmi:type="messir:PackageDeclaration" href=".views.msr#uuid77e3d0e778c340a083a53b5f0e403485"/>
   </diagram:DSemanticDiagram>

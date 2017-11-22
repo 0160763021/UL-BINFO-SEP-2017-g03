@@ -1,0 +1,25 @@
+/*
+@author nelson
+@date Wed Nov 22 22:29:01 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.init.Alogin
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.init.Apassword
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the clAuthenticated type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new clAuthenticated instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

@@ -1,0 +1,28 @@
+/*
+@author nelson
+@date Wed Nov 22 22:28:59 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init.AVid
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init.AName
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init.Description
+""
+@endParameters
+
+@description "
+used to initialize the current object as a new instance of the clVM type. "
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new clVM instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "

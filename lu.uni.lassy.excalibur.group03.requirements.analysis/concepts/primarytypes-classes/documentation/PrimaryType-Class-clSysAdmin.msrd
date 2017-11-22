@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Wed Nov 22 22:16:55 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSysAdmin
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSysAdmin.SysID
+"a unique identification information."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSysAdmin.init
+"used to initialize the current object as a new instance of the clSysAdmin type."
+@endOperations

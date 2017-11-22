@@ -1,0 +1,22 @@
+/*
+@author nelson
+@date Wed Nov 22 22:14:37 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.BID
+"a unique identification information."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.date
+"used to define the date when the backup should be performed."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.description
+"used to define the purpose of the backup."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.init
+"used to initialize the current object as a new instance of the clBackup type."
+@endOperations

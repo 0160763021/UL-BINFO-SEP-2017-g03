@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Wed Nov 22 22:17:36 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clStorage
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clStorage.capacity
+"used to define the capacity of a storage component."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clStorage.init
+"used to initialize the current object as a new instance of the clStorage type."
+@endOperations

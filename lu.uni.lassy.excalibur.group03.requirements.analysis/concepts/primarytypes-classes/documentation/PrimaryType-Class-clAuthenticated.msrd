@@ -1,0 +1,19 @@
+/*
+@author nelson
+@date Wed Nov 22 22:14:34 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.login
+"used as an identifier for authentication."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.password
+"used as a key for authentication."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.init
+"used to initialize the current object as a new instance of the clAuthenticated type."
+@endOperations

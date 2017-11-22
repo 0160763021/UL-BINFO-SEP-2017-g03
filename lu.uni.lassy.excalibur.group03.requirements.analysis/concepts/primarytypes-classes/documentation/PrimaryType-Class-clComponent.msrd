@@ -1,0 +1,22 @@
+/*
+@author nelson
+@date Wed Nov 22 22:18:09 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.Cid
+"a unique identification information."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.CName
+"used as a name for the component."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.CModel
+"used as a model name for the component."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init
+"used to initialize the current object as a new instance of the clComponent type."
+@endOperations

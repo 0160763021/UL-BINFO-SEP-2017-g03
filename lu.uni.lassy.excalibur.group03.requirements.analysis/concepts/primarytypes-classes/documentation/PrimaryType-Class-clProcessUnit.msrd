@@ -1,0 +1,19 @@
+/*
+@author nelson
+@date Wed Nov 22 22:17:57 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clProcessUnit
+@description ""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clProcessUnit.cores
+"used to define the number of cores of a process unit component."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clProcessUnit.clockspeed
+"used to define the clock speed of a process unit component."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clProcessUnit.init
+"used to initialize the current object as a new instance of the clProcessUnit type."
+@endOperations

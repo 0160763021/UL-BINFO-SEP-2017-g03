@@ -1,0 +1,14 @@
+/*
+@author nelson
+@date Wed Nov 22 21:49:12 CET 2017
+*/
+
+
+@@view cm-view-1
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 15
+@description "Concept Model - PrimaryTypes-Classes local view 01. local view of the ctState primary
+type."
+@caption ""
