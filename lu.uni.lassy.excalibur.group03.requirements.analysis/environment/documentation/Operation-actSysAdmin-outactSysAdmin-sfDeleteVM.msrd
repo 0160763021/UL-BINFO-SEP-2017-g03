@@ -9,17 +9,19 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfDeleteVM.AdtVMID
-""
+"used to uniquely identify which virtual machine should be deleted"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfDeleteVM.AdtPassword
-""
+"used as a confirmation before deleting the virtual machine"
 @endParameters
 
-@description "
+@description "sent to delete a virtual machine
  "
 //preProtocol descriptions
 @preP
-" "
+"the system is started "
+@preP
+"the actor is logged in and did not log out "
 @endPreP
 //preFunctional descriptions
 @preF

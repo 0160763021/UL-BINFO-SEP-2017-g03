@@ -363,6 +363,9 @@
     <semanticResources>operations/environment/environment-actSysAdmin-sfInitVM.msr</semanticResources>
     <semanticResources>operations/environment/environment-actSysAdmin-sfGetProposedVM.msr</semanticResources>
     <semanticResources>operations/environment/environment-actSysAdmin-sfValidateVM.msr</semanticResources>
+    <semanticResources>usecases/documentation/UseCase-sfInitVM.msrd</semanticResources>
+    <semanticResources>usecases/documentation/UseCase-sfGenerateComponent.msrd</semanticResources>
+    <semanticResources>usecases/documentation/UseCase-sfGetProposedVM.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_fJMFUL12Eee7mbrw4kTqwQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bPLGAL2mEee7mbrw4kTqwQ" name="ugBackupVMNow" repPath="#_bPBVAL2mEee7mbrw4kTqwQ">
@@ -2936,6 +2939,22 @@
           <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ryA_3M1VEeeiw5LuSD_CHw" id="(0.6377672209026127,0.5)"/>
           <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_ryBm4M1VEeeiw5LuSD_CHw" id="(0.5,0.5)"/>
         </edges>
+        <edges xmi:type="notation:Edge" xmi:id="_yG1D4M9lEeeHircTNw7QQQ" type="4001" element="_yGqEwM9lEeeHircTNw7QQQ" source="_hvlicMuxEeeQPbxR_e8tSw" target="_hvxIoMuxEeeQPbxR_e8tSw">
+          <children xmi:type="notation:Node" xmi:id="_yG7KgM9lEeeHircTNw7QQQ" type="6001">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yG7Kgc9lEeeHircTNw7QQQ" y="-10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_yG7xkM9lEeeHircTNw7QQQ" type="6002">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yG7xkc9lEeeHircTNw7QQQ" y="10"/>
+          </children>
+          <children xmi:type="notation:Node" xmi:id="_yG8YoM9lEeeHircTNw7QQQ" type="6003">
+            <layoutConstraint xmi:type="notation:Bounds" xmi:id="_yG8Yoc9lEeeHircTNw7QQQ" y="10"/>
+          </children>
+          <styles xmi:type="notation:ConnectorStyle" xmi:id="_yG1D4c9lEeeHircTNw7QQQ"/>
+          <styles xmi:type="notation:FontStyle" xmi:id="_yG1D4s9lEeeHircTNw7QQQ" fontName="Segoe UI" fontHeight="14"/>
+          <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_yG1D489lEeeHircTNw7QQQ" points="[550, 140, 550, 140]$[615, 495, 615, 495]"/>
+          <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yG-04M9lEeeHircTNw7QQQ" id="(0.5,0.5)"/>
+          <targetAnchor xmi:type="notation:IdentityAnchor" xmi:id="_yG-04c9lEeeHircTNw7QQQ" id="(0.5,0.5)"/>
+        </edges>
       </data>
     </ownedAnnotationEntries>
     <ownedDiagramElements xmi:type="diagram:DNodeContainer" xmi:id="_Tq0nNMuxEeeQPbxR_e8tSw" name="use case system summary suDeployAndRun()">
@@ -3004,7 +3023,7 @@
         <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@containerMappings[name='UseCaseContainer']/@subNodeMappings[name='UseCase']"/>
       </ownedDiagramElements>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_hu5l8MuxEeeQPbxR_e8tSw" name="actSuperSysAdmin" incomingEdges="_DjYqoM1TEeeiw5LuSD_CHw _DjZRs81TEeeiw5LuSD_CHw _Djaf0s1TEeeiw5LuSD_CHw _rwc5kM1VEeeiw5LuSD_CHw" width="4" height="4" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_hu5l8MuxEeeQPbxR_e8tSw" name="actSuperSysAdmin" incomingEdges="_DjYqoM1TEeeiw5LuSD_CHw _DjZRs81TEeeiw5LuSD_CHw _Djaf0s1TEeeiw5LuSD_CHw _rwc5kM1VEeeiw5LuSD_CHw _yGqEwM9lEeeHircTNw7QQQ" width="4" height="4" resizeKind="NSEW">
       <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin"/>
       <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3015,7 +3034,7 @@
       </ownedStyle>
       <actualMapping xmi:type="description_1:NodeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@nodeMappings[name='UseCaseActor']"/>
     </ownedDiagramElements>
-    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_hu4X0MuxEeeQPbxR_e8tSw" name="actSysAdmin" incomingEdges="_DjZRsM1TEeeiw5LuSD_CHw _DjZ4ws1TEeeiw5LuSD_CHw _DjbG4s1TEeeiw5LuSD_CHw" width="4" height="4" resizeKind="NSEW">
+    <ownedDiagramElements xmi:type="diagram:DNode" xmi:id="_hu4X0MuxEeeQPbxR_e8tSw" name="actSysAdmin" outgoingEdges="_yGqEwM9lEeeHircTNw7QQQ" incomingEdges="_DjZRsM1TEeeiw5LuSD_CHw _DjZ4ws1TEeeiw5LuSD_CHw _DjbG4s1TEeeiw5LuSD_CHw" width="4" height="4" resizeKind="NSEW">
       <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin"/>
       <semanticElements xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin"/>
       <arrangeConstraints>KEEP_LOCATION</arrangeConstraints>
@@ -3124,6 +3143,14 @@
         <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_rwc5ks1VEeeiw5LuSD_CHw" labelSize="14" showIcon="false"/>
       </ownedStyle>
       <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Relation_UseCase_Actor']"/>
+    </ownedDiagramElements>
+    <ownedDiagramElements xmi:type="diagram:DEdge" xmi:id="_yGqEwM9lEeeHircTNw7QQQ" sourceNode="_hu4X0MuxEeeQPbxR_e8tSw" targetNode="_hu5l8MuxEeeQPbxR_e8tSw">
+      <target xmi:type="messir:Actor" href="environment/environment.msr#lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin"/>
+      <ownedStyle xmi:type="diagram:EdgeStyle" xmi:id="_yGqr0M9lEeeHircTNw7QQQ" targetArrow="InputClosedArrow" size="2">
+        <description xmi:type="style:EdgeStyleDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Inheritance_Relation_Actor_Actor']/@style"/>
+        <centerLabelStyle xmi:type="diagram:CenterLabelStyle" xmi:id="_yGqr0c9lEeeHircTNw7QQQ" labelSize="14"/>
+      </ownedStyle>
+      <actualMapping xmi:type="description_1:EdgeMapping" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']/@defaultLayer/@edgeMappings[name='UC_Inheritance_Relation_Actor_Actor']"/>
     </ownedDiagramElements>
     <description xmi:type="description_1:DiagramDescription" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']/@ownedRepresentations[name='Use_Case_Diagram']"/>
     <filterVariableHistory xmi:type="diagram:FilterVariableHistory" xmi:id="_Tq0nOMuxEeeQPbxR_e8tSw"/>

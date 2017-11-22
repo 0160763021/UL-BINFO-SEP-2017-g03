@@ -1,0 +1,42 @@
+/*
+@author nelson
+@date Wed Nov 22 10:21:50 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfSetComponent
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfSetComponent.AdtVMID
+"used to uniquely identify a virtual machine"
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfSetComponent.AdtCID
+"used to uniquely identify a component"
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfSetComponent.AdtAmount
+"used to determine the amount of a given component"
+@endParameters
+
+@description "sent to define a component for a virtual machine
+ "
+//preProtocol descriptions
+@preP
+"the system is started "
+@preP
+"the actor is logged in and did not log out "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

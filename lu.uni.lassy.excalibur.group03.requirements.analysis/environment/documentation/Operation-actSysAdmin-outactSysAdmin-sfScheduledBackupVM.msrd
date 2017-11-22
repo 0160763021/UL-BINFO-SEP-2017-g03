@@ -9,20 +9,22 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM.AdtBackupDescription
-""
+"used as a description for describing the purpose of the backup"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM.AdtVMID
-""
+"used to uniquely identify a virtual machine"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM.AdtDateAndTime
-""
+"used to specify a date when the backup should be performed"
 @endParameters
 
-@description "
+@description "sent to define a scheduled backup on a specific virtual machine
  "
 //preProtocol descriptions
 @preP
-" "
+"the system is started "
+@preP
+"the actor is logged in and did not log out "
 @endPreP
 //preFunctional descriptions
 @preF

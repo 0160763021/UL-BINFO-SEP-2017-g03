@@ -1,0 +1,42 @@
+/*
+@author nelson
+@date Wed Nov 22 10:19:53 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM.AdtVMID
+"used to uniquely identify a virtual machine"
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM.AdtVMName
+"used to specify a name for the virtual machine"
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM.AdtVMDescription
+"used to specify a description for the virtual machine"
+@endParameters
+
+@description "sent to initialize a virtual machine with a unique id, name and description
+ "
+//preProtocol descriptions
+@preP
+"the system is started "
+@preP
+"the actor is logged in and did not log out "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "
