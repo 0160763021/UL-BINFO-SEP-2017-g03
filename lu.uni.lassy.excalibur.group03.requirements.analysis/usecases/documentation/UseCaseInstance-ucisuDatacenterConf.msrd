@@ -1,0 +1,9 @@
+/*
+@author Dany-
+@date Wed Nov 22 20:10:13 CET 2017
+*/
+
+
+@@Instance Use Case usecases.ucisuDatacenterConf.ucisuDatacenterConf
+@description "Use Case Instance for the summary suDatacenterConf illustrating a simple and complete interaction scenario
+primarily handled by a superSysAdmin in a concrete situation."

@@ -1,0 +1,10 @@
+/*
+@author Dany-
+@date Wed Nov 22 20:13:02 CET 2017
+*/
+
+
+@@view ucisuDatacenterConf
+@instance Use-Case usecases.ucisuDatacenterConf.ucisuDatacenterConf 
+@description "uci-suDeployAndRun-uci-suDatacenterConf"
+@caption ""
