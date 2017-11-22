@@ -1,0 +1,47 @@
+package usecases.ucisuDatacenterConf {
+	import lu.uni.lassy.excalibur.group03.requirements.analysis.usecases
+
+	Use Case Model {
+
+		use case instance ucisuDatacenterConf : suDeployAndRun{
+			actors {
+				Bill : lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin
+			}
+			use case steps {
+				Bill executed instanceof subfunction sfCreateSystemAndEnvironment() {
+			
+					} 
+				Bill executed instanceof subfunction sfLogin("VMMSsuperSysAdmin1", "12abc") {
+						ieMessage("You are logged in! Welcome...") returned to Bill
+					}
+				Bill executed instanceof subfunction sfChooseModels() {
+						
+				} 
+				Bill executed instanceof subfunction sfConfirmChoice() {
+						ieMessage("The request has been successfully send to the datacenter receiver") returned to Bill
+				}
+				Bill executed instanceof subfunction sfOverviewComponent("CPU") {
+						
+				}
+				Bill executed instanceof subfunction sfOverviewComponent("RAM") {
+						
+				}
+				Bill executed instanceof subfunction sfOverviewComponent("GPU") {
+						
+				}
+				Bill executed instanceof subfunction sfOverviewComponent("HDD") {
+						
+				}
+				Bill executed instanceof subfunction sfOverviewComponent("SSD") {
+						
+				}
+				Bill executed instanceof subfunction sfOverviewComponent("Software") {
+						
+				}
+				Bill executed instanceof subfunction sfLogout() {
+						ieMessage("Good bye!") returned to Bill
+					}
+			}
+		}
+	}
+}
