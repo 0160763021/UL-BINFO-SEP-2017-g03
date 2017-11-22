@@ -24,26 +24,16 @@ actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actSuperSysAdmi
 			
 			}
 			output interface outactSysAdmin {
-			operation sfModifyVM(AdtVMID: dtVMID):ptBoolean
-			operation sfCheckVMDescription(AdtVMDescription: dtVMDescription, AdtVMName: dtVMName):ptBoolean
-			operation sfCreateVMExpert(AdtVMDescription: dtVMDescription, AdtVMName: dtVMName,
-				AdtComponentID1: dtComponentID, AdtAmount1: dtAmount, AdtComponentID2: dtComponentID, AdtAmount2: dtAmount,
-				AdtComponentID3: dtComponentID, AdtAmount3: dtAmount, AdtComponentID4: dtComponentID, AdtAmount4: dtAmount,
-				AdtComponentID5: dtComponentID, AdtAmount5: dtAmount, AdtComponentID6: dtComponentID)
-			:ptBoolean
-			operation sfCreateVMTemplate(AdtVMName: dtVMName, AdtVMDescription: dtVMDescription,
-				AdtComponentID1: dtComponentID, AdtAmount1: dtAmount, AdtComponentID2: dtComponentID, AdtAmount2: dtAmount,
-				AdtComponentID3: dtComponentID, AdtAmount3: dtAmount, AdtComponentID4: dtComponentID, AdtAmount4: dtAmount,
-				AdtComponentID5: dtComponentID, AdtAmount5: dtAmount, AdtComponentID6: dtComponentID
-			):ptBoolean
+			
 			operation sfDeleteVM(AdtVMID: dtVMID, AdtPassword: dtPassword):ptBoolean
-			operation sfGetAvailableComponents(AdtDateAndTime: dtDateAndTime):ptBoolean
-			operation sfGetCalendar(AdtDateAndTime: dtDateAndTime):ptBoolean
-			operation sfGetQuestions():ptBoolean
+			operation sfGetAvailableComponents():ptBoolean
 			operation sfHotBackupVM(AdtVMID: dtVMID, AdtDateAndTime: dtDateAndTime):ptBoolean
-			operation sfProposeVM(AdtQID1 : dtQuestionID, AdtQID2 : dtQuestionID, AdtQID3 : dtQuestionID,
-				AdtQID4 : dtQuestionID):ptBoolean
 			operation sfScheduledBackupVM(AdtBackupDescription: dtBackupDescription, AdtVMID: dtVMID, AdtDateAndTime: dtDateAndTime):ptBoolean
+			operation sfInitVM(AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription):ptBoolean
+			operation sfSetComponent(AdtVMID: dtVMID, AdtCID: dtComponentID, AdtAmount: dtAmount):ptBoolean
+			operation sfGenerateComponent(AdtQID: dtQuestionID, AdtVID: dtVMID):ptBoolean
+			operation sfGetProposedVM(AdtVMID: dtVMID):ptBoolean
+			operation sfValidateVM(adtVMID: dtVMID):ptBoolean
 			}
 		}
 	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] extends actAuthenticated{

@@ -10,29 +10,14 @@
 
 //output events
 @outputEvent
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfModifyVM
-"sent to modify a virtual machine"
-@outputEvent
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCheckVMDescription
-"sent to check if the provided name and description are considered as valid before creating the virtual machine"
-@outputEvent
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfDeleteVM
 "sent to delete a virtual machine"
 @outputEvent
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGetAvailableComponents
 "sent to get a list of all the components which are available in the datacenter"
 @outputEvent
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGetCalendar
-"sent to get a calendar which will be used to create a scheduled backup"
-@outputEvent
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGetQuestions
-"sent to get a list of all the questions which will be used when creating a virtual machine using a template"
-@outputEvent
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfHotBackupVM
 "sent to perform a hot backup on a selected virtual machine"
-@outputEvent
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfProposeVM
-"sent to propose a virtual machine"
 @outputEvent
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM
 "sent to perform a scheduled backup on a selected virtual machine"

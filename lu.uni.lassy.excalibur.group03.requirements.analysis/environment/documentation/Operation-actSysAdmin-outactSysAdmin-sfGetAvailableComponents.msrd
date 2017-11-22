@@ -1,17 +1,11 @@
 /*
 @author nelson
-@date Tue Nov 21 10:26:28 CET 2017
+@date Wed Nov 22 10:00:30 CET 2017
 */
 
 
 @@Operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGetAvailableComponents
-//parameters
-@parameter
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGetAvailableComponents.AdtDateAndTime
-""
-@endParameters
-
 @description "
  "
 //preProtocol descriptions
