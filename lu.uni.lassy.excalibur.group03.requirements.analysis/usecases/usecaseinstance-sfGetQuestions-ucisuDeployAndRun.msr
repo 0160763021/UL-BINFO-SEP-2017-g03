@@ -16,27 +16,27 @@ package usecases.ucisuDeployAndRun {
 				John executed instanceof subfunction sfLogin("VMMSsysAdmin1", "abc12") {
 						ieMessage("You are logged in! Welcome...") returned to John
 					}
-				John executed instanceof subfunction sfCheckVMDescription("VM1", "VM for SEP") {
+				John executed instanceof subfunction sfInitVM("VM1", "VM for SEP") {
 						ieMessage("Name and description have been correctly saved") returned to John
 					}
 				John executed instanceof subfunction sfGetAvailableComponents() {
 						
 					}
-				John executed instanceof subfunction sfCreateVMExpert("VM1", "VM for SEP", "Intel XEON E5-1630 v4", "4", "32GB ECC", "2",
+				John executed instanceof subfunction sfValidateVM("VM1", "VM for SEP", "Intel XEON E5-1630 v4", "4", "32GB ECC", "2",
 					"Nvidia QUADRO P6000", "4", "64 TB 7200 RPM", "2", "1TB SATA SSD", "2", "SOLIDWORKS"
 				) {
 						ieMessage("VM succesfully created!") returned to John
 					}
-				John executed instanceof subfunction sfCheckVMDescription("VM2", "VM2 for SEP") {
+				John executed instanceof subfunction sfInitVM("VM2", "VM2 for SEP") {
 						ieMessage("Name and description have been correctly saved") returned to John
 					}
 				John executed instanceof subfunction sfGetAvailableComponents() {
 							
 					}
-				John executed instanceof subfunction sfGetQuestions() {
+				John executed instanceof subfunction sfGenerateComponent() {
 						
 					}
-				John executed instanceof subfunction sfProposeVM() {
+				John executed instanceof subfunction sfGetProposedVM() {
 					
 					}
 				John executed instanceof subfunction sfModifyVM("VM2", "VM2 for SEP", "Nvidia QUADRO P6000", "6") {
