@@ -10,7 +10,7 @@ import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 
-
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes
 
 
 import lu.uni.lassy.messir.libraries.primitives
@@ -25,6 +25,91 @@ Concept Model {
 			operation init(AvpStarted:ptBoolean): ptBoolean
 		}	
 
+	class clVM role rnclVM cardinality[1 .. *] {
+		attribute Vid: dtVMID
+		attribute Name: dtVMName
+		attribute Description: dtVMDescription
+		
+		operation init(
+			AVid: dtVMID,
+			AName: dtVMName,
+			Description: dtVMDescription
+		): ptBoolean
 	}
-}
+
+	class clComponent role rnclComponent cardinality[1 .. *] {
+		attribute Cid: dtComponentID
+		attribute CName: dtCompName
+		attribute CModel: dtModel
+		
+		operation init(
+			ACid: dtComponentID,
+			CName: dtCompName,
+			CModel: dtModel
+		): ptBoolean
+		
+	}
+
+	class clAuthenticated role rnclAuthenticated cardinality[0 .. *] {
+		attribute login: dtLogin
+		attribute password: dtPassword
+		
+		operation init(
+			Alogin: dtLogin,
+			Apassword: dtPassword
+		): ptBoolean
+	}
+
+	class clSysAdmin role rnclSysAdmin cardinality[0 .. *] {
+			attribute SysID: dtSysID
+			
+			operation init(ASysID: dtSysID): ptBoolean
+		}
+	
+	class clSuperSysAdmin role rnclSuperSysAdmin cardinality[1 .. 1] {
+			attribute SuperSysID: dtSuperSysID
+			
+			operation init(ASuperSysID: dtSuperSysID): ptBoolean
+			}
+
+		
+	class clProcessUnit role rnclProcessUnit cardinality[0 .. 1] {
+		attribute cores: dtCores
+		attribute clockspeed: dtClockSpeed
+		
+		operation init(
+			Acores: dtCores,
+			Aclockspeed: dtClockSpeed
+		): ptBoolean
+		}
+
+	class clStorage role rnclStorage cardinality[0 .. 1] {
+		attribute capacity: dtCapacity
+		
+		operation init(
+			Acapacity: dtCapacity
+		): ptBoolean
+		}
+
+	class clSoftware role rnclSoftware cardinality[0 .. *] {
+		attribute license: dtLicenseID
+		
+		operation init(AlicenseID: dtLicenseID): ptBoolean
+		}
+
+	class clBackup role rnclBackup cardinality[0 .. *] {
+		attribute BID: dtBID
+		attribute date: dtDate
+		attribute description: dtBackupDescription
+		
+		operation init(
+			ABID: dtBID,
+			Adate: dtDate,
+			Adescription: dtBackupDescription
+			
+		): ptBoolean
+		}
+
+	}
+	}
 }

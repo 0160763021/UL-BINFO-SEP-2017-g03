@@ -10,12 +10,46 @@ import lu.uni.lassy.messir.libraries.math
 import lu.uni.lassy.messir.libraries.primitives
 import lu.uni.lassy.messir.libraries.string
 
-
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 
 Concept Model {
 	
 	Primary Types {
 	
+	association assctVMclComponent
+	clVM(rnVMs1)[1..*]
+	clComponent(rnComponents)[1..*] 
+	
+	association assctComponentclProcessUnit
+	clProcessUnit(rnPUs)[1..*]
+	clComponent(rnComponents1)[1..*] 
+	
+	association assctComponentclStroage
+	clStorage(rnStorages)[1..*]
+	clComponent(rnComponents2)[1..*] 
+	
+	association assctComponentclSoftware
+	clSoftware(rnSoftware)[1..*]
+	clComponent(rnComponents3)[1..*] 
+	
+	association assctSysAdminclVM
+	clVM(rnVMs2)[1..*]
+	clSysAdmin(rnSysAdmin)[1..*] 
+	
+	
+	association assctAuthenticatedactAuthenticated
+	clAuthenticated(rnctAuthenticated)[1..1]
+	actAuthenticated(rnactAuthenticated)[1..1]
+	
+	association assctSysAdminactSysAdmin
+	clSysAdmin(rnctSysAdmin)[1..1]
+	actSysAdmin(rnactSysAdmin)[1..1]
+	
+	association assctSuperSysAdminactSuperSysAdmin
+	clSuperSysAdmin(rnctSuperSysAdmin)[1..1]
+	actSuperSysAdmin(rnactSuperSysAdmin)[1..1]
+	}
 	}
 }
-}
+

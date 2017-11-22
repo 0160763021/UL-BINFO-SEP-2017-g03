@@ -44,8 +44,35 @@ Concept Model {
 		operation is(): ptBoolean
 		}	
 	datatype dtBackupDescription extends dtString{
-		operation is(): ptString
+		operation is(): ptBoolean
 		}
+	datatype dtModel extends dtString{
+		operation is(): ptBoolean
+		}
+	datatype dtCompName extends dtString{
+		operation is(): ptBoolean
+		}
+	datatype dtSysID extends dtString{
+		operation is(): ptBoolean
 	}
+	datatype dtSuperSysID extends dtString{
+		operation is(): ptBoolean
+				}
+	datatype dtCores extends dtInteger{
+		operation is(): ptBoolean
+	}
+	datatype dtClockSpeed extends dtInteger{
+		operation is(): ptBoolean
+	}
+	datatype dtLicenseID extends dtInteger{
+		operation is(): ptBoolean
+	}
+	datatype dtCapacity extends dtInteger{
+		operation is(): ptBoolean
+	}
+	datatype dtBID extends dtString{
+		operation is(): ptBoolean
+				}
+			}
 }
 }

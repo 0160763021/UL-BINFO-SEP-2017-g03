@@ -1,0 +1,13 @@
+/*
+@author nelson
+@date Wed Nov 22 18:17:06 CET 2017
+*/
+
+
+@@view cm-view-6
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 12
+@description ""
+@caption ""

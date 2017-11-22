@@ -15,7 +15,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 
 Environment Model {
 			
-actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actSuperSysAdmin{
+	actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actAuthenticated{
 			input interface inactSysAdmin {
 			
 			
