@@ -16,46 +16,50 @@ package usecases.ucisuDeployAndRun {
 				John executed instanceof subfunction sfLogin("VMMSsysAdmin1", "abc12") {
 						ieMessage("You are logged in! Welcome...") returned to John
 					}
-				John executed instanceof subfunction sfInitVM("VM1", "VM for SEP") {
+				John executed instanceof subfunction sfInitVM("1234", "VM1", "VM for SEP") {
 						ieMessage("Name and description have been correctly saved") returned to John
 					}
-				John executed instanceof subfunction sfGetAvailableComponents() {
-						
-					}
-				John executed instanceof subfunction sfValidateVM("VM1", "VM for SEP", "Intel XEON E5-1630 v4", "4", "32GB ECC", "2",
-					"Nvidia QUADRO P6000", "4", "64 TB 7200 RPM", "2", "1TB SATA SSD", "2", "SOLIDWORKS"
-				) {
+				John executed instanceof subfunction sfGetAvailableComponents("CPU") {}
+				John executed instanceof subfunction sfSetComponent("1234", "11", "4") {}
+				John executed instanceof subfunction sfGetAvailableComponents("GPU") {}
+				John executed instanceof subfunction sfSetComponent("1234", "21", "2") {}
+				John executed instanceof subfunction sfGetAvailableComponents("RAM") {}
+				John executed instanceof subfunction sfSetComponent("1234", "31", "3") {}
+				John executed instanceof subfunction sfGetAvailableComponents("HDD") {}
+				John executed instanceof subfunction sfSetComponent("1234", "41", "4") {}
+				John executed instanceof subfunction sfGetAvailableComponents("SSD") {}
+				John executed instanceof subfunction sfSetComponent("1234", "51", "4") {}
+				John executed instanceof subfunction sfGetAvailableComponents("SOF") {}
+				John executed instanceof subfunction sfSetComponent("1234", "61", "1") {}
+
+				John executed instanceof subfunction sfValidateVM("1234") {
 						ieMessage("VM succesfully created!") returned to John
 					}
-				John executed instanceof subfunction sfInitVM("VM2", "VM2 for SEP") {
+				
+				John executed instanceof subfunction sfInitVM("4321", "VM2", "VM2 for SEP") {
 						ieMessage("Name and description have been correctly saved") returned to John
-					}
-				John executed instanceof subfunction sfGetAvailableComponents() {
-							
-					}
-				John executed instanceof subfunction sfGenerateComponent() {
-						
-					}
-				John executed instanceof subfunction sfGetProposedVM() {
+					}	
+				John executed instanceof subfunction sfGenerateComponent("1", "YES", "4321") {}
+				John executed instanceof subfunction sfGenerateComponent("2", "YES", "4321") {}
+				John executed instanceof subfunction sfGenerateComponent("3", "NO", "4321") {}
+				John executed instanceof subfunction sfGenerateComponent("4", "YES", "4321") {}
+				John executed instanceof subfunction sfGenerateComponent("5", "NO", "4321") {}
+				John executed instanceof subfunction sfGenerateComponent("6", "YES", "4321") {}	
 					
+				John executed instanceof subfunction sfGetProposedVM() {}
+				John executed instanceof subfunction sfValidateVM("4321") {
+						ieMessage("VM succesfully created!") returned to John
 					}
-				John executed instanceof subfunction sfModifyVM("VM2", "VM2 for SEP", "Nvidia QUADRO P6000", "6") {
-						
-						ieMessage("VM succesfully modified") returned to John
-					}
-				John executed instanceof subfunction sfCreateVMTemplate("VM2", "VM2 for SEP", "Intel XEON E5-1630 v4", "2", "16GB ECC", "1",
-					"Nvidia QUADRO P4000", "2", "32 TB 7200 RPM", "1", "1TB SATA SSD", "1", "SOLIDWORKS") {
-						ieMessage("VM succesfully created") returned to John
-					}
-				John executed instanceof subfunction sfHotBackupVM() {
+				
+				John executed instanceof subfunction sfHotBackupVM("1234") {
 						ieMessage("Hot backup was correctly performed") returned to John
 					}
-				John executed instanceof subfunction sfGetCalendar() {
-						
-					}
-				John executed instanceof subfunction sfScheduledBackupVM() {
+
+				John executed instanceof subfunction sfScheduledBackupVM("4321") {
 						ieMessage("Scheduled backup was correctly performed") returned to John
 					}
+				John executed instanceof subfunction sfDeleteVM("1234") {}
+	
 				John executed instanceof subfunction sfLogout() {
 						ieMessage("Good bye!") returned to John
 					}
