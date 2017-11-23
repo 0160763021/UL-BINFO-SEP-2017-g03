@@ -1,0 +1,12 @@
+/*
+@author Dany-
+@date Thu Nov 23 13:03:49 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtReqID
+@description "h"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtReqID.is
+""
+@endOperations

@@ -1,0 +1,17 @@
+package lu.uni.lassy.excalibur.group03.requirements.analysis.environment.operations.actSuperSysAdmin.outactSuperSysAdmin.sfOverviewComponent {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfOverviewComponent(AetComponent: etComponent):ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+
+		}
+	}
+}

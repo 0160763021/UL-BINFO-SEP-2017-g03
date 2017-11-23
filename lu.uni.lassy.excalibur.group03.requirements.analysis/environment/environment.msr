@@ -40,7 +40,9 @@ Environment Model {
 			input interface inactSuperSysAdmin {
 			}
 			output interface outactSuperSysAdmin {
-			operation sfOverviewCPU():ptBoolean
+			operation sfOverviewComponent(AetComponent: etComponent): ptBoolean
+			operation sfChooseModels(AdtReqID: dtReqID, AdtCID: dtComponentID, AdtAmount: dtAmount): ptBoolean
+			operation sfConfirmChoice(AdtReqID: dtReqID): ptBoolean
 			}
 		}
 	actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
@@ -57,6 +59,12 @@ Environment Model {
 			}
 			output interface outactCreator {
 			operation sfCreateSystemAndEnvironment():ptBoolean
+			}
+		}
+	actor actDatacenter role rnactDatacenter cardinality[0 .. *] {
+			input interface inactDatacenter {
+			}
+			output interface outactDatacenter {
 			}
 		}
 	}

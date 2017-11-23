@@ -73,6 +73,13 @@ Concept Model {
 	datatype dtBID extends dtString{
 		operation is(): ptBoolean
 				}
+	datatype dtReqID {
+		operation is(): ptBoolean
 			}
-}
+	enum etComponent {
+		constants["CPU", "RAM", "GPU", "HDD", "SSD", "Software"]
+		operation is(): ptBoolean
+		}
+		}
+	}
 }

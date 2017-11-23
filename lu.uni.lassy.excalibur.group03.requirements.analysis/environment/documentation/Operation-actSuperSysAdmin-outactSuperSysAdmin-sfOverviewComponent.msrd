@@ -1,0 +1,34 @@
+/*
+@author Dany-
+@date Thu Nov 23 13:02:00 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfOverviewComponent
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfOverviewComponent.AetComponent
+""
+@endParameters
+
+@description "h
+ "
+//preProtocol descriptions
+@preP
+" "
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "
