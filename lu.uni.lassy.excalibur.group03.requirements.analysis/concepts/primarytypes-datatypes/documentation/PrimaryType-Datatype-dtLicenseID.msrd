@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Thu Nov 23 17:18:04 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLicenseID
+@description "used to define the license number of a software"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLicenseID.is
+""
+@endOperations

@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Thu Nov 23 17:17:52 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtModel.is
+@description "used to determine which strings are considered as valid dtModel.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

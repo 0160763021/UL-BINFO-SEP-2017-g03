@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Thu Nov 23 17:17:57 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtSuperSysID
+@description "a string which unquely identifies a superSysAdmin"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtSuperSysID.is
+""
+@endOperations

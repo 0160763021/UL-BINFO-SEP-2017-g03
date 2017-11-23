@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Thu Nov 23 17:18:02 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtClockSpeed
+@description "used to define the clockspeed of a process unit component"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtClockSpeed.is
+""
+@endOperations

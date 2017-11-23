@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Thu Nov 23 17:18:09 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtBID.is
+@description "used to determine which strings are considered as valid dtBID.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

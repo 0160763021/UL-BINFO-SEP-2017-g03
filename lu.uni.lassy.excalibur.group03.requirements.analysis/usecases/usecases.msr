@@ -332,19 +332,20 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		
 		actor actSuperSysAdmin[primary, active]
 		actor actSysAdmin[primary, active]
+		actor actCreator[primary, active]
 		
 		reuse suVMLifecycle[1..*]
 		reuse suUserManagement[1..*]
 		reuse suDatacenterConf[1..*]
 		
-		step a: actSuperSysAdmin executes sfCreateSystemAndEnvironment()
+		step a: actCreator executes sfCreateSystemAndEnvironment()
 		step b: actSuperSysAdmin executes suDatacenterConf()
 		step c: actSysAdmin executes suVMLifecycle()
 		step d: actSysAdmin executes suUserManagement()
 		
 		}
 	use case system subfunction sfCreateSystemAndEnvironment() {
-			actor actSuperSysAdmin[primary, active]
+			actor actCreator[primary, active]
 		}
 	use case system subfunction sfLogin() {
 			actor actSysAdmin[primary, active]

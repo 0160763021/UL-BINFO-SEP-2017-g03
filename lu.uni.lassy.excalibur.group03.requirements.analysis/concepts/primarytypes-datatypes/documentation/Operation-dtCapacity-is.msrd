@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Thu Nov 23 17:18:07 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtCapacity.is
+@description "used to determine which integers are considered as valid dtCapacity.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Thu Nov 23 17:18:00 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtCores
+@description "used to define the number of cores of a process unit component"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtCores.is
+""
+@endOperations

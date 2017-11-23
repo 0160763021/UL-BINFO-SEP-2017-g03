@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Thu Nov 23 17:18:12 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etComponent.is
+@description "used to determine which litteral belongs to the enumeration.
+ "
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//example
+@example" "

@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Thu Nov 23 17:18:06 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtCapacity
+@description "used to define the capacity of a storage component"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtCapacity.is
+""
+@endOperations

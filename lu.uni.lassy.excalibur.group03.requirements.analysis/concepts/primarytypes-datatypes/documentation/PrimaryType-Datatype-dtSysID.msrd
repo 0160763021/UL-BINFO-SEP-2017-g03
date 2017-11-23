@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Thu Nov 23 17:17:55 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtSysID
+@description "a string which uniquely identifies a sysAdmin"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtSysID.is
+""
+@endOperations
