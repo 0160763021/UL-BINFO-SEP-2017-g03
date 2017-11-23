@@ -61,6 +61,47 @@ managing the deployed VMs.
 
 
 
+\textbf{Authenticated} Is an abstract actor which is inteded to make sure that
+the different actors who log into the system can securely use the application. 
+The functionalities are:
+
+\begin{description}
+
+\item[$\bullet$] Logging into the system
+\item[$\bullet$] Logging out
+\end{description}
+\textbf{sysAdmin} The sysAdmin is responsible for creating, managing and
+maintaining the deployed virtual machines. The fonctionalities for the sysAdmin 
+are the followed:
+
+\begin{description}
+\item[$\bullet$] create a virtual mahine, either by choosing each component
+individual or by using a preconfigured template
+\item[$\bullet$] perform a backup, this backup can be a hot backup or a
+scheduled one, so by specifying a date, when it should be performed
+\item[$\bullet$] modify a virtual machine by selecting one or more new
+components
+\item[$\bullet$] delete a virtual machine
+\item[$\bullet$] view its profile include all his personal information
+\item[$\bullet$] change its personal information
+\item[$\bullet$] delete his account
+\end{description}
+\textbf{superSysAdmin} The superSysAdmin is responsible for managing the
+different sysAdmin's as well as the ressources of the datacenter. The
+fonctionalities for the super-SysAdmin are the followed:
+\begin{description}
+\item[$\bullet$] request one or more components which then gets allocated to the
+datacenter
+\item[$\bullet$] create new sysAdmins and also to specify their access rights
+\item[$\bullet$] get an overview of the ressources available in the datacenter
+\end{description}
+
+\textbf{Creator} Creators are responsible for installing and making sure that
+the VMMS system is correctly deployed and fonctioning in its intended
+environment.
+
+
+
 
 \subsection{Operating environment}
 The VMMS software system is a web-oriented application which can be accessed
@@ -102,7 +143,7 @@ section which are:
 
 \begin{description}
 \item[$\bullet$] Scope which provides the scope of the user manual.
-\item[$\bullet$] Purpose contains the purpose of the user’s manual.
+\item[$\bullet$] Purpose contains the purpose of the user manual.
 \item[$\bullet$] Intended audience contains all the information related to the 
 different categories of persons to which VMMS is target to.
 \item[$\bullet$] Detailed description about VMMS (Actors and Operating
