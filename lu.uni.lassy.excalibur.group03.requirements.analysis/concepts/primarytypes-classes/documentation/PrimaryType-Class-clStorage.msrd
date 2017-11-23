@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clStorage
-@description ""
+@description "Used to model a storage component. Storage components are entities that are handled by the VMMS system."
 @attribute
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clStorage.capacity
 "used to define the capacity of a storage component."

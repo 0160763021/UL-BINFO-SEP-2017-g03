@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSoftware
-@description ""
+@description "Used to model a software component. Software components are entities that are handled by the VMMS system."
 @attribute
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSoftware.license
 "used to define the license key."

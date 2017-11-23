@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM
-@description ""
+@description "Used to model a virtual machine. Virtual machines are entities that are handled by the VMMS system."
 @attribute
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.Vid
 "a unique identification information."

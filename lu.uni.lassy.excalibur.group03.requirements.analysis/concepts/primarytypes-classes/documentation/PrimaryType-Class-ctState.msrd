@@ -5,7 +5,8 @@
 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.ctState
-@description ""
+@description "used to model the system. Each system specified using Messir must include a ctState class for
+which there is only one instance at any state of the abstract machine after creation."
 @attribute
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.ctState.vpStarted
 ""

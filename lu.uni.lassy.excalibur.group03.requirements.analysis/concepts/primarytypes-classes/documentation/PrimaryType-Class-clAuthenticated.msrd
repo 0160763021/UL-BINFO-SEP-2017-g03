@@ -5,7 +5,7 @@
 
 
 @@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated
-@description ""
+@description "used to model system’s representation about actors that need to authenticate to access some specific functionalities."
 @attribute
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.login
 "used as an identifier for authentication."
