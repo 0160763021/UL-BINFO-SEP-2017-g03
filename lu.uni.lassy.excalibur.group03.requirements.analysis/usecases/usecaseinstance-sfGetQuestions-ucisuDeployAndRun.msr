@@ -10,7 +10,10 @@ package usecases.ucisuDeployAndRun {
 				
 			}
 			use case steps {
-				Bill executed instanceof subfunction sfCreateSystemAndEnvironment() {
+				Bill executed instanceof subfunction sfCreateSystemAndEnvironment("Intel","XeonE5","CPU", "4", "4", "100",
+					"Nvidia","Quaddro","GPU", "2", "684", "100", "Intel","ECC","RAM", "16", "100", "Seagate","Barracuda", "HDD", "4000", "100",
+					"Samsung","EVO", "SSD","1000", "100", "SolidWorks", "Software","1546842", "100"
+				) {
 			
 					}
 				John executed instanceof subfunction sfLogin("VMMSsysAdmin1", "abc12") {
@@ -29,7 +32,7 @@ package usecases.ucisuDeployAndRun {
 				John executed instanceof subfunction sfSetComponent("1234", "41", "4") {}
 				John executed instanceof subfunction sfGetAvailableComponents("SSD") {}
 				John executed instanceof subfunction sfSetComponent("1234", "51", "4") {}
-				John executed instanceof subfunction sfGetAvailableComponents("SOF") {}
+				John executed instanceof subfunction sfGetAvailableComponents("Software") {}
 				John executed instanceof subfunction sfSetComponent("1234", "61", "1") {}
 
 				John executed instanceof subfunction sfValidateVM("1234") {
@@ -46,19 +49,19 @@ package usecases.ucisuDeployAndRun {
 				John executed instanceof subfunction sfGenerateComponent("5", "NO", "4321") {}
 				John executed instanceof subfunction sfGenerateComponent("6", "YES", "4321") {}	
 					
-				John executed instanceof subfunction sfGetProposedVM() {}
+				John executed instanceof subfunction sfGetProposedVM("4321") {}
 				John executed instanceof subfunction sfValidateVM("4321") {
 						ieMessage("VM succesfully created!") returned to John
 					}
 				
-				John executed instanceof subfunction sfHotBackupVM("1234") {
+				John executed instanceof subfunction sfHotBackupVM("1234", "24/11/2017") {
 						ieMessage("Hot backup was correctly performed") returned to John
 					}
 
-				John executed instanceof subfunction sfScheduledBackupVM("4321") {
+				John executed instanceof subfunction sfScheduledBackupVM("4321", "important","15/9/2018") {
 						ieMessage("Scheduled backup was correctly performed") returned to John
 					}
-				John executed instanceof subfunction sfDeleteVM("1234") {}
+				John executed instanceof subfunction sfDeleteVM("1234", "abc12") {}
 	
 				John executed instanceof subfunction sfLogout() {
 						ieMessage("Good bye!") returned to John
