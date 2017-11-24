@@ -9,5 +9,5 @@
 about the different actors and deployed virtual machines"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAMessage.is
-""
+"used to determine which strings are considered as valid messages."
 @endOperations

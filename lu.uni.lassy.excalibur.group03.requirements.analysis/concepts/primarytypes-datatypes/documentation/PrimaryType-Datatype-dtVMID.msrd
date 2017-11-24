@@ -8,5 +8,5 @@
 @description "a string which uniquely identifies a virtual machines"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMID.is
-""
+"used to determine which strings are considered as valid virtual machine identifiers."
 @endOperations

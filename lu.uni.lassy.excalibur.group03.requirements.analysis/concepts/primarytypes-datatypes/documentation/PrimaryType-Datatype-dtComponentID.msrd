@@ -8,5 +8,5 @@
 @description "a string which uniquely identifies a component"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtComponentID.is
-""
+"used to determine which strings are considered as valid component identifiers."
 @endOperations

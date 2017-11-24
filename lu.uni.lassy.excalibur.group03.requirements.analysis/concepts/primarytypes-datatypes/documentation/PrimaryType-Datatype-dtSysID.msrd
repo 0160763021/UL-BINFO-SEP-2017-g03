@@ -8,5 +8,5 @@
 @description "a string which uniquely identifies a sysAdmin"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtSysID.is
-""
+"used to determine which strings are considered as valid dtSysID."
 @endOperations

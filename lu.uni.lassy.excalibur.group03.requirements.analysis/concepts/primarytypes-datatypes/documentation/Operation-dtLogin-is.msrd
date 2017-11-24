@@ -6,7 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLogin.is
-@description "used to determine which strings are considered as valid dtLogin..
+@description "used to determine which strings are considered as valid dtLogin.
  "
 //postFunctional descriptions
 @postF 

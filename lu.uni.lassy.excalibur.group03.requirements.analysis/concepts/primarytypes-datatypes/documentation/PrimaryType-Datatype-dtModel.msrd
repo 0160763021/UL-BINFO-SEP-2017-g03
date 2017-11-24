@@ -8,5 +8,5 @@
 @description "used to define the model name of a component"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtModel.is
-""
+"used to determine which strings are considered as valid dtModel."
 @endOperations

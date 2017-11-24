@@ -447,7 +447,20 @@
     <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtModel-is.msr</semanticResources>
     <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtSuperSysID-is.msr</semanticResources>
     <semanticResources>operations/concepts/primarytypes-datatypes/primarytypes-datatypes-dtSysID-is.msr</semanticResources>
-    <semanticResources>usecases/documentation/UseCaseInstance-uci.msrd</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clVM-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clComponent-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clAuthenticated-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clSysAdmin-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clSuperSysAdmin-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clProcessUnit-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clStorage-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clSoftware-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clBackup-init.msr</semanticResources>
+    <semanticResources>operations/concepts/primarytypes-classes/primarytypes-classes-clRequestComponent-init.msr</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctVMclBackup.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-associations/documentation/PrimaryType-Association-assctSysAdminclBackup.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/PrimaryType-Enumeration-etAnswer.msrd</semanticResources>
+    <semanticResources>concepts/primarytypes-datatypes/documentation/Operation-etAnswer-is.msrd</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" xmi:id="_fJMFUL12Eee7mbrw4kTqwQ">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" xmi:id="_bPLGAL2mEee7mbrw4kTqwQ" name="ugBackupVMNow" repPath="#_bPBVAL2mEee7mbrw4kTqwQ">

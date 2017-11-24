@@ -8,5 +8,5 @@
 @description "used to define the capacity of a storage component"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtCapacity.is
-""
+"used to determine which integers are considered as valid dtCapacity."
 @endOperations

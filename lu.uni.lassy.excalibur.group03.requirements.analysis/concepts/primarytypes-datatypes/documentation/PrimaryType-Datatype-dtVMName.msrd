@@ -8,5 +8,5 @@
 @description "a string which represents the name of the virtual machine"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtVMName.is
-""
+"used to determine which strings are considered as valid names for the different virtual machines."
 @endOperations

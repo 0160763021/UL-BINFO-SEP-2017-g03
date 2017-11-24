@@ -6,7 +6,7 @@
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtClockSpeed
 @description "used to define the clockspeed of a process unit component"
-@operation
+@operation 
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtClockSpeed.is
-""
+"used to determine which integers are considered as valid dtClockSpeed."
 @endOperations

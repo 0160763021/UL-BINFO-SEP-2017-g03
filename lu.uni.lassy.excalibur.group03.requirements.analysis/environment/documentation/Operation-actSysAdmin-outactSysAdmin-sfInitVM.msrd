@@ -9,7 +9,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM.AdtVMID
-"used to uniquely identify a virtual machine"
+"used to uniquely identify a virtual machin"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM.AdtVMName
 "used to specify a name for the virtual machine"

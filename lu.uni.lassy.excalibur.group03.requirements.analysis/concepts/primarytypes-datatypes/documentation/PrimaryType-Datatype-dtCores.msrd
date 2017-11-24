@@ -8,5 +8,5 @@
 @description "used to define the number of cores of a process unit component"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtCores.is
-""
+"used to determine which integers are considered as valid dtCores."
 @endOperations

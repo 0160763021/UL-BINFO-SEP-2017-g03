@@ -8,5 +8,5 @@
 @description "a login string which is used to authentify an VMMS user"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLogin.is
-""
+"used to determine which strings are considered as valid dtLogin."
 @endOperations

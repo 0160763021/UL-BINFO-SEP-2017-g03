@@ -8,5 +8,5 @@
 @description "used to define the license number of a software"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLicenseID.is
-""
+"used to determine which strings are considered as valid dtLicenseID."
 @endOperations

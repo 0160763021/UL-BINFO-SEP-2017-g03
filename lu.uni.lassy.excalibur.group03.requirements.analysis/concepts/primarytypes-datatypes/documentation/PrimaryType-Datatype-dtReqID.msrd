@@ -8,5 +8,5 @@
 @description "h"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtReqID.is
-""
+"used to determine which strings are considered as valid dtReqID."
 @endOperations

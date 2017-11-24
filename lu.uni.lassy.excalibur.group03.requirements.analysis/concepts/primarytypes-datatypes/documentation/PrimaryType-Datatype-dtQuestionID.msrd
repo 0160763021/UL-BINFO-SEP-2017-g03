@@ -8,5 +8,5 @@
 @description "a string which uniquely identifies a question"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtQuestionID.is
-""
+"used to determine which strings are considered as valid question identifiers."
 @endOperations

@@ -8,5 +8,5 @@
 @description "an integer value which represents the quantity of a given component"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAmount.is
-""
+"used to determine which integer values are considered as valid dtAmount."
 @endOperations
