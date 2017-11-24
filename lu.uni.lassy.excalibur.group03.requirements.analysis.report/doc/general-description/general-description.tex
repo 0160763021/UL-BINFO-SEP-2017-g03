@@ -32,65 +32,58 @@ information between its customers and the iCrash system.
 
 The sysAdmin is a human person which responsibilites is to create, deploy and
 manage the different virtual machines. The objectives of the sysAdmin are:
-
-	•	to create a virtual machine using expert mode
-
-	•	to create a virtual machines using a predefined and preconfigured template
-
-	•	to perform a backup on a virtual machine, the backup can be a hot backup or a
-		scheduled one
-
-	•	to get an overview of all the created virtual machines
-
-	•	to modify a virtual machine by changing each component individual
-
-	•	to delete a virtual machine
-
-	•	to have access to its profile and view all his personal informations
-
+\begin{description}
+\item[$\bullet$] to create a virtual machine using expert mode
+\item[$\bullet$] to create a virtual machines using a predefined and
+preconfigured template
+\item[$\bullet$] to perform a backup on a virtual machine, the backup can be a
+hot backup or a scheduled one
+\item[$\bullet$] to get an overview of all the created virtual machines
+\item[$\bullet$] to modify a virtual machine by changing each component
+individual
+\item[$\bullet$] to delete a virtual machine
+\item[$\bullet$] to have access to its profile and view all his personal
+informations
+\end{description}
 \subsection{SuperSysAdmin}
 
 The superSysAdmin is a human person which is above the sysAdmin and is
 responsible for managing the different sysAdmins as well as the ressources of
 the datacenter. Its objectives are:
-
-	•	to request more ressources for the datacenter
-
-	•	to get an overview of all the ressources which are currently beeing used
-
-	•	to create a new sysAdmin, which includes defining the propper access rights
-		of each individual sysAdmin
-
+\begin{description}
+\item[$\bullet$] to request more ressources for the datacenter
+\item[$\bullet$] to get an overview of all the ressources which are currently
+beeing used
+\item[$\bullet$] to create a new sysAdmin, which includes defining the propper
+access rights of each individual sysAdmin
+\end{description}
 \subsection{Creator}
 
 Any system needs to have a Creator skateholder which is a technician and is
 responsible for installing the VMMS system on the targeted deployment
 infrastructure. Its objectives are:
-
-	•	to install the VMMS system
-
-	•	to define the values for the initial system's state
-
-	•	to define the values for the initial system's environment
-
-	•	to ensure the integration of the VMMS system including its initial
-		environment.
-
+\begin{description}
+\item[$\bullet$] to install the VMMS system
+\item[$\bullet$] to define the values for the initial system's state
+\item[$\bullet$] to define the values for the initial system's environment
+\item[$\bullet$] to ensure the integration of the VMMS system including its
+initial environment.
+\end{description}
 All theses objectives are only achievable, the Creator has the followed responsibilities:
-
-	•	to provided the data to the VMMS system which is necessart for its
-		initialization
-
+\begin{description}
+\item[$\bullet$] to provide the data to the VMMS system which is necessart for
+its initialization
+\end{description}
 \subsection{Datacenter Technicien}
 
 The datacenter technicien is a human skateholder and represents a technicien
 working in the respective datacenter which is responsible for handling the
 different requests sent by the superSysAdmin. The objectives are:
-
-	•	Receive the request from the superSysAdmin for allocating more ressources to
-		the datacenter and to physically install all the needed hardware and ensure
-		that everythings works as it is meant to be.
-
+\begin{description}
+\item[$\bullet$] Receive the request from the superSysAdmin for allocating more
+ressources to the datacenter and to physically install all the needed hardware
+and ensure that everythings works as it is meant to be.
+\end{description}
 
 \section{System's Actors}
 \label{sec:icrash-gendescr-actors}
@@ -107,17 +100,16 @@ identifiers (see \cite{messirbook} for more details).
 
 Among all the skateholders presented in the previous section, we can determine
 the folllow types of direct actors:
-
-	•	actSysAdmin: for the sys-Administrator skateholder
-	
-	•	actsuperSysAdmin: for the super-sys-Administrator skateholder
-	
+\begin{description}
+\item[$\bullet$] actSysAdmin: for the sys-Administrator skateholder
+\item[$\bullet$] actsuperSysAdmin: for the super-sys-Administrator skateholder
+\end{description}	
 Then there is one indirect actor which is not dirreclty related to system ones.
-
-	•	actDatacenterTech: for the datacenter technicient skateholder
-
+\begin{description}
+\item[$\bullet$] actDatacenterTech: for the datacenter technicient skateholder
+\end{description}
 Lastly there is one abstract actor
-
-	•	actAuthenticated: for the logical Activator skateholder.
-
+\begin{description}
+\item[$\bullet$] actAuthenticated: for the logical Activator skateholder.
+\end{description}
 \newpage
