@@ -22,20 +22,28 @@ Concept Model {
 	clComponent(rnComponents)[1..*] 
 	
 	association assctComponentclProcessUnit
-	clProcessUnit(rnPUs)[1..*]
-	clComponent(rnComponents1)[1..*] 
+	clProcessUnit(rnPUs)[0..1]
+	clComponent(rnComponents1)[1..1] 
 	
 	association assctComponentclStroage
-	clStorage(rnStorages)[1..*]
-	clComponent(rnComponents2)[1..*] 
+	clStorage(rnStorages)[0..1]
+	clComponent(rnComponents2)[1..1] 
 	
 	association assctComponentclSoftware
-	clSoftware(rnSoftware)[1..*]
-	clComponent(rnComponents3)[1..*] 
+	clSoftware(rnSoftware)[0..1]
+	clComponent(rnComponents3)[1..1] 
 	
 	association assctSysAdminclVM
 	clVM(rnVMs2)[1..*]
 	clSysAdmin(rnSysAdmin)[1..*] 
+	
+	association assctVMclBackup
+	clBackup(rnBackups)[1..1]
+	clVM(rnVMs3)[1..*] 
+	
+	association assctSysAdminclBackup
+	clSysAdmin(rnSysAdmin2)[1..1]
+	clBackup(rnBackups2)[1..*] 
 	
 	
 	association assctAuthenticatedactAuthenticated

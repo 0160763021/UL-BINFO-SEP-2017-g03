@@ -75,7 +75,7 @@ Concept Model {
 			}
 
 		
-	class clProcessUnit role rnclProcessUnit cardinality[0 .. 1] {
+	class clProcessUnit role rnclProcessUnit cardinality[0 .. *] {
 		attribute cores: dtCores
 		attribute clockspeed: dtClockSpeed
 		
@@ -85,7 +85,7 @@ Concept Model {
 		): ptBoolean
 		}
 
-	class clStorage role rnclStorage cardinality[0 .. 1] {
+	class clStorage role rnclStorage cardinality[0 .. *] {
 		attribute capacity: dtCapacity
 		
 		operation init(
