@@ -9,7 +9,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSysAdmin.init.ASysID
-""
+"used to initialize the id field"
 @endParameters
 
 @description "

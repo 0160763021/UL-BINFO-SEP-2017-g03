@@ -9,13 +9,13 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.init.ABID
-""
+"used to initialize the id field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.init.Adate
-""
+"used to initialize the date field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.init.Adescription
-""
+"used to initialize the description field"
 @endParameters
 
 @description "

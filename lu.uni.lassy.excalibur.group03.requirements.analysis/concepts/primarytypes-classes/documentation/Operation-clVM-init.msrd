@@ -9,13 +9,13 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init.AVid
-""
+"used to initialize the id field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init.AName
-""
+"used to initialize the name field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init.Description
-""
+"used to initialize the description field"
 @endParameters
 
 @description "

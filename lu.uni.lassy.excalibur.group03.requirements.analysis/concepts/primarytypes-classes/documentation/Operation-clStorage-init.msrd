@@ -9,7 +9,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clStorage.init.Acapacity
-""
+"used to initialize the capacity field"
 @endParameters
 
 @description "

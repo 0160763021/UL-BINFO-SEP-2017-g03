@@ -9,7 +9,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSoftware.init.AlicenseID
-""
+"used to initialize the license id field"
 @endParameters
 
 @description "

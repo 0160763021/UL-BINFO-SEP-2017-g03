@@ -9,10 +9,10 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clProcessUnit.init.Acores
-""
+"used to initialize the cores field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clProcessUnit.init.Aclockspeed
-""
+"used to initialize the clock speed field"
 @endParameters
 
 @description "

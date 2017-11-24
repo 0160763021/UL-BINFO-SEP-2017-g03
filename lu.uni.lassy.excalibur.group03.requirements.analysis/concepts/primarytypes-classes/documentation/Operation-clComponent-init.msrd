@@ -9,16 +9,16 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init.ACid
-""
+"used to initialize the id field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init.CName
-""
+"used to initialize the name field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init.CModel
-""
+"used to initialize the model field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init.CType
-""
+"used to initialize the type field"
 @endParameters
 
 @description "

@@ -12,7 +12,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 "used to initialize the login field"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.init.Apassword
-""
+"used to initialize the password field"
 @endParameters
 
 @description "
