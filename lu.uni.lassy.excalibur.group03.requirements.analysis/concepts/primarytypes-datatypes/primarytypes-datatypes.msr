@@ -79,7 +79,13 @@ Concept Model {
 	enum etComponent {
 		constants["CPU", "RAM", "GPU", "HDD", "SSD", "Software"]
 		operation is(): ptBoolean
-		}
-		}
 	}
+	enum etAnswer {
+		constants["YES", "NO"]
+		operation is(): ptBoolean
+	}
+	
+	
+}
+}
 }

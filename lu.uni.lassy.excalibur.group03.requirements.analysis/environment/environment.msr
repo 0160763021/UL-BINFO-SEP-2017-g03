@@ -31,7 +31,7 @@ Environment Model {
 			operation sfScheduledBackupVM(AdtBackupDescription: dtBackupDescription, AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
 			operation sfInitVM(AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription):ptBoolean
 			operation sfSetComponent(AdtVMID: dtVMID, AdtCID: dtComponentID, AdtAmount: dtAmount):ptBoolean
-			operation sfGenerateComponent(AdtQID: dtQuestionID, AdtVID: dtVMID):ptBoolean
+			operation sfGenerateComponent(AdtQID: dtQuestionID, AetAnswer: etAnswer, AdtVID: dtVMID):ptBoolean
 			operation sfGetProposedVM(AdtVMID: dtVMID):ptBoolean
 			operation sfValidateVM(adtVMID: dtVMID):ptBoolean
 			}

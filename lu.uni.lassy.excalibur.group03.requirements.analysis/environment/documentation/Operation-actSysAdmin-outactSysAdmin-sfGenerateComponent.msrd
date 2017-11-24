@@ -11,6 +11,9 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGenerateComponent.AdtQID
 "used to uniquely identify the question"
 @parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGenerateComponent.AetAnswer
+"used to determine if the question was answered with yes or no"
+@parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGenerateComponent.AdtVID
 "used to uniquely identify a virtual machine"
 @endParameters
