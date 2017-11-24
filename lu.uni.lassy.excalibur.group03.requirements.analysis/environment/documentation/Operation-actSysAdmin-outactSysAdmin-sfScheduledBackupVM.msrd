@@ -14,7 +14,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM.AdtVMID
 "used to uniquely identify a virtual machine"
 @parameter
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM.AdtDateAndTime
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM.AdtDate
 "used to specify a date when the backup should be performed"
 @endParameters
 

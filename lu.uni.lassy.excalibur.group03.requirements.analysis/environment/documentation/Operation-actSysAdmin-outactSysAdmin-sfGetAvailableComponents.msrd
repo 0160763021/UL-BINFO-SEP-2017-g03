@@ -6,7 +6,11 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGetAvailableComponents
-@description "sent to get all the components available for a given category
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGetAvailableComponents.AetComponent
+"used to define the type of the component"
+@endParameters
+@description "sent to get all the components available for a given type
  "
 //preProtocol descriptions
 @preP

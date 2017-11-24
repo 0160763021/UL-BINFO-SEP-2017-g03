@@ -11,7 +11,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfHotBackupVM.AdtVMID
 "used to uniquely identify a virtual machine"
 @parameter
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfHotBackupVM.AdtDateAndTime
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfHotBackupVM.AdtDate
 "used to determine when the update should be performed"
 @endParameters
 

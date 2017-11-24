@@ -26,9 +26,9 @@ Environment Model {
 			output interface outactSysAdmin {
 			
 			operation sfDeleteVM(AdtVMID: dtVMID, AdtPassword: dtPassword):ptBoolean
-			operation sfGetAvailableComponents():ptBoolean
-			operation sfHotBackupVM(AdtVMID: dtVMID, AdtDateAndTime: dtDateAndTime):ptBoolean
-			operation sfScheduledBackupVM(AdtBackupDescription: dtBackupDescription, AdtVMID: dtVMID, AdtDateAndTime: dtDateAndTime):ptBoolean
+			operation sfGetAvailableComponents(AetComponent: etComponent):ptBoolean
+			operation sfHotBackupVM(AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
+			operation sfScheduledBackupVM(AdtBackupDescription: dtBackupDescription, AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
 			operation sfInitVM(AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription):ptBoolean
 			operation sfSetComponent(AdtVMID: dtVMID, AdtCID: dtComponentID, AdtAmount: dtAmount):ptBoolean
 			operation sfGenerateComponent(AdtQID: dtQuestionID, AdtVID: dtVMID):ptBoolean
