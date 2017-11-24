@@ -10,6 +10,45 @@ Group the operations devoted to the needs of specific actors. Common
 operations to several actors may be grouped and presented once to avoid redundancy.
 
 
+
+\section{CreateSystemAndEnvironment}
+\label{operation:CreateSystemAndEnvironment}
+This software operation initializes the system.
+\begin{description}
+
+\item \textbf{Parameters:} CPUName, CpuModel, CpuClockSpeed, CpuCores,
+CpuAmount, GpuName, GpuModel, GpuClockSpeed, GpuCores, GpuAmount, RamName,
+RamModel, RamCapacity, RamAmount, HDDName, HDDModel, HDDCapacity, HDDAmount,
+SSDName, SSDModel, SSDCapacity, SSDAmount, SoftwareName, SoftwareModel,
+SoftwareLicenseID, SoftwareAmount
+\item \textbf{Precondition:} /
+\item \textbf{Post-condition:} /
+\item \textbf{Output messages:} /
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item 
+\end{enumerate}
+
+ 
+\end{description}
+
+\subsection{CreateSystemAndEnvironment}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+
+
 \section{InitVM}
 \label{operation:InitVM}
 This software operation initializes a virtual machine with a name, desription
@@ -63,9 +102,8 @@ the requested type of component.
 representing all the available components for the given type which are available
 in the datacenter and can later be used by the sysAdmin to create a virtual machine.
 
-\item \textbf{Output messages:} The operation will send a notification to the
-sysAdmin as well as to the superSysAdmin in form of an error message in case the
-datacenter lacks of ressources.
+\item \textbf{Output messages:} The operation will send a notification in form
+of an error message in case the datacenter lacks of ressources.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
