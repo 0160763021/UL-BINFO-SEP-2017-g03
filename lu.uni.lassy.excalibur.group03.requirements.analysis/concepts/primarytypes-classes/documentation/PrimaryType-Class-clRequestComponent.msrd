@@ -1,0 +1,22 @@
+/*
+@author Dany-
+@date Fri Nov 24 18:23:44 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent
+@description "entity class illustrating the request of component"
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.ReqID
+""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.dtCID
+""
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.dtAmount
+""
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.init
+""
+@endOperations

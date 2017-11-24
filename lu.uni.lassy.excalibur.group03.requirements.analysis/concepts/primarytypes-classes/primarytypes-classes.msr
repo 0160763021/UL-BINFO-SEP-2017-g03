@@ -21,7 +21,14 @@ Concept Model {
 	
 		state class ctState {
 			attribute vpStarted: ptBoolean
-
+			attribute dtAmount: dtInteger
+			attribute maxCPUAmount: dtAmount
+			attribute maxRAMAmount: dtAmount
+			attribute maxGPUAmount: dtAmount
+			attribute maxHDDAmount: dtAmount
+			attribute maxSSDAmount: dtAmount
+			attribute maxSoftwareAmount: dtAmount
+			
 			operation init(AvpStarted:ptBoolean): ptBoolean
 		}	
 

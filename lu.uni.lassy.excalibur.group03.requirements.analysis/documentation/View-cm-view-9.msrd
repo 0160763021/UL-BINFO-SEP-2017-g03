@@ -1,0 +1,13 @@
+/*
+@author Dany-
+@date Fri Nov 24 18:27:20 CET 2017
+*/
+
+
+@@view cm-view-9
+@model Concept 
+@level Local
+@sublevel Primary Class
+@number 18
+@description "request component class"
+@caption ""
