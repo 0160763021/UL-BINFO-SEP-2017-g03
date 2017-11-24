@@ -41,11 +41,13 @@ Concept Model {
 		attribute Cid: dtComponentID
 		attribute CName: dtCompName
 		attribute CModel: dtModel
+		attribute CType: etComponent
 		
 		operation init(
 			ACid: dtComponentID,
 			CName: dtCompName,
-			CModel: dtModel
+			CModel: dtModel,
+			CType: etComponent
 		): ptBoolean
 		
 	}

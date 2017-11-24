@@ -15,6 +15,9 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 @attribute
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.CModel
 "used as a model name for the component."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.CType
+"used to define the type of the component."
 @endAttributes
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init

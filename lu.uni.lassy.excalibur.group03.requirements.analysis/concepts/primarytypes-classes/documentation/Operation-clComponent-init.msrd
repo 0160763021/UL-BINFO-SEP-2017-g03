@@ -16,6 +16,9 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init.CModel
 ""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init.CType
+""
 @endParameters
 
 @description "
