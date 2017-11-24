@@ -8,5 +8,5 @@
 @model Environment 
 @level Global
 @number 16
-@description "global view for all actors with their relationships with ctState"
+@description "Environment Model - Global View 01. em-gv-01 environment model global view."
 @caption ""
