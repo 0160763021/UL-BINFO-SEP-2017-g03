@@ -16,6 +16,9 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 Environment Model {
 			
 	actor actSysAdmin role rnactSysAdmin cardinality[0 .. *] extends actAuthenticated{
+			
+			operation init():ptBoolean
+			
 			input interface inactSysAdmin {
 			
 			
@@ -37,6 +40,9 @@ Environment Model {
 			}
 		}
 	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] extends actAuthenticated{
+			
+			operation init():ptBoolean
+			
 			input interface inactSuperSysAdmin {
 			}
 			output interface outactSuperSysAdmin {
@@ -46,6 +52,9 @@ Environment Model {
 			}
 		}
 	actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
+		
+			operation init():ptBoolean
+			
 			input interface inactAuthenticated {
 			operation ieMessage(AdtAMessage: dtAMessage):ptBoolean
 			}
@@ -55,6 +64,9 @@ Environment Model {
 			}
 		}
 	actor actCreator role rnactCreator cardinality[0 .. *] {
+			
+			operation init():ptBoolean
+			
 			input interface inactCreator {
 			}
 			output interface outactCreator {
@@ -62,6 +74,9 @@ Environment Model {
 			}
 		}
 	actor actDatacenter role rnactDatacenter cardinality[0 .. *] {
+			
+			operation init():ptBoolean
+			
 			input interface inactDatacenter {
 			}
 			output interface outactDatacenter {

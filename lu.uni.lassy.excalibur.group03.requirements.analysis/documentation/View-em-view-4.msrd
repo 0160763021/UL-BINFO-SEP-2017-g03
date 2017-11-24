@@ -8,5 +8,5 @@
 @model Environment 
 @level Global
 @number 16
-@description ""
+@description "global view for all actors with their relationships with ctState"
 @caption ""

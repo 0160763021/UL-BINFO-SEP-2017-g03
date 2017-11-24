@@ -1,0 +1,34 @@
+/*
+@author Dany-
+@date Fri Nov 24 16:22:00 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfConfirmChoice
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfConfirmChoice.AdtReqID
+""
+@endParameters
+
+@description "makes sure of your choices to request to the datacenter
+ "
+//preProtocol descriptions
+@preP
+" supersysadmin is logged in"
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

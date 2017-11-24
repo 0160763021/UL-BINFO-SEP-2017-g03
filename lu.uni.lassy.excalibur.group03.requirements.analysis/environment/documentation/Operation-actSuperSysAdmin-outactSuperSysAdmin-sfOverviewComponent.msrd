@@ -12,11 +12,11 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmi
 ""
 @endParameters
 
-@description "h
+@description "overview of the component
  "
 //preProtocol descriptions
 @preP
-" "
+" supersysadmin is logged in"
 @endPreP
 //preFunctional descriptions
 @preF

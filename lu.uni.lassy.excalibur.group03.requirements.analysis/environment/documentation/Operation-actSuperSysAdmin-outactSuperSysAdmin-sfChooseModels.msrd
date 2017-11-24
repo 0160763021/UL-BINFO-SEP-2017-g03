@@ -1,0 +1,40 @@
+/*
+@author Dany-
+@date Fri Nov 24 16:21:59 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfChooseModels
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfChooseModels.AdtReqID
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfChooseModels.AdtCID
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfChooseModels.AdtAmount
+""
+@endParameters
+
+@description "choose the components and amount to request
+ "
+//preProtocol descriptions
+@preP
+"supersysadmin logged in"
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

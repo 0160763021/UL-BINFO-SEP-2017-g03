@@ -5,7 +5,7 @@
 
 
 @@Primary Type Enumeration lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etComponent
-@description ""
+@description "enumeration regrouping the different types of components available"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etComponent.is
 ""

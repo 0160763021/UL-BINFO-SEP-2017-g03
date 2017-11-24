@@ -1,0 +1,16 @@
+/*
+@author Dany-
+@date Fri Nov 24 17:59:50 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actAuthenticated.init
+@description "
+used to initialize the current object as a new instance of the actAuthenticated type."
+//postFunctional descriptions
+@postF 
+"true iff the system poststate includes the current object as a new actAuthenticated instance having its attributes equal to the ones provided as parameters. "
+@endPostF
+//example
+@example" "
