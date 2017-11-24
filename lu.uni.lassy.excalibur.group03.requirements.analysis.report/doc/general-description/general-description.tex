@@ -5,17 +5,109 @@
 \chapter{General Description}
 \label{chap:general_description}
 
+All the information provided in this section is intended to present the system
+for which the Messir analysis is provided. 
 
 \section{Domain Stakeholders}
 \label{sec:icrash-gendescr-stakeholders}
 
+This section is intended to give a biref description of all the skateholders
+which are present in the system. Their description is divided as follow, first a
+brief description of the skateholder is given followed by the responsibilities
+which each skateholder has. This information should help the skateholder to
+achieve the skateholders objectives to a certain point. Each objective is
+shortly explained and match to the corresponding use cases and their
+corresponding views, which can be found on section .. of this document. All the
+listed skateholders named in this section play an important role in the system
+and are affected directly or indirectly by the system.
+
 \newpage
+
+\section{Communication Company}
+
+A Communication Company is a company that has the capacity to ensure communication of
+information between its customers and the iCrash system.
+
+\subsection{SysAdmin}
+
+The sysAdmin is a human person which responsibilites is to create, deploy and
+manage the different virtual machines. The objectives of the sysAdmin are:
+
+	•	to create a virtual machine using expert mode
+
+	•	to create a virtual machines using a predefined and preconfigured template
+
+	•	to perform a backup on a virtual machine, the backup can be a hot backup or a
+		scheduled one
+
+	•	to get an overview of all the created virtual machines
+
+	•	to modify a virtual machine by changing each component individual
+
+	•	to delete a virtual machine
+
+	•	to have access to its profile and view all his personal informations
+
+\subsection{SuperSysAdmin}
+
+The superSysAdmin is a human person which is above the sysAdmin and is
+responsible for managing the different sysAdmins as well as the ressources of
+the datacenter. Its objectives are:
+
+	•	to request more ressources for the datacenter
+
+	•	to get an overview of all the ressources which are currently beeing used
+
+	•	to create a new sysAdmin, which includes defining the propper access rights
+		of each individual sysAdmin
+
+\subsection{Creator}
+
+Any system needs to have a Creator skateholder which is a technician and is
+responsible for installing the VMMS system on the targeted deployment
+infrastructure. Its objectives are:
+
+	•	to install the VMMS system
+
+	•	to define the values for the initial system's state
+
+	•	to define the values for the initial system's environment
+
+	•	to ensure the integration of the VMMS system including its initial
+		environment.
+
+All theses objectives are only achievable, the Creator has the followed responsibilities:
+
+	•	to provided the data to the VMMS system which is necessart for its
+		initialization
+
+\subsection{Datacenter Technicien}
+
+The datacenter technicien is a human skateholder and represents a technicien
+working in the respective datacenter which is responsible for handling the
+different requests sent by the superSysAdmin. The objectives are:
+
+	•	Receive the request from the superSysAdmin for allocating more ressources to
+		the datacenter and to physically install all the needed hardware and ensure
+		that everythings works as it is meant to be.
+
 
 \section{System's Actors}
 \label{sec:icrash-gendescr-actors}
 
+Among all the skateholders presented in the previous section, we can determine
+the folllow types of direct actors:
 
-The objective of this section is not to provide the full requirement elicitation document in this section but to reuse a part of this document to provide a informal introduction to the \msrmessir specification of the system under development. The use case model is made of a use case diagrams modelling abstractly and informally the actors and their use cases together with a set of use cases descriptions. 
-In addition, those diagrams and description tables are adapted to the \msrmessir specification since actor and messages names together with parameters are partly adapted to be consistent with the specification identifiers (see \cite{messirbook} for more details). 
+	•	actSysAdmin: for the sys-Administrator skateholder
+	
+	•	actsuperSysAdmin: for the super-sys-Administrator skateholder
+	
+Then there is one indirect actor which is not dirreclty related to system ones.
 
+	•	actDatacenterTech: for the datacenter technicient skateholder
 
+Lastly there is one abstract actor
+
+	•	actAuthenticated: for the logical Activator skateholder.
+
+\newpage
