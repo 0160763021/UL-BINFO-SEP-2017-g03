@@ -232,8 +232,10 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system usergoal ugSysAdminCreation() {
 		actor actSuperSysAdmin[primary, active]
 		reuse sfPersonalInformation[1..*]
+		reuse sfAttributeRights[1..*]
 		
 		step a: actSuperSysAdmin executes sfPersonalInformation()
+		step b: actSuperSysAdmin executes sfAttributeRights()
 		}
 		
 		
@@ -376,6 +378,9 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		}
 	use case system subfunction sfConfirmPassword() {
 			actor actAuthenticated[primary,active]
+		}
+	use case system subfunction sfAttributeRights() {
+			actor actSuperSysAdmin[primary, active]
 		}
 	}
 }
