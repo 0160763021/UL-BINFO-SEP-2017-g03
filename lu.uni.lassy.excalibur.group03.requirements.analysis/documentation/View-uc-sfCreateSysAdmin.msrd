@@ -5,6 +5,6 @@
 
 
 @@view uc-sfCreateSysAdmin
-@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfCreateSysAdmin 
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfPersonalInformation 
 @description "shows the sfCreateSysadmin subfunction use-case and its primary actor actSuperSysAdmin"
 @caption ""

@@ -231,13 +231,13 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		}
 	use case system usergoal ugSysAdminCreation() {
 		actor actSuperSysAdmin[primary, active]
-		reuse sfCreateSysAdmin[1..*]
+		reuse sfPersonalInformation[1..*]
 		
-		step a: actSuperSysAdmin executes sfCreateSysAdmin()
+		step a: actSuperSysAdmin executes sfPersonalInformation()
 		}
 		
 		
-	use case system subfunction sfCreateSysAdmin() {
+	use case system subfunction sfPersonalInformation() {
 			actor actSuperSysAdmin[primary, active]
 		}
 		
@@ -245,12 +245,15 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system usergoal ugChangeId() {
 		actor actSuperSysAdmin[primary, active]
 		actor actSysAdmin[primary,active]
-		reuse sfChangeId[1..*]
-		step a: actSuperSysAdmin executes sfChangeId()
+		reuse sfConfirmPassword[1..*]
+		reuse sfNewId[1..*]
+		step a: actSuperSysAdmin executes sfConfirmPassword()
+		step b: actSuperSysAdmin executes sfNewId()
+		
 		}
 		
-	use case system subfunction sfChangeId() {
-			actor actSuperSysAdmin[primary, active]
+	use case system subfunction sfNewId() {
+			actor  actAuthenticated[primary, active]
 			
 			
 		}
@@ -259,32 +262,38 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system usergoal ugChangeEmail() {
 		actor actSuperSysAdmin[primary, active]
 		actor actSysAdmin[primary,active]
-		reuse sfChangeEmail[1..*]
-		step a: actSuperSysAdmin executes sfChangeEmail()
+		reuse sfNewEmail[1..*]
+		reuse sfConfirmPassword[1..*]
+		step a: actSuperSysAdmin executes sfConfirmPassword()
+		step b: actSuperSysAdmin executes sfNewEmail()
 		
 		}
 		
-		
-	use case system subfunction sfChangeEmail() {
-			actor actSuperSysAdmin[primary, active]
+		use case system subfunction sfNewEmail() {
+			actor  actAuthenticated[primary, active]
 		}
 		
 		
 	use case system usergoal ugChangePw() {
 		actor actSuperSysAdmin[primary, active]
 		actor actSysAdmin[primary,active]
-		reuse sfChangePw[1..*]
-		step a: actSuperSysAdmin executes sfChangePw()
+		reuse sfNewPw[1..*]
+		reuse sfConfirmPassword[1..*]
+		step a: actSuperSysAdmin executes sfConfirmPassword()
+		step b: actSuperSysAdmin executes sfNewPw()
+		}
+		
+		use case system subfunction sfNewPw() {
+			actor  actAuthenticated[primary, active]
 		}
 		
 		
-	use case system subfunction sfChangePw() {
-			actor actSuperSysAdmin[primary, active]
-		}
 	use case system usergoal ugDeleteAcc() {
 		actor actSysAdmin[primary,active]
 		reuse sfDeleteAcc[1..1]
-		step a: actSysAdmin executes sfDeleteAcc()
+		reuse sfConfirmPassword[1..*]
+		step a: actSysAdmin executes sfConfirmPassword()
+		step b: actSysAdmin executes sfDeleteAcc()
 		}
 	use case system subfunction sfDeleteAcc() {
 			actor actSysAdmin[primary, active]
@@ -364,6 +373,9 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	
 	use case system subfunction sfSetComponent() {
 			actor actSysAdmin[primary, active]
+		}
+	use case system subfunction sfConfirmPassword() {
+			actor actAuthenticated[primary,active]
 		}
 	}
 }

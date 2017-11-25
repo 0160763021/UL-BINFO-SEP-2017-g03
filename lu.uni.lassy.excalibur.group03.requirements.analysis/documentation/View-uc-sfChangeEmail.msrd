@@ -5,6 +5,6 @@
 
 
 @@view uc-sfChangeEmail
-@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfChangeEmail 
+@model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfNewEmail 
 @description "suDeployAndRun summary use case"
 @caption ""
