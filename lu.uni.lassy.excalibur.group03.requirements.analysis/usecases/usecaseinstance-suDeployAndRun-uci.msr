@@ -8,36 +8,29 @@ package usecases.ucisuDatacenterConf {
 				Bill : lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin
 			}
 			use case steps {
-				Bill executed instanceof subfunction sfCreateSystemAndEnvironment() {
-			
-					} 
+				Bill executed instanceof subfunction sfCreateSystemAndEnvironment("Intel","XeonE5","CPU", "4", "4", "100",
+					"Nvidia","Quaddro","GPU", "2", "684", "100", "Intel","ECC","RAM", "16", "100", "Seagate","Barracuda", "HDD", "4000", "100",
+					"Samsung","EVO", "SSD","1000", "100", "SolidWorks", "Software","1546842", "100") {} 
+				
 				Bill executed instanceof subfunction sfLogin("VMMSsuperSysAdmin1", "12abc") {
 						ieMessage("You are logged in! Welcome...") returned to Bill
 					}
-				Bill executed instanceof subfunction sfChooseModels() {
-						
-				} 
+					
+				Bill executed instanceof subfunction sfChooseModels("1", "2") {}
+				Bill executed instanceof subfunction sfChooseModels("3", "4") {}
+				Bill executed instanceof subfunction sfChooseModels("6", "3") {}
+				Bill executed instanceof subfunction sfChooseModels("10", "1") {}
 				Bill executed instanceof subfunction sfConfirmChoice() {
 						ieMessage("The request has been successfully send to the datacenter receiver") returned to Bill
 				}
-				Bill executed instanceof subfunction sfOverviewComponent("CPU") {
-						
-				}
-				Bill executed instanceof subfunction sfOverviewComponent("RAM") {
-						
-				}
-				Bill executed instanceof subfunction sfOverviewComponent("GPU") {
-						
-				}
-				Bill executed instanceof subfunction sfOverviewComponent("HDD") {
-						
-				}
-				Bill executed instanceof subfunction sfOverviewComponent("SSD") {
-						
-				}
-				Bill executed instanceof subfunction sfOverviewComponent("Software") {
-						
-				}
+				
+				Bill executed instanceof subfunction sfOverviewComponent("CPU") {}
+				Bill executed instanceof subfunction sfOverviewComponent("RAM") {}
+				Bill executed instanceof subfunction sfOverviewComponent("GPU") {}
+				Bill executed instanceof subfunction sfOverviewComponent("HDD") {}
+				Bill executed instanceof subfunction sfOverviewComponent("SSD") {}
+				Bill executed instanceof subfunction sfOverviewComponent("Software") {}
+				
 				Bill executed instanceof subfunction sfLogout() {
 						ieMessage("Good bye!") returned to Bill
 					}

@@ -189,7 +189,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	use case system usergoal ugComponentRequest() {
 			actor actSuperSysAdmin[primary, active]
 			
-			reuse sfChooseModels[1..1]
+			reuse sfChooseModels[1..*]
 			reuse sfConfirmChoice[1..1]
 		
 			step a: actSuperSysAdmin executes sfChooseModels()
