@@ -18,7 +18,7 @@ Concept Model {
 	Primary Types {
 	
 	association assctVMclComponent
-	clVM(rnVMs1)[1..*]
+	clVM(rnVMs1)[0..*]
 	clComponent(rnComponents)[1..*] 
 	
 	association assctComponentclProcessUnit
@@ -34,16 +34,16 @@ Concept Model {
 	clComponent(rnComponents3)[1..1] 
 	
 	association assctSysAdminclVM
-	clVM(rnVMs2)[1..*]
-	clSysAdmin(rnSysAdmin)[1..*] 
+	clVM(rnVMs2)[0..*]
+	clSysAdmin(rnSysAdmin)[1..1] 
 	
 	association assctVMclBackup
-	clBackup(rnBackups)[1..1]
-	clVM(rnVMs3)[1..*] 
+	clBackup(rnBackups)[0..*]
+	clVM(rnVMs3)[1..1] 
 	
 	association assctSysAdminclBackup
 	clSysAdmin(rnSysAdmin2)[1..1]
-	clBackup(rnBackups2)[1..*] 
+	clBackup(rnBackups2)[0..*] 
 	
 	
 	association assctAuthenticatedactAuthenticated
