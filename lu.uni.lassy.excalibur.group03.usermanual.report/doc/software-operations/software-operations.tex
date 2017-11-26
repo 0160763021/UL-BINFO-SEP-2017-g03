@@ -1,4 +1,4 @@
-\chapter{Software operations}
+ \chapter{Software operations}
 \label{chap:soptware_operations}
 
 
@@ -421,7 +421,7 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 \section{Delete account}
-\label{operation:deletAccount}
+\label{operation:ConfirmDelete}
 This system operation allows the SysAdmin to delete his account.
 
 \begin{description}
@@ -502,11 +502,6 @@ Each example must show how the actor uses the software operation under
 description to achieve (at least one of) its expected outcome.
 
 It might be required to include GUI screenshots to illustrate the example.
-
-
-
-
-
 
 
 
@@ -599,7 +594,7 @@ This system operation allows the super-SysAdmin to create a SysAdmin.
 \begin{description}
 
 \item \textbf{Parameters:} Name, Username, E-mail, Password, Birth date, Phone
-number, Rights
+number
 \item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
 in with the super-SysAdmin's account.
 \item \textbf{Post-condition:} A new SysAdmin will be created and this
@@ -636,12 +631,50 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
+\section{ConfirmPassword}
+\label{operation:ConfirmPassword}
+This system operation confirms if the password given by an actor is the right
+one. It compares the given password with the right password.
+
+\begin{description}
+
+\item \textbf{Parameters:} inputPassword
+\item \textbf{Precondition:} The person must be the super-SysAdmin or the
+SysAdmin and be logged in.
+\item \textbf{Post-condition:}A comparation is made between the actor's given
+password and the right password.
+\item \textbf{Output messages:} 
+
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+ \item The actor need to fill the password textfield with the appropriate
+ password .
+\item Click on the ''Confirm'' to call the operation that compares the given
+pasword with the right password.
+
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{ConfirmPassword}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
 
 
 
 
 \section{Change E-mail}
-\label{operation:changeEmail}
+\label{operation:NewEmail}
 This system operation allows the super-SysAdmin or the SysAdmin to change
 their E-mail.
 
@@ -662,8 +695,8 @@ user telling that the E-mail has successfully been modified.
 \item Click on the "Change Email " icon to begin with the changeEmail operation. 
 \item A new page''Confirm the password'' appears. You need to insert your
 account password in the input text field. 
-\item Make sure that you insert the right password before to click on the
-''confirm'' button otherwise you can not access the next step.
+\item Click on the''confirm'' button otherwise you can not access the next
+step.
 \item A new page ''Insert your new E-mail!'' appears and allows you to
 insert a new e-mail in the input text field.
 \item Click on the ''confirm'' button to replace the old e-mail by the new one.
@@ -686,7 +719,7 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 \section{Change Id}
-\label{operation:changeId}
+\label{operation:NewId}
 This system operation allows the super-SysAdmin or the SysAdmin to change
 their Id.
 
@@ -707,8 +740,8 @@ current user telling that the Id  has successfully been modified.
 \item Click on the "Change ID " icon to begin with the changeId operation. 
 \item A new page''Confirm the password'' appears. You need to insert your
 account password in the input text field. 
-\item Make sure that you insert the right password before to click on the
-''confirm'' button otherwise you can not access the next step.
+\item Click on the ''confirm'' button otherwise you can not access the next
+step.
 \item A new page ''Insert your new Id'' appears and allows you to
 insert a new Id in the input text field.
 \item Click on the ''confirm'' button to replace the old Id by the new one.
@@ -730,7 +763,7 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 \section{Change Password}
-\label{operation:changePassword}
+\label{operation:NewPw}
 This system operation allows the super-SysAdmin or the SysAdmin to change
 their Password.
 
@@ -751,8 +784,8 @@ current user telling that the password  has successfully been modified.
 operation.
 \item A new page''Confirm the password'' appears. You need to insert your old
 account password in the input text field. 
-\item Make sure that you insert the right password before to click on the
-''confirm'' button otherwise you can not access the next step.
+\item Click on the ''confirm'' button otherwise you can not access the next
+step.
 \item A new page ''Insert your new Password'' appears and allows you to
 insert a new password in the input text field.
 \item Click on the ''confirm'' button to replace the old password by the new
