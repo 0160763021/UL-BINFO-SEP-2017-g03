@@ -1,0 +1,12 @@
+/*
+@author dylan
+@date Sun Nov 26 00:59:56 CET 2017
+*/
+
+
+@@view uci-ucisuUserManagement
+@instance Use-Case usecases.ucisuUserManagement.ucisuUserManagement 
+@description "uci-ucisuUserManagement"
+@caption ""
+
+

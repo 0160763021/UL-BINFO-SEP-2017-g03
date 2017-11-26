@@ -1,0 +1,9 @@
+/*
+@author dylan
+@date Sun Nov 26 01:07:55 CET 2017
+*/
+
+
+@@Instance Use Case usecases.ucisuUserManagement.ucisuUserManagement
+@description "Use Case Instance for the summary suUserManagement illustrating a simple and complete interaction scenario
+ handled by a superSysAdmin and a sysAdmin in a concrete situation."

@@ -228,6 +228,11 @@
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptInteger.msrd</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptReal.msrd</semanticResources>
   <semanticResources>platform:/resource/lu.uni.lassy.excalibur.standard.specification.libraries/library/documentation/PrimaryType-Primitive-ptString.msrd</semanticResources>
+  <semanticResources>usecases/usecaseinstance-suUserManagement-ucisuUserManagement.msr</semanticResources>
+  <semanticResources>usecases/documentation/UseCaseInstance-uci.msrd</semanticResources>
+  <semanticResources>usecases/usecaseinstance-suDeployAndRun2-uci.msr</semanticResources>
+  <semanticResources>documentation/View-uci-ucisuUserManagement.msrd</semanticResources>
+  <semanticResources>usecases/documentation/UseCaseInstance-ucisuUserManagement.msrd</semanticResources>
   <ownedViews xmi:type="viewpoint:DView" xmi:id="_eushsL12Eee7mbrw4kTqwQ">
     <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/lu.uni.lassy.excalibur.ui.viewer/description/excalibur_models.odesign#//@ownedViewpoints[name='msr-viewpoint']"/>
   </ownedViews>

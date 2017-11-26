@@ -4,7 +4,7 @@
 */
 
 
-@@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfDeleteAcc
+@@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfConfirmDelete
 @description ""
 @protocolCondition
 "

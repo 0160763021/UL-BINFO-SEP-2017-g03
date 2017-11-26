@@ -292,12 +292,12 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		
 	use case system usergoal ugDeleteAcc() {
 		actor actSysAdmin[primary,active]
-		reuse sfDeleteAcc[1..1]
+		reuse sfConfirmDelete[1..1]
 		reuse sfConfirmPassword[1..*]
 		step a: actSysAdmin executes sfConfirmPassword()
-		step b: actSysAdmin executes sfDeleteAcc()
+		step b: actSysAdmin executes sfConfirmDelete()
 		}
-	use case system subfunction sfDeleteAcc() {
+	use case system subfunction sfConfirmDelete() {
 			actor actSysAdmin[primary, active]
 		}
 	use case system subfunction sfInitVM() {
