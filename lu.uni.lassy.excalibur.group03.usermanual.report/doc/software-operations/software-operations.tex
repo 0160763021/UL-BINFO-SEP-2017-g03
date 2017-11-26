@@ -631,6 +631,51 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
+
+
+\section{Attribute Rights}
+\label{operation:AttributeRights}
+This system operation allows the super-sysAdmin to attribute rights.
+
+\begin{description}
+
+\item \textbf{Parameters:} Right1, Right2, Right3, Right4, Right5, Right6,
+Right7, Right8
+\item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
+in. Before to have acces to the AttributeRights operation the super-sysadmin
+hass to complete the PersonalInformation operation.
+\item \textbf{Post-condition:} Rights will be attributed to an sysAdmin that is
+being created.
+\item \textbf{Output messages:} 
+
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+ \item After having completed the PersonalInformation operation a new page
+ ''Attribute the rights'' appears to give the Super-SysAdmin the power to attribute the new SysAdmin rights about the application.
+\item The super-sysadmin can assign a right by clicking on a box.
+\item Click on the right button at the right corner of the page called
+''Create User'' to call the "Attribute Rights" operation.
+
+\end{enumerate}
+
+ 
+\end{description}
+
+ 
+\subsection{AttributeRights}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
 \section{ConfirmPassword}
 \label{operation:ConfirmPassword}
 This system operation confirms if the password given by an actor is the right
