@@ -62,17 +62,48 @@ Concept Model {
 	class clAuthenticated role rnclAuthenticated cardinality[0 .. *] {
 		attribute login: dtLogin
 		attribute password: dtPassword
+		attribute firstName: dtFirstName
+		attribute lastName: dtLastName 
+		attribute userName: dtUserName
+		attribute email: dtEmail
+		attribute birthDate: dtDate
+		attribute phoneNumber: dtPhoneNumber
+		
+		
+		
 		
 		operation init(
 			Alogin: dtLogin,
-			Apassword: dtPassword
+			Apassword: dtPassword,
+			AfirstName: dtFirstName,
+			AlastName: dtLastName,
+			AuserName: dtUserName,
+			Aemail: dtEmail,
+			AbirthDate: dtDate,
+			AphoneNumber: dtPhoneNumber
 		): ptBoolean
 	}
 
 	class clSysAdmin role rnclSysAdmin cardinality[0 .. *] {
 			attribute SysID: dtSysID
+			attribute right1: etRight
+			attribute right2: etRight
+			attribute right3: etRight
+			attribute right4: etRight
+			attribute right5: etRight
+			attribute right6: etRight
+			attribute right7: etRight
+			attribute right8: etRight
 			
-			operation init(ASysID: dtSysID): ptBoolean
+			operation init(ASysID: dtSysID,
+			Aright1: etRight,
+			Aright2: etRight,
+			Aright3: etRight,
+			Aright4: etRight,
+			Aright5: etRight,
+			Aright6: etRight,
+			Aright7: etRight,
+			Aright8: etRight): ptBoolean
 		}
 	
 	class clSuperSysAdmin role rnclSuperSysAdmin cardinality[1 .. 1] {
@@ -128,6 +159,44 @@ Concept Model {
 			AReqID: dtReqID,
 			AdtCID: dtComponentID,
 			AdtAmount: dtAmount
+		): ptBoolean
+			}
+			
+			class clCreateSysAdmin role rnCreateSysAdmin cardinality[0 .. *] {
+		attribute firstName: dtFirstName
+		attribute lastName: dtLastName 
+		attribute userName: dtUserName
+		attribute email: dtEmail
+		attribute birthDate: dtDate
+		attribute phoneNumber: dtPhoneNumber
+		attribute password: dtPassword
+		attribute confirmPassword: dtPassword
+		attribute right1: etRight
+		attribute right2: etRight
+		attribute right3: etRight
+		attribute right4: etRight
+		attribute right5: etRight
+		attribute right6: etRight
+		attribute right7: etRight
+		attribute right8: etRight
+		
+		operation init(
+			AfirstName: dtFirstName,
+			AlastName: dtLastName,
+			AuserName: dtUserName,
+			Aemail: dtEmail,
+			AbirthDate: dtDate,
+			AphoneNumber: dtPhoneNumber,
+			Apassword: dtPassword,
+			AconfirmPassword: dtPassword,
+			Aright1: etRight,
+			Aright2: etRight,
+			Aright3: etRight,
+			Aright4: etRight,
+			Aright5: etRight,
+			Aright6: etRight,
+			Aright7: etRight,
+			Aright8: etRight
 		): ptBoolean
 			}
 

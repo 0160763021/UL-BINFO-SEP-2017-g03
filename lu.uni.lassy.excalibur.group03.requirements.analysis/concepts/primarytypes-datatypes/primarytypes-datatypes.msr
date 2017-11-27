@@ -85,6 +85,33 @@ Concept Model {
 		operation is(): ptBoolean
 	}
 	
+	datatype dtFirstName extends dtString{
+		operation is(): ptBoolean
+	}
+	datatype dtLastName extends dtString{
+		operation is(): ptBoolean
+	}
+	datatype dtUserName extends dtString{
+		operation is(): ptBoolean
+	}
+	datatype dtEmail extends dtString{
+		operation is(): ptBoolean
+	}
+	datatype dtBirtthdtae extends dtDate{
+		operation is(): ptBoolean
+	}
+	datatype dtPhoneNumber extends dtInteger{
+		operation is(): ptBoolean
+	}
+	enum etRight {
+		constants["True", "False"]
+		operation is(): ptBoolean
+	}
+	enum etConfirmDelete {
+		constants["Yes", "No"]
+		operation is(): ptBoolean
+	}
+	
 	
 }
 }

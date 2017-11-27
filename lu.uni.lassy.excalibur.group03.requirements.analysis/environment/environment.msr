@@ -37,6 +37,7 @@ Environment Model {
 			operation sfGenerateComponent(AdtQID: dtQuestionID, AetAnswer: etAnswer, AdtVID: dtVMID):ptBoolean
 			operation sfGetProposedVM(AdtVMID: dtVMID):ptBoolean
 			operation sfValidateVM(adtVMID: dtVMID):ptBoolean
+			operation sfConfirmDelete(AetConfirmDelete:etConfirmDelete):ptBoolean
 			}
 		}
 	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] extends actAuthenticated{
@@ -49,6 +50,8 @@ Environment Model {
 			operation sfOverviewComponent(AetComponent: etComponent): ptBoolean
 			operation sfChooseModels(AdtReqID: dtReqID, AdtCID: dtComponentID, AdtAmount: dtAmount): ptBoolean
 			operation sfConfirmChoice(AdtReqID: dtReqID): ptBoolean
+			operation sfAtributeRights(AetRight1: etRight,AetRight2: etRight,AetRight3: etRight,AetRight4: etRight,AetRight5: etRight,AetRight6: etRight,AetRight7: etRight,AetRight8: etRight):ptBoolean
+			operation sfPersonalInformation(AdtFirstName:dtFirstName,AdtLastName:dtLastName,AdtUserName:dtUserName,AdtEmail:dtEmail,AdtBirthdate:dtDate,AdtPassword:dtPassword,AdtConfirmPassword:dtPassword,AdtPhoneNumber:dtPhoneNumber):ptBoolean
 			}
 		}
 	actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
@@ -61,6 +64,9 @@ Environment Model {
 			output interface outactAuthenticated {
 			operation sfLogin(AdtLogin: dtLogin, AdtPassword: dtPassword):ptBoolean
 			operation sfLogout():ptBoolean
+			operation sfConfirmPassword( AdtPassword: dtPassword):ptBoolean
+			operation sfNewEmail(AdtNewEmail: dtEmail):ptBoolean
+			operation sfNewId(AdtNewId: dtUserName):ptBoolean
 			}
 		}
 	actor actCreator role rnactCreator cardinality[0 .. *] {
