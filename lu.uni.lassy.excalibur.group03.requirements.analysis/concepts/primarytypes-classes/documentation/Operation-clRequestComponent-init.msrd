@@ -10,12 +10,6 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.init.AReqID
 ""
-@parameter
-lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.init.AdtCID
-""
-@parameter
-lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.init.AdtAmount
-""
 @endParameters
 
 @description "
