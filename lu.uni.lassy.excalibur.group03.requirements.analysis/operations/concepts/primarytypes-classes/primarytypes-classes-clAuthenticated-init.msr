@@ -10,7 +10,14 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.init(Alogin:dtLogin, Apassword:dtPassword):ptBoolean{
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clAuthenticated.init(Alogin: dtLogin,
+			Apassword: dtPassword,
+			AfirstName: dtFirstName,
+			AlastName: dtLastName,
+			AuserName: dtUserName,
+			Aemail: dtEmail,
+			AbirthDate: dtDate,
+			AphoneNumber: dtPhoneNumber):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
 		}

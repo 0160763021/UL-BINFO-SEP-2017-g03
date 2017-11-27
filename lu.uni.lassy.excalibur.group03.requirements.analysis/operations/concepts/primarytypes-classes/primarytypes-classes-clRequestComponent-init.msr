@@ -10,7 +10,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.init(AReqID:dtReqID, AdtCID:dtComponentID, AdtAmount:dtAmount):ptBoolean{
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.init(AReqID:dtReqID):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
 		}

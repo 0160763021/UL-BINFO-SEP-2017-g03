@@ -5,7 +5,7 @@
 
 
 @@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtReqID
-@description "h"
+@description "used to define the request number component request"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtReqID.is
 "used to determine which strings are considered as valid dtReqID."

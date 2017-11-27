@@ -8,13 +8,7 @@
 @description "entity class illustrating the request of component"
 @attribute
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.ReqID
-""
-@attribute
-lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.dtCID
-""
-@attribute
-lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.dtAmount
-""
+"a unique identification number"
 @endAttributes
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.init

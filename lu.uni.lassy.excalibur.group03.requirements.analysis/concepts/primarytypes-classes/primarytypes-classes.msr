@@ -152,13 +152,9 @@ Concept Model {
 
 	class clRequestComponent role rnclRequestComponent cardinality[0 .. *] {
 		attribute ReqID: dtReqID
-		attribute dtCID: dtComponentID
-		attribute dtAmount: dtAmount
 		
 		operation init(
-			AReqID: dtReqID,
-			AdtCID: dtComponentID,
-			AdtAmount: dtAmount
+			AReqID: dtReqID
 		): ptBoolean
 			}
 			

@@ -6,9 +6,10 @@ package usecases.ucisuDatacenterConf {
 		use case instance ucisuDatacenterConf : suDeployAndRun{
 			actors {
 				Bill : lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin
+				Paul : lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actCreator
 			}
 			use case steps {
-				Bill executed instanceof subfunction sfCreateSystemAndEnvironment("Intel","XeonE5","CPU", "4", "4", "100",
+				Paul executed instanceof subfunction sfCreateSystemAndEnvironment("Intel","XeonE5","CPU", "4", "4", "100",
 					"Nvidia","Quaddro","GPU", "2", "684", "100", "Intel","ECC","RAM", "16", "100", "Seagate","Barracuda", "HDD", "4000", "100",
 					"Samsung","EVO", "SSD","1000", "100", "SolidWorks", "Software","1546842", "100") {} 
 				

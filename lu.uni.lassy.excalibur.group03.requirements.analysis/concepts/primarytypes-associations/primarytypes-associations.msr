@@ -45,6 +45,14 @@ Concept Model {
 	clSysAdmin(rnSysAdmin2)[1..1]
 	clBackup(rnBackups2)[0..*] 
 	
+	association assctSuperSysAdminclRequestComponent
+	clSuperSysAdmin(rnSuperSysAdmin)[1..1]
+	clRequestComponent(rnRequestComponent)[0..*] 
+	
+	association assctComponentclRequestComponent
+	clComponent(rnComponents4)[1..*]
+	clRequestComponent(rnRequestComponent2)[0..*] 
+	
 	
 	association assctAuthenticatedactAuthenticated
 	clAuthenticated(rnctAuthenticated)[1..1]
