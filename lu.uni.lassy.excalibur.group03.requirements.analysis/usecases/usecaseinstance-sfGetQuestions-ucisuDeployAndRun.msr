@@ -6,7 +6,7 @@ package usecases.ucisuDeployAndRun {
 		use case instance ucisuDeployAndRun : suDeployAndRun{
 			actors {
 				John : lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin
-				Bill : lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin
+				Bill : lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actCreator
 				
 			}
 			use case steps {

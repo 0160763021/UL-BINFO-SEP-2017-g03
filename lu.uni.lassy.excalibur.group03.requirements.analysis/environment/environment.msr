@@ -76,7 +76,14 @@ Environment Model {
 			input interface inactCreator {
 			}
 			output interface outactCreator {
-			operation sfCreateSystemAndEnvironment():ptBoolean
+			operation sfCreateSystemAndEnvironment(
+				AdtCpuName: dtCompName, AdtCpuModel: dtModel, AdtComp1Type: etComponent, AdtCpuSpeed: dtClockSpeed, AdtCpuCores: dtCores, AdtCpuAmount: dtAmount,
+				AdtGpuName: dtCompName, AdtGpuModel: dtModel, AdtComp2Type: etComponent, AdtGpuSpeed: dtClockSpeed, AdtGpuCores: dtCores, AdtGpuAmount: dtAmount,
+				AdtRamName: dtCompName, AdtRamModel: dtModel, AdtComp3Type: etComponent, AdtCapacityRAM: dtCapacity, AdtRamAmount: dtAmount,
+				AdtHDDName: dtCompName, AdtHDDModel: dtModel, AdtComp4Type: etComponent, AdtCapacityHDD: dtCapacity, AdtHDDAmount: dtAmount,
+				AdtSDDName: dtCompName, AdtSDDModel: dtModel, AdtComp5Type: etComponent, AdtCapacitySDD: dtCapacity, AdtSDDAmount: dtAmount,
+				AdtSoftwareName: dtCompName, AdtSoftwareModel: dtModel, AdtComp6Type: etComponent, AdtLicense: dtLicenseID, AdtSoftwareAmount: dtAmount
+			):ptBoolean
 			}
 		}
 	actor actDatacenter role rnactDatacenter cardinality[0 .. *] {
