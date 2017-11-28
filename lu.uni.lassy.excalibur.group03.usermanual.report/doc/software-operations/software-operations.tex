@@ -495,7 +495,7 @@ overview.
  
 \end{description}
 
-\subsection{OverviewCPUExample}
+\subsection{OverviewComponentExample}
 Examples should illustrate the use of \textbf{complex operations}.
 
 Each example must show how the actor uses the software operation under
@@ -587,8 +587,10 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
-\section{createSysAdmin}
-\label{operation:createSysAdmin}
+
+
+\section{PersonalInformation}
+\label{operation:PersonalInformation}
 This system operation allows the super-SysAdmin to create a SysAdmin.
 
 \begin{description}
@@ -597,10 +599,9 @@ This system operation allows the super-SysAdmin to create a SysAdmin.
 date, Phone number
 \item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
 in with the super-SysAdmin's account.
-\item \textbf{Post-condition:} A new SysAdmin will be created and this
-SysAdmin will be able to access the application.
-\item \textbf{Output messages:} The operation will send one notification to the
-super-SysAdmin telling that a SysAdmin user has been successfully created.
+\item \textbf{Post-condition:} Peronal information of a sysadmin are saved
+for the cration of an sys-admin
+\item \textbf{Output messages:} 
 
 
 \item \textbf{Triggering:}
@@ -608,11 +609,8 @@ super-SysAdmin telling that a SysAdmin user has been successfully created.
 \item Click on the differents textfields an fill them with the appropriate
 value.
 \item Click on the ''Next step'' button which is situated at the right corner of
-the page.
-\item A new page ''Attribute the rights'' appears to give the SuperSysAdmin the
-power to attribute the new SysAdmin rights about the application.
-\item Click on the right button at the right corner of the page called
-''Create User'' to create the new SysAdmin.
+the page call the operation.
+
 
 \end{enumerate}
 
@@ -620,7 +618,7 @@ power to attribute the new SysAdmin rights about the application.
 \end{description}
 
  
-\subsection{createSysAdminExample}
+\subsection{PersonalInformation}
 Examples should illustrate the use of \textbf{complex operations}.
 
 Each example must show how the actor uses the software operation under
@@ -633,20 +631,21 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
-\section{Attribute Rights}
+\section{AttributeRights}
 \label{operation:AttributeRights}
 This system operation allows the super-sysAdmin to attribute rights.
 
 \begin{description}
 
-\item \textbf{Parameters:} Right1, Right2, Right3, Right4, Right5, Right6,
-Right7, Right8
+\item \textbf{Parameters:} UserName,Right1, Right2, Right3, Right4, Right5,
+Right6, Right7, Right8
 \item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
 in. Before to have acces to the AttributeRights operation the super-sysadmin
 hass to complete the PersonalInformation operation.
 \item \textbf{Post-condition:} Rights will be attributed to an sysAdmin that is
 being created.
-\item \textbf{Output messages:} 
+\item \textbf{Output messages:} The operation will send one notification to the
+super-SysAdmin telling that a SysAdmin user has been successfully created.
 
 
 \item \textbf{Triggering:}
@@ -849,7 +848,4 @@ Each example must show how the actor uses the software operation under
 description to achieve (at least one of) its expected outcome.
 
 It might be required to include GUI screenshots to illustrate the example.
-
-
-
 
