@@ -12,7 +12,21 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 
 		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clProcessUnit.init(Acores:dtCores, Aclockspeed:dtClockSpeed):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
-
+		postF{
+			if
+			(
+			let Self:lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clProcessUnit in
+			Self.cores = Acores
+			and Self.clockspeed = Aclockspeed
+			and Self.description = Adescription
+			
+			and (Self.oclIsNew and self = Self)
+			)
+			then (result = true)
+			else (result = false)
+			endif}
+		prolog{"src/Operations/Concepts/PrimaryTypesClasses-clProcessUnit-init.pl"}
+		
 		}
 	}
 }

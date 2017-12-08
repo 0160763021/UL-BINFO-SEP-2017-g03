@@ -10,7 +10,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datat
  "
 //postFunctional descriptions
 @postF 
-" "
+"the operation returns true if the value of the attribute dtComponentID is larger then 0 and smaller then 10000"
 @endPostF
 //example
 @example" "

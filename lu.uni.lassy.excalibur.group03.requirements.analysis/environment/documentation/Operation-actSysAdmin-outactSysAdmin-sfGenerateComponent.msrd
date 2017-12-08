@@ -28,11 +28,11 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"there exists a virtual machine having the given id in the pre-state"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the ctVM class instance will be related with another clComponent instance"
 @endPostF
 //postProtocol descriptions
 @postP 

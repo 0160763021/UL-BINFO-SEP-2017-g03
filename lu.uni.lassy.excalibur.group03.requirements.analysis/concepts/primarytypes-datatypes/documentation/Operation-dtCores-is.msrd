@@ -10,7 +10,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datat
  "
 //postFunctional descriptions
 @postF 
-" "
+"the operation returns true if the value of the attribute dtCores is larger then 0 and smaller then 37"
 @endPostF
 //example
 @example" "

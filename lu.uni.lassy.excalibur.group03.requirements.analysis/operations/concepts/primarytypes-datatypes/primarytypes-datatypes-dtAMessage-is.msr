@@ -10,6 +10,17 @@ import lu.uni.lassy.messir.libraries.calendar
 		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtAMessage.is():ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
-		}
+		postF{let TheResult: ptBoolean in
+			(if
+				(MaxLength = 200
+					and self.value.length().leq(MaxLength)
+				)
+				then (TheResult = true)
+				else (TheResult = false)
+				endif
+				result = TheResult
+			)}
+			}
+			}
 	}
-}
+

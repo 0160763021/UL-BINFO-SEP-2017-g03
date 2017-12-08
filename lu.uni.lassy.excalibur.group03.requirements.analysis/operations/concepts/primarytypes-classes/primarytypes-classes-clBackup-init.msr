@@ -6,13 +6,29 @@ import lu.uni.lassy.messir.libraries.string
 import lu.uni.lassy.messir.libraries.calendar
 
 import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes
 
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.init(ABID:dtBID, Adate:dtDate, Adescription:dtBackupDescription):ptBoolean{
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clBackup.init(ABID:dtBID, Adate:dtDate, Adescription:dtBackupDescription):ptBoolean
+		{
 		// include below the specification information (pre,post or ocl or prolog)
-
+		
+		postF{
+			if
+			(
+			let Self:clBackup in
+			Self.BID = ABID
+			and Self.date = Adate
+			and Self.description = Adescription
+			
+			and (Self.oclIsNew and self = Self)
+			)
+			then (result = true)
+			else (result = false)
+			endif}
+		prolog{"src/Operations/Concepts/PrimaryTypesClasses-clBackup-init.pl"}
 		}
 	}
 }

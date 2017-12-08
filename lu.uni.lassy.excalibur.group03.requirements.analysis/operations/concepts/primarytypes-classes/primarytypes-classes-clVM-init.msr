@@ -13,6 +13,20 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM.init(AVid:dtVMID, AName:dtVMName, Description:dtVMDescription):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
+		postF{
+			if
+			(
+			let Self:lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clVM in
+			Self.Vid = AVid
+			and Self.VMName = AVMName
+			and Self.Description = Adescription
+			
+			and (Self.oclIsNew and self = Self)
+			)
+			then (result = true)
+			else (result = false)
+			endif}
+		prolog{"src/Operations/Concepts/PrimaryTypesClasses-clBackup-init.pl"}
 		}
 	}
 }

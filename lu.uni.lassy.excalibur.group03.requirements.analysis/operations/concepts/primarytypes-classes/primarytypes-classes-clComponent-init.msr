@@ -13,6 +13,22 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent.init(ACid:dtComponentID, CName:dtCompName, CModel:dtModel, CType:etComponent):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
+		postF{
+			if
+			(
+			let Self:lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponent in
+			Self.CID = ACID
+			and Self.CName = ACName
+			and Self.CModel = ACModel
+			and Self.CType = ACType
+			
+			and (Self.oclIsNew and self = Self)
+			)
+			then (result = true)
+			else (result = false)
+			endif}
+		prolog{"src/Operations/Concepts/PrimaryTypesClasses-clComponent-init.pl"}
 		}
-	}
+		}
+	
 }

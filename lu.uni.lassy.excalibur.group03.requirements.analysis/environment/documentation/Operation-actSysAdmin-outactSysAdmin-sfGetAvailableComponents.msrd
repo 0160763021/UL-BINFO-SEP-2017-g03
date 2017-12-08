@@ -20,7 +20,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"none"
 @endPreF
 //postFunctional descriptions
 @postF 
@@ -28,7 +28,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+""
 @endPostP
 //example
 @example" "

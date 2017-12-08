@@ -10,7 +10,8 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datat
  "
 //postFunctional descriptions
 @postF 
-" "
+"the operation returns true if the value of the attribute dtLicenseID is larger then 0 and smaller then 1000"
+
 @endPostF
 //example
 @example" "
