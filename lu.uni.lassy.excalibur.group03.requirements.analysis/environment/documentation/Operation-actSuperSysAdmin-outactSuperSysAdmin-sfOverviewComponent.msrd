@@ -9,26 +9,35 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmi
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfOverviewComponent.AetComponent
-""
+"used to initialized the component field"
 @endParameters
 
-@description "overview of the component
+@description "This system operation is triggered by
+the superSysAdmin actor and has for objective to make
+the system show his resources for a chosen component.
  "
 //preProtocol descriptions
 @preP
-" supersysadmin is logged in"
+"the vpStarted attribute of the only instance of the
+State class must be equal to true, indicating that
+the system has been started and created (i.e. the
+oeCreateSystemAndEnvironment operation has been
+executed)."
+@preP
+"the supersysadmin is logged in"
 @endPreP
+
 //preFunctional descriptions
 @preF
-" "
+"none"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the chosen resource state is obtained"
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none "
 @endPostP
 //example
 @example" "

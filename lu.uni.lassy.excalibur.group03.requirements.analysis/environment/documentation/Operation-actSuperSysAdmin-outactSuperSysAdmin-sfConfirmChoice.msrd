@@ -9,26 +9,35 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmi
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfConfirmChoice.AdtReqID
-""
+"used to initialize the id field"
 @endParameters
 
-@description "makes sure of your choices to request to the datacenter
+@description "This system operation is triggered by
+the superSysAdmin actor and has for objective to confirm
+the request to the datacenter for extra resources of the
+chosen components/models.
  "
 //preProtocol descriptions
 @preP
-" supersysadmin is logged in"
+"the vpStarted attribute of the only instance of the
+State class must be equal to true, indicating that
+the system has been started and created (i.e. the
+oeCreateSystemAndEnvironment operation has been
+executed)."
+@preP
+"the supersysadmin is logged in"
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that at least one request has been formulated for the sfChooseModels"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"a message is send to the datacenter requesting for more resources of the chosen components/models"
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+"none"
 @endPostP
 //example
 @example" "

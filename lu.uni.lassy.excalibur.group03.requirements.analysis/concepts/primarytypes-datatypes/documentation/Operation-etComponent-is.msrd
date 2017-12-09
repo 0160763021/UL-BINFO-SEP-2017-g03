@@ -10,7 +10,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datat
  "
 //postFunctional descriptions
 @postF 
-" "
+"the operation returns true if the value corresponds to the defined enumeration type"
 @endPostF
 //example
 @example" "
