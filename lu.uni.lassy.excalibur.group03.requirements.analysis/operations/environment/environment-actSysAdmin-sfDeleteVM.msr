@@ -6,12 +6,52 @@ import lu.uni.lassy.messir.libraries.string
 import lu.uni.lassy.messir.libraries.calendar
 
 import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 
 	Operation Model {
 
 		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfDeleteVM(AdtVMID: dtVMID, AdtPassword: dtPassword):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
-
+		
+		//Pre Protocol
+		preP{let TheSystem: ctState in
+			let TheActor: actSysAdmin in 
+			self.rnActor.rnSystem = TheSystem
+			and self.rnActor = TheActor
+			
+			//Prep01
+			and TheSystem.vpStarted = true
+			//Prep02
+			and TheActor.rnclAuthenticated.vpIsLogged = true}
+		
+		
+		//Pre Functional
+		preF{
+			true
 		}
-	}
+		
+		//Post functional
+		postF{let TheSystem: ctState in
+			let TheactAuthenticated: actAuthenticated in
+			let AptStringMessageForTheactAuthenticated: ptString in
+			
+			self.rnActor.rnSystem =TheSystem
+			and self.rnActor = TheactAuthenticated
+			
+			//PostF01
+			TheSystem.rnclVM->select(Vid.eq(AdtVid)) = theclVM
+			and theclVM.msrIsKilled
+			
+			
+			//PostF02
+			AptStringMessageForTheaclAuthenticated.eq('VM succesfully deleted')		
+		}
+		
+		//Post protocol
+		postP{true}	
+			
+		}
+		}
+	
 }

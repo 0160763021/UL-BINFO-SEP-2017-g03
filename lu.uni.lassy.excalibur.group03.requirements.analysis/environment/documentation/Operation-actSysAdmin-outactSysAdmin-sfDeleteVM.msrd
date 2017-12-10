@@ -29,7 +29,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreF
 //postFunctional descriptions
 @postF 
-"the clVM class instance with the provided id is considered to be deleted in the post state"
+"the clVM class instance with the provided id is considered to not belong anymore to the post state"
 @postF 
 "a notification is send to the sysAdmin informing him that the virtual machine was deleted"
 @endPostF

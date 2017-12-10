@@ -20,11 +20,11 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
-"none"
+"it is supposed that there is at least one component of the specified type available"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"all the available components of the specified type will be returned to the sysAdmin so that he can then choose you later"
 @endPostF
 //postProtocol descriptions
 @postP 

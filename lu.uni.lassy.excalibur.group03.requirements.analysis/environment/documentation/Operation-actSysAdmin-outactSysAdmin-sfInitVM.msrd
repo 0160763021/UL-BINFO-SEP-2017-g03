@@ -9,7 +9,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM.AdtVMID
-"used to uniquely identify a virtual machin"
+"used to uniquely identify a virtual machine"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM.AdtVMName
 "used to specify a name for the virtual machine"
@@ -28,11 +28,11 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that there cannot exist a clVM instance with the same id attribute as the one that the sysAdmins wants to create"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the system's state has a new instance of clVM initialized with the given values."
 @endPostF
 //postProtocol descriptions
 @postP 

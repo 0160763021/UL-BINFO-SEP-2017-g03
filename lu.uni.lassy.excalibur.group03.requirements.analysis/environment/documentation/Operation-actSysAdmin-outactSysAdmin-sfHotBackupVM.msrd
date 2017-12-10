@@ -25,11 +25,15 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"the date for the backup is supposed to be equal to the current time know by the system"
+@preF
+"it is supposed that there cannot exist a clBackup instance with the same id attribute"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the system's state has a new instance of clBackup initialized with the given values."
+@postF 
+"a notification is send to the sysAdmin informing him that a scheduled backup was succesfully performed"
 @endPostF
 //postProtocol descriptions
 @postP 

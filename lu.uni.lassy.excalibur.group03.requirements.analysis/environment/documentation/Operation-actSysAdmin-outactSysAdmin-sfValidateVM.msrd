@@ -12,19 +12,21 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 "used to uniquely identify a virtual machine"
 @endParameters
 
-@description "
+@description "send to validate the virtual machine
  "
 //preProtocol descriptions
 @preP
-" "
+"the system is started "
+@preP
+"the actor is logged in and did not log out "
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that the virtual machine with the provided id exists"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"a notification is send to the sysAdmin informing him that the virtual machine was created."
 @endPostF
 //postProtocol descriptions
 @postP 

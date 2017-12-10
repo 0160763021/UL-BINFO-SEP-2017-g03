@@ -28,11 +28,13 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that there exists a clComponent instance with id equal to the one specified"
+@preF
+"it is supposed that there are enough components of that type available"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the specified clVm istance will be related with clComponent instance"
 @endPostF
 //postProtocol descriptions
 @postP 
