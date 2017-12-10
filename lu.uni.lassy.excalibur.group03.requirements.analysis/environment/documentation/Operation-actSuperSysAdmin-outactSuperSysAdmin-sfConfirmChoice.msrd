@@ -33,7 +33,7 @@ executed)."
 @endPreF
 //postFunctional descriptions
 @postF 
-"a message is send to the datacenter requesting for more resources of the chosen components/models"
+"A new instance for a component request is created and a message is send to the datacenter requesting for more resources of the chosen components/models"
 @endPostF
 //postProtocol descriptions
 @postP 
