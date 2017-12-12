@@ -28,17 +28,19 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
+"it is supposed that there exist a clVM instance with the provided vid."
+@preF
 "it is supposed that there exists a clComponent instance with id equal to the one specified"
 @preF
-"it is supposed that there are enough components of that type available"
+"it is supposed that the amount is positive"
 @endPreF
 //postFunctional descriptions
 @postF 
-"the specified clVm istance will be related with clComponent instance"
+"the number of all component instances related with one virtual machine is equal to the number of components related with the virtual machine having the id provided plus one."
 @endPostF
 //postProtocol descriptions
 @postP 
-" "
+""
 @endPostP
 //example
 @example" "

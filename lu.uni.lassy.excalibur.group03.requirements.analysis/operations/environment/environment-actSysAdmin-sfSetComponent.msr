@@ -6,6 +6,8 @@ import lu.uni.lassy.messir.libraries.string
 import lu.uni.lassy.messir.libraries.calendar
 
 import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 
 
 	Operation Model {
@@ -13,6 +15,50 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfSetComponent(AdtVMID:dtVMID, AdtCID:dtComponentID, AdtAmount:dtAmount):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
+		//Pre Protocol
+		preP{let TheSystem: ctState in
+			let TheActor: actSysAdmin in 
+			self.rnActor.rnSystem = TheSystem
+			and self.rnActor = TheActor
+			
+			//Prep01
+			and TheSystem.vpStarted = true
+			//Prep02
+			and TheActor.rnclAuthenticated.vpIsLogged = true}
+		
+		
+		//Pre Functional
+		preF{let TheSystem: ctState in
+			let TheActor: actSysAdmin in
+			let ColclBackup:Bag(clBackup) in
+			
+			self.rnActor.rnSystem = TheSystem
+			and self.rnActor = TheActor
+			
+			//PreF01
+			and TheSystem.rnclVM->select(VID.eq(AdtVID)) = ColclVIDs
+			and ColclVIDs->isEmpty() = false
+			
+			//PreF02
+			and TheSystem.rnclComponent->select(CID.eq(AdtCID)) = ColclCIDs
+			and ColclCIDs->isEmpty() = false
+			
+			//PreF03
+			and TheSystem.rnclComponent->select(CID.eq(AdtCID) and AdtAmount > 0)->size() > 0
+		}
+		
+		//Post functional
+		postF{let TheSystem: ctState in
+			
+			//PostF01
+			and TheSystem.rnclVM.rnclComponent->allInstances()->size()@pre = 
+			TheSystem.rnclVM.rnclComponent->allInstances()->size()@post + 1
+			
+			
+		}
+		
+		//Post protocol
+		postP{true}	
 		}
 	}
 }
