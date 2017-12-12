@@ -113,7 +113,7 @@ Concept Model {
 			}
 
 		
-	class clProcessUnit role rnclProcessUnit cardinality[1 .. *] {
+	class clProcessUnit role rnclProcessUnit cardinality[1 .. *] extends clComponent{
 		attribute cores: dtCores
 		attribute clockspeed: dtClockSpeed
 		
@@ -123,7 +123,7 @@ Concept Model {
 		): ptBoolean
 		}
 
-	class clStorage role rnclStorage cardinality[1 .. *] {
+	class clStorage role rnclStorage cardinality[1 .. *] extends clComponent{
 		attribute capacity: dtCapacity
 		
 		operation init(
@@ -131,13 +131,13 @@ Concept Model {
 		): ptBoolean
 		}
 
-	class clSoftware role rnclSoftware cardinality[1 .. *] {
+	class clSoftware role rnclSoftware cardinality[1 .. *] extends clComponent{
 		attribute license: dtLicenseID
 		
 		operation init(AlicenseID: dtLicenseID): ptBoolean
 		}
 
-	class clBackup role rnclBackup cardinality[0 .. *] {
+	class clBackup role rnclBackup cardinality[0 .. *] extends clComponent{
 		attribute BID: dtBID
 		attribute date: dtDate
 		attribute description: dtBackupDescription

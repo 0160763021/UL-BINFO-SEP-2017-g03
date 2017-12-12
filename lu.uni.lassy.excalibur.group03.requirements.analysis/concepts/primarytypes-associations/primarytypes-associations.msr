@@ -21,17 +21,11 @@ Concept Model {
 	clVM(rnVMs1)[0..*]
 	clComponent(rnComponents)[1..*] 
 	
-	association assctComponentclProcessUnit
-	clProcessUnit(rnPUs)[0..1]
-	clComponent(rnComponents1)[1..1] 
+	 
 	
-	association assctComponentclStroage
-	clStorage(rnStorages)[0..1]
-	clComponent(rnComponents2)[1..1] 
+	 
 	
-	association assctComponentclSoftware
-	clSoftware(rnSoftware)[0..1]
-	clComponent(rnComponents3)[1..1] 
+	 
 	
 	association assctSysAdminclVM
 	clVM(rnVMs2)[0..*]
