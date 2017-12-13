@@ -104,12 +104,12 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		postF{let TheSystem: ctState in
 			let TheclVM: clVM in
 	
-			let TheclComponentAmount1: clCompAmount in
-			let TheclComponentAmount2: clCompAmount in
-			let TheclComponentAmount3: clCompAmount in
-			let TheclComponentAmount4: clCompAmount in
-			let TheclComponentAmount5: clCompAmount in
-			let TheclComponentAmount6: clCompAmount in
+			let TheclComponentAmount1: clComponentAmount in
+			let TheclComponentAmount2: clComponentAmount in
+			let TheclComponentAmount3: clComponentAmount in
+			let TheclComponentAmount4: clComponentAmount in
+			let TheclComponentAmount5: clComponentAmount in
+			let TheclComponentAmount6: clComponentAmount in
 			
 			let AptStringMessageForTheactAuthenticated: ptString in
 			

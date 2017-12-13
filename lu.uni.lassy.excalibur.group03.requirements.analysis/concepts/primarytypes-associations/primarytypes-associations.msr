@@ -17,11 +17,12 @@ Concept Model {
 	
 	Primary Types {
 	
-	association assctVMclComponent
-	clVM(rnVMs1)[0..*]
-	clComponent(rnComponents)[1..*] 
-	
 	 
+	
+	association assclVMclComponentclComponentAmount
+	clVM(rnVMs5)[1..1]
+	clComponent(rnComponents2)[1..1]
+	clComponentAmount(rnComAmounts)[1..1]
 	
 	 
 	

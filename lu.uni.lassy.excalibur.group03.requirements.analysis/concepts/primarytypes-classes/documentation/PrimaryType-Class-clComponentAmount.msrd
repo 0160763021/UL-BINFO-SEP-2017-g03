@@ -1,0 +1,23 @@
+/*
+@author nelson
+@date Wed Dec 13 20:23:34 CET 2017
+*/
+
+
+@@Primary Type Class lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponentAmount
+@description "Used to model a class which enables to determine which component is associated with which virtual machine
+and also the amount of the component."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponentAmount.VID
+"used to uniquely identify a virtual machine."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponentAmount.CID
+"used to uniquely identify a component."
+@attribute
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponentAmount.Amount
+"used to define the amount for the given component."
+@endAttributes
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clComponentAmount.init
+"used to initialize the current object as a new instance of the clVM type."
+@endOperations

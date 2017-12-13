@@ -196,6 +196,20 @@ Concept Model {
 		): ptBoolean
 			}
 
+		class clComponentAmount role rnclComponentAmount cardinality[0 .. *] {
+			
+			attribute VID: dtVMID
+			attribute CID: dtComponentID
+			attribute Amount: dtAmount
+			
+			operation init(
+				VID: dtVMID,
+				CID: dtComponentID,
+				Amount: dtAmount
+				
+			): ptBoolean
 		}
+
 	}
+}
 }
