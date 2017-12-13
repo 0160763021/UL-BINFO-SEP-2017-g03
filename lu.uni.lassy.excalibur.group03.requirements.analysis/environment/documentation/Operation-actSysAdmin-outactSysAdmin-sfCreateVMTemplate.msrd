@@ -9,64 +9,72 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtVMID
-""
+"used to uniquely identify a virtual machine"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtVMName
-""
+"used to give the virtual machine a name"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtVMDescription
-""
+"used as description for the virtual machine"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtQID1
-""
+"used to uniquely identify a question"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtQID2
-""
+"used to uniquely identify a question"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtQID3
-""
+"used to uniquely identify a question"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtQID4
-""
+"used to uniquely identify a question"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtQID5
-""
+"used to uniquely identify a question"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtQID6
-""
+"used to uniquely identify a question"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AetAnswer1
-""
+"used to determine if the answer to the question is yes or no"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AetAnswer2
-""
+"used to determine if the answer to the question is yes or no"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AetAnswer3
-""
+"used to determine if the answer to the question is yes or no"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AetAnswer4
-""
+"used to determine if the answer to the question is yes or no"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AetAnswer5
-""
+"used to determine if the answer to the question is yes or no"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AetAnswer6
-""
+"used to determine if the answer to the question is yes or no"
 @endParameters
 
-@description "
+@description " sent to create a virtual machine using template mode
  "
 //preProtocol descriptions
 @preP
-" "
+"the system is started "
+@preP
+"the actor is logged in and did not log out "
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that every attribute is of correct type"
+@preF
+"it is supposed that there cannot exist a clVM instance with the same id attribute as the one that the sysAdmins wants to create"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the system's state has a new instance of clVM initialized with the given values."
+@postF 
+"the system's state has a new instance of clComponentAmount initialized with the given values."
+@postF 
+"the new vm instance will be related with all the clComponents instances where having provided an id as parameters as well related with the clComponentAmount instance"
 @endPostF
 //postProtocol descriptions
 @postP 

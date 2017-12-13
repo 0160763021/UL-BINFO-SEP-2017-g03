@@ -9,64 +9,76 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtVMID
-""
+"used to uniquely identify a virtual machine"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtVMDescription
-""
+"used as description for the virtual machine"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtVMName
-""
+"used to give the virtual machine a name"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtCID1
-""
+"used to uniquely identify a component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtCID2
-""
+"used to uniquely identify a component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtCID3
-""
+"used to uniquely identify a component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtCID4
-""
+"used to uniquely identify a component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtCID5
-""
+"used to uniquely identify a component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtCID6
-""
+"used to uniquely identify a component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtAmount1
-""
+"used to determine the amount of a given component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtAmount2
-""
+"used to determine the amount of a given component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtAmount3
-""
+"used to determine the amount of a given component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtAmount4
-""
+"used to determine the amount of a given component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtAmount5
-""
+"used to determine the amount of a given component"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert.AdtAmount6
-""
+"used to determine the amount of a given component"
 @endParameters
 
-@description "
+@description " sent to create a virtual machine using expert mode
  "
 //preProtocol descriptions
 @preP
-" "
+"the system is started "
+@preP
+"the actor is logged in and did not log out "
 @endPreP
 //preFunctional descriptions
 @preF
-" "
+"it is supposed that every attribute is of correct type"
+@preF
+"it is supposed that there cannot exist a clVM instance with the same id attribute as the one that the sysAdmins wants to create"
+@preF
+"it is supposed that there exists a clComponent instance with id equal to the one specified"
+@preF
+"it is supposed that the component is available"
 @endPreF
 //postFunctional descriptions
 @postF 
-" "
+"the system's state has a new instance of clVM initialized with the given values."
+@postF 
+"the system's state has a new instance of clComponentAmount initialized with the given values."
+@postF 
+"the new vm instance will be related with all the clComponents instances where having provided an id as parameters as well related with the clComponentAmount instance"
 @endPostF
 //postProtocol descriptions
 @postP 
