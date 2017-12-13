@@ -38,6 +38,25 @@ Environment Model {
 			operation sfGetProposedVM(AdtVMID: dtVMID):ptBoolean
 			operation sfValidateVM(adtVMID: dtVMID):ptBoolean
 			operation sfConfirmDelete(AetConfirmDelete:etConfirmDelete):ptBoolean
+			operation sfCreateVMExpert(AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription, 
+				AdtCID1: dtComponentID, AdtAmount1: dtAmount,
+				AdtCID2: dtComponentID, AdtAmount2: dtAmount,
+				AdtCID3: dtComponentID, AdtAmount3: dtAmount,
+				AdtCID4: dtComponentID, AdtAmount4: dtAmount,
+				AdtCID5: dtComponentID, AdtAmount5: dtAmount,
+				AdtCID6: dtComponentID, AdtAmount6: dtAmount
+			):ptBoolean
+			operation sfCreateVMTemplate(
+				AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription,
+				AdtQID1: dtQuestionID, AetAnswer1: etAnswer,
+				AdtQID2: dtQuestionID, AetAnswer2: etAnswer,
+				AdtQID3: dtQuestionID, AetAnswer3: etAnswer,
+				AdtQID4: dtQuestionID, AetAnswer4: etAnswer,
+				AdtQID5: dtQuestionID, AetAnswer5: etAnswer,
+				AdtQID6: dtQuestionID, AetAnswer6: etAnswer
+				
+			):ptBoolean
+			
 			}
 		}
 	actor actSuperSysAdmin role rnactSuperSysAdmin cardinality[0 .. *] extends actAuthenticated{
