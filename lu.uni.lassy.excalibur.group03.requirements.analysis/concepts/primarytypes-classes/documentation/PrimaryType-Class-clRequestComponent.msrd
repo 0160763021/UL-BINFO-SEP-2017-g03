@@ -12,5 +12,5 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.class
 @endAttributes
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clRequestComponent.init
-""
+"used to initialize the current object as a new instance of the clRequestComponent type."
 @endOperations

@@ -33,7 +33,7 @@ executed)."
 @endPreF
 //postFunctional descriptions
 @postF 
-"the chosen resource state is obtained"
+"the poststate obtained is the one given as parameter"
 @endPostF
 //postProtocol descriptions
 @postP 

@@ -8,5 +8,5 @@
 @description "enumeration regrouping the different types of components available"
 @operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etComponent.is
-""
+"used to determine which strings values are considered as valid etComponent."
 @endOperations
