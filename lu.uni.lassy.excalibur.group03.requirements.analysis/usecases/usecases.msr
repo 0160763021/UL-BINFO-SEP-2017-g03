@@ -33,80 +33,18 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		step b: actSysAdmin executes sfLogout()
 		
 		}
-	use case system usergoal ugCreateVMExpert() {
-		actor actSysAdmin[primary, active]
-		
-		reuse sfInitVM[0..*]
-		reuse sfGetAvailableComponents[0..*]
-		reuse sfSetComponent[0..*]
-		reuse sfValidateVM[0..*]
-		
-		step a: actSysAdmin executes sfInitVM()
-		step b: actSysAdmin executes sfGetAvailableComponents()
-		step c: actSysAdmin executes sfSetComponent()
-		step d: actSysAdmin executes sfValidateVM()
-		
-		
-		ordering constraint
-		"step (a) needs to be done first"
-		ordering constraint
-		"step (b) can only be executed if step (a) was executed"
-		ordering constraint
-		"step (c) can only be executed if step (b) was executed"	
-		}
-	
-	use case system usergoal ugCreateVMTemplate() {
-		actor actSysAdmin[primary, active]
-		
-		reuse sfInitVM[0..*]
-		reuse sfGenerateComponent[0..*]
-		reuse sfGetProposedVM[0..*]
-		reuse ugModifyVM[0..*]
-		reuse sfValidateVM[0..*]
-		
-		
-		step a: actSysAdmin executes sfInitVM()
-		step b: actSysAdmin executes sfGenerateComponent()
-		step c: actSysAdmin executes sfGetProposedVM()
-		step d: actSysAdmin executes ugModifyVM()
-		step e: actSysAdmin executes sfValidateVM()
-		
-		ordering constraint
-		"step (a) needs to be done first"
-		ordering constraint
-		"step (b) can only be executed if step (a) was executed"
-		ordering constraint
-		"step (c) can only be executed if step (b) was executed"
-		}
 	
 	
 	
-	use case system usergoal ugBackupVMNow() {
-		actor actSysAdmin[primary, active]
-		
-		reuse sfHotBackupVM[1..*]
-		step a: actSysAdmin executes sfHotBackupVM()
-		}
 	
 	
-	use case system usergoal ugBackupVMPlanified() {
-		actor actSysAdmin[primary, active]
-		
-		reuse sfScheduledBackupVM[0..*]
-		
-		step a: actSysAdmin executes sfScheduledBackupVM()
-		
-		ordering constraint
-		"step (a) needs to be done first"
-
-		}
 	
-	use case system usergoal ugDeleteVM() {
-		actor actSysAdmin[primary, active]
-		
-		reuse sfDeleteVM[1..*]
-		step a: actSysAdmin executes sfDeleteVM()
-		}
+	
+	
+	
+	
+	
+	
 	
 	use case system summary suVMLifecycle() {
 		actor actSysAdmin[primary, active]
@@ -315,17 +253,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				ieMessage(Message) returned to actSysAdmin
 			}
 		}
-	use case system usergoal ugModifyVM() {
-		actor actSysAdmin[primary, active]
-		
-		reuse sfGetAvailableComponents[0..*]
-		reuse sfSetComponent[0..*]
-		reuse sfValidateVM[0..*]
-		
-		step a: actSysAdmin executes sfGetAvailableComponents()
-		step b: actSysAdmin executes sfSetComponent()
-		step c: actSysAdmin executes sfValidateVM()
-		}
+	
 	use case system summary suDeployAndRun() {
 		
 		actor actSuperSysAdmin[primary, active]
