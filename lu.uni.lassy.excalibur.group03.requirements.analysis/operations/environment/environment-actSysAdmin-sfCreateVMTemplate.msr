@@ -19,8 +19,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				AdtQID3: dtQuestionID, AetAnswer3: etAnswer,
 				AdtQID4: dtQuestionID, AetAnswer4: etAnswer,
 				AdtQID5: dtQuestionID, AetAnswer5: etAnswer,
-				AdtQID6: dtQuestionID, AetAnswer6: etAnswer
-				
+				AdtQID6: dtQuestionID, AetAnswer6: etAnswer,
+				AdtSysID: dtSysID
 			):ptBoolean{
 				
 			//Pre Protocol

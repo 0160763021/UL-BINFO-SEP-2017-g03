@@ -18,7 +18,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				AdtCID3: dtComponentID, AdtAmount3: dtAmount,
 				AdtCID4: dtComponentID, AdtAmount4: dtAmount,
 				AdtCID5: dtComponentID, AdtAmount5: dtAmount,
-				AdtCID6: dtComponentID, AdtAmount6: dtAmount
+				AdtCID6: dtComponentID, AdtAmount6: dtAmount,
+				AdtSysID: dtSysID
 			):ptBoolean{
 				
 				

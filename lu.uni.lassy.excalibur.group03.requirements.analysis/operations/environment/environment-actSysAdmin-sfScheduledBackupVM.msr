@@ -11,7 +11,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 
 	Operation Model {
 
-		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM(AdtBackupDescription:dtBackupDescription, AdtVMID:dtVMID, AdtDate:dtDate):ptBoolean{
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM(AdtBID: dtBID, BAdtSysID: dtSysID, AdtBackupDescription:dtBackupDescription, AdtVMID:dtVMID, AdtDate:dtDate):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
 		//Pre Protocol

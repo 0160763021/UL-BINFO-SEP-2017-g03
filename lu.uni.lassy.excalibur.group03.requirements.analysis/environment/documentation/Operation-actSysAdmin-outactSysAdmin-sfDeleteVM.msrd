@@ -11,6 +11,9 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfDeleteVM.AdtVMID
 "used to uniquely identify which virtual machine should be deleted"
 @parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfDeleteVM.AdtSysID
+"used to uniquely identify the sysAdmin"
+@parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfDeleteVM.AdtPassword
 "used as a confirmation before deleting the virtual machine"
 @endParameters

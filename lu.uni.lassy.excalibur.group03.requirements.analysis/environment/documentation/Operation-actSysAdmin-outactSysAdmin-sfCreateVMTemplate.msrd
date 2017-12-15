@@ -52,6 +52,9 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AetAnswer6
 "used to determine if the answer to the question is yes or no"
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate.AdtSysID
+"used to uniquely identify the sysAdmin"
 @endParameters
 
 @description " sent to create a virtual machine using template mode

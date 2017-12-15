@@ -28,10 +28,10 @@ Environment Model {
 			}
 			output interface outactSysAdmin {
 			
-			operation sfDeleteVM(AdtVMID: dtVMID, AdtPassword: dtPassword):ptBoolean
+			operation sfDeleteVM(AdtVMID: dtVMID,AdtSysID: dtSysID, AdtPassword: dtPassword):ptBoolean
 			operation sfGetAvailableComponents(AetComponent: etComponent):ptBoolean
-			operation sfHotBackupVM(AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
-			operation sfScheduledBackupVM(AdtBackupDescription: dtBackupDescription, AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
+			operation sfHotBackupVM(AdtBID: dtBID, AdtSysID: dtSysID, AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
+			operation sfScheduledBackupVM(AdtBID: dtBID, AdtSysID: dtSysID, AdtBackupDescription: dtBackupDescription, AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
 			
 			operation sfSetComponent(AdtVMID: dtVMID, AdtCID: dtComponentID, AdtAmount: dtAmount):ptBoolean
 			
@@ -44,7 +44,8 @@ Environment Model {
 				AdtCID3: dtComponentID, AdtAmount3: dtAmount,
 				AdtCID4: dtComponentID, AdtAmount4: dtAmount,
 				AdtCID5: dtComponentID, AdtAmount5: dtAmount,
-				AdtCID6: dtComponentID, AdtAmount6: dtAmount
+				AdtCID6: dtComponentID, AdtAmount6: dtAmount,
+				AdtSysID: dtSysID
 			):ptBoolean
 			operation sfCreateVMTemplate(
 				AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription,
@@ -53,7 +54,8 @@ Environment Model {
 				AdtQID3: dtQuestionID, AetAnswer3: etAnswer,
 				AdtQID4: dtQuestionID, AetAnswer4: etAnswer,
 				AdtQID5: dtQuestionID, AetAnswer5: etAnswer,
-				AdtQID6: dtQuestionID, AetAnswer6: etAnswer
+				AdtQID6: dtQuestionID, AetAnswer6: etAnswer,
+				AdtSysID: dtSysID
 				
 			):ptBoolean
 			

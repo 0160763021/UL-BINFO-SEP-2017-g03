@@ -8,6 +8,12 @@
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfHotBackupVM
 //parameters
 @parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfHotBackupVM.AdtBID
+"used to uniquely identify a backuo"
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfHotBackupVM.AdtSysID
+"used to uniquely identify the sysAdmin"
+@parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfHotBackupVM.AdtVMID
 "used to uniquely identify a virtual machine"
 @parameter
