@@ -107,27 +107,20 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		reuse sfDeleteVM[1..*]
 		step a: actSysAdmin executes sfDeleteVM()
 		}
+	
 	use case system summary suVMLifecycle() {
 		actor actSysAdmin[primary, active]
 	
 		reuse ugSecurelyUseSystem[1..*]
-		reuse ugCreateVMExpert[1..*]
-		reuse ugCreateVMTemplate[1..*]
-		reuse ugBackupVMNow[1..*]
-		reuse ugBackupVMPlanified[1..*]
-		reuse ugDeleteVM[1..*]
+		reuse ugVMManagement[1..*]
+		reuse ugBackup[1..*]
 		
 		step a: actSysAdmin executes ugSecurelyUseSystem()
-		step b: actSysAdmin executes ugCreateVMExpert()
-		step c: actSysAdmin executes ugCreateVMTemplate()
-		step d: actSysAdmin executes ugBackupVMNow()
-		step e: actSysAdmin executes ugBackupVMPlanified()
-		step f: actSysAdmin executes ugDeleteVM()
+		step b: actSysAdmin executes ugVMManagement()
+		step c: actSysAdmin executes ugBackup()
 		
 		ordering constraint
 		"step (a) needs to be done first"
-		ordering constraint
-		"step (d), (e) and (f) can only be executed if step (b) or (c) was executed"
 		
 		}
 	use case system summary suDatacenterConf() {
@@ -382,6 +375,31 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			returned messages {
 				ieMessage(Message) returned to actSysAdmin
 			}
+		}
+	use case system usergoal ugVMManagement() {
+			actor actSysAdmin[primary, active]
+			
+			reuse sfCreateVMExpert[1..*]
+			reuse sfCreateVMTemplate[1..*]
+			reuse sfDeleteVM[1..*]
+			reuse sfSetComponent[1..*]
+			
+			step a: actSysAdmin executes sfCreateVMExpert()
+			step b: actSysAdmin executes sfCreateVMTemplate()
+			step c: actSysAdmin executes sfDeleteVM()
+			step d: actSysAdmin executes sfSetComponent()
+			
+			ordering constraint
+			"step (c) can only be executed if (a) or (b) was executed once before"
+		}
+	use case system usergoal ugBackup() {
+			actor actSysAdmin[primary, active]
+			
+			reuse sfHotBackupVM[1..*]
+			reuse sfScheduledBackupVM[1..*]
+			
+			step a: actSysAdmin executes sfHotBackupVM()
+			step b: actSysAdmin executes sfScheduledBackupVM()
 		}
 	}
 }
