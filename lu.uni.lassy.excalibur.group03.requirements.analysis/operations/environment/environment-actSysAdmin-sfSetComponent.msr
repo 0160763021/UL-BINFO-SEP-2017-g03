@@ -51,10 +51,11 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		postF{let TheSystem: ctState in
 			
 			//PostF01
-			and TheSystem.rnclVM.rnclComponent->allInstances()->size()@pre = 
-			TheSystem.rnclVM.rnclComponent->allInstances()->size()@post + 1
+			if(dtCid.is(AdtCID1)) then (TheclComponentAmount1.init(AdtVMID, AdtCID1, AdtAmount)) else (true) endif
+			and TheSystem@pre.rnclVM.rnclComponent->allInstances()->size() = 
+			TheSystem@post.rnclVM.rnclComponent->allInstances()->size() + 1
 			
-			
+		
 		}
 		
 		//Post protocol

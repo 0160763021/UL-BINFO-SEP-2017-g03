@@ -40,8 +40,12 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			and ColclVMs->isEmpty() = false}
 		
 		//Post functional
-		postF{true
-			
+		postF{let TheSystem: ctState in
+			let ColCompAmount:Bag(clComponentAmount) in
+		
+			//PostF01
+			and TheSystem.rnclComponentAmount->select(Vid.eq(AdtVid)) = ColCompAmount
+			and ColCompAmount->size().eq(6)	
 		}
 	}
 	

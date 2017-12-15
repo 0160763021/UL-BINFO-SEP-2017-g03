@@ -20,11 +20,11 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
-"it is supposed that there exists a virtual machine instance having the provided id"
+"it is supposed that the provided component type is considered as a valid one"
 @endPreF
 //postFunctional descriptions
 @postF 
-""
+"the operation will return a collection of components belonging to the specified type therefore at least one component of that type must be available"
 @endPostF
 //postProtocol descriptions
 @postP 

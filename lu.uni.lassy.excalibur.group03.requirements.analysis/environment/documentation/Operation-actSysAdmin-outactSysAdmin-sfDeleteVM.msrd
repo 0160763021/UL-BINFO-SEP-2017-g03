@@ -29,9 +29,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreF
 //postFunctional descriptions
 @postF 
-"the clVM class instance with the provided id is considered to not belong anymore to the post state"
-@postF 
-"a notification is send to the sysAdmin informing him that the virtual machine was deleted"
+"In case the sysadmin has provided his correct password then the clVM class instance with the provided id is considered to not belong anymore to the post state and a notification is send to the sysadmin informing him that the virtual machine was deleted, in case the password is wrong then an error message will be sent to the sysadmin"
 @endPostF
 //postProtocol descriptions
 @postP 

@@ -58,46 +58,78 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			and ColclVMs->isEmpty() = true
 			
 			//PreF02
-			and TheSystem.rnclComponent->select(Cid.eq(AdtCID1)) = ColclComponent1
-			and ColclComponent1->isEmpty() = false
+			if(Cid.is(AdtCID1)) then(
+				
+				//PreF02
+				and TheSystem.rnclComponent->select(Cid.eq(AdtCID1)) = ColclComponent1
+				and ColclComponent1->isEmpty() = false
+				
+				//PreF03
+				and ColclComponent1.CAmount.gt(AdtAmount1)
+				
+			)else( true ) endif
+		
 			
-			//PreF03
-			and ColclComponent1.CAmount.gt(AdtAmount1)
+			if(Cid.is(AdtCID2)) then(
+				
+				//PreF02
+				and TheSystem.rnclComponent->select(Cid.eq(AdtCID2)) = ColclComponent2
+				and ColclComponent2->isEmpty() = false
+				
+				//PreF03
+				and ColclComponent2.CAmount.gt(AdtAmount2)
+				
+			)else( true ) endif
 			
-			//PreF02
-			and TheSystem.rnclComponent->select(Cid.eq(AdtCID2)) = ColclComponent2
-			and ColclComponent2->isEmpty() = false
+			if(Cid.is(AdtCID3)) then(
+				
+				//PreF02
+				and TheSystem.rnclComponent->select(Cid.eq(AdtCID3)) = ColclComponent3
+				and ColclComponent3->isEmpty() = false
+				
+				//PreF03
+				and ColclComponent3.CAmount.gt(AdtAmount3)
+				
+			)else( true ) endif
 			
-			//PreF03
-			and ColclComponent2.CAmount.gt(AdtAmount2)
 			
-			//PreF02
-			and TheSystem.rnclComponent->select(Cid.eq(AdtCID3)) = ColclComponent3
-			and ColclComponent3->isEmpty() = false
 			
-			//PreF03
-			and ColclComponent3.CAmount.gt(AdtAmount3)
+			if(Cid.is(AdtCID4)) then(
+				
+				//PreF02
+				and TheSystem.rnclComponent->select(Cid.eq(AdtCID4)) = ColclComponent4
+				and ColclComponent4->isEmpty() = false
+				
+				//PreF03
+				and ColclComponent4.CAmount.gt(AdtAmount4)
+				
+			)else( true ) endif
 			
-			//PreF02
-			and TheSystem.rnclComponent->select(Cid.eq(AdtCID4)) = ColclComponent4
-			and ColclComponent4->isEmpty() = false
+			if(Cid.is(AdtCID5)) then(
+				
+				//PreF02
+				and TheSystem.rnclComponent->select(Cid.eq(AdtCID5)) = ColclComponent5
+				and ColclComponent5->isEmpty() = false
+				
+				//PreF03
+				and ColclComponent5.CAmount.gt(AdtAmount5)
+				
+				
+				
+			)else( true ) endif
 			
-			//PreF03
-			and ColclComponent4.CAmount.gt(AdtAmount4)
+			if(Cid.is(AdtCID6)) then(
+				
+				//PreF02
+				and TheSystem.rnclComponent->select(Cid.eq(AdtCID6)) = ColclComponent6
+				and ColclComponent6->isEmpty() = false
+				
+				//PreF03
+				and ColclComponent6.CAmount.gt(AdtAmount6)
+				
+			)else( true ) endif
 			
-			//PreF02
-			and TheSystem.rnclComponent->select(Cid.eq(AdtCID5)) = ColclComponent5
-			and ColclComponent5->isEmpty() = false
-			
-			//PreF03
-			and ColclComponent5.CAmount.gt(AdtAmount5)
-			
-			//PreF02
-			and TheSystem.rnclComponent->select(Cid.eq(AdtCID6)) = ColclComponent6
-			and ColclComponent6->isEmpty() = false
-			
-			//PreF03
-			and ColclComponent6.CAmount.gt(AdtAmount6)
+		
 	
 		}
 		//Post functional

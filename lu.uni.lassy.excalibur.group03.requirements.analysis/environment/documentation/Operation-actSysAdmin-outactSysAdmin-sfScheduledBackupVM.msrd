@@ -31,12 +31,14 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 "the date for the backup is supposed to be in the future with respect to the current time know by the system"
 @preF
 "it is supposed that there cannot exist a clBackup instance with the same id attribute"
+@preF
+"it is supposed that there exists an clsysAdmin instance having the provided id"
+@preF
+"it is supposed that there exists an clVM instance having the provided id"
 @endPreF
 //postFunctional descriptions
 @postF 
-"the system's state has a new instance of clBackup initialized with the given values."
-@postF 
-"a notification is send to the sysAdmin informing him that a scheduled backup was succesfully performed"
+"the system's state has a new instance of clBackup initialized with the given values but only in case all the parameters were correctly specified. In that case a notification will be sent to sysadmin informing that a backup was successfully created else an error message will be sent to the sysAdmin"
 @endPostF
 //postProtocol descriptions
 @postP 

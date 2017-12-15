@@ -36,8 +36,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreF
 //postFunctional descriptions
 @postF 
-"the number of all component instances related with one virtual machine is equal to the number of components related with the virtual machine having the id provided plus one."
-@endPostF
+"the number of all component instances related with one virtual machine is equal to the number of components related with the virtual machine having the id provided plus one which means that the virtual machine will be related with a new component."@endPostF
 //postProtocol descriptions
 @postP 
 ""

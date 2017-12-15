@@ -29,7 +29,9 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		preF{let TheSystem: ctState in
 			let TheActor: actSysAdmin in
 			let ColclBackup:Bag(clBackup) in
-			
+			let ColclSysAdmin: Bag(clSysAdmin) in
+			let ColclVM: Bag(clVM) in 
+						
 			self.rnActor.rnSystem = TheSystem
 			and self.rnActor = TheActor
 			
@@ -38,7 +40,15 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			
 			//PreF02
 			and TheSystem.rnclBackup->select(BID.eq(AdtBID)) = ColclBIDs
-			and ColclBIDs->isEmpty() = true}
+			and ColclBIDs->isEmpty() = true
+			
+			//PreF03
+			and TheSystem.rnclSysAdmin->select(SysID.eq(AdtSysID)) = ColclSysAdmin
+			and ColclSysAdmin->isEmpty() = false
+			
+			//PreF04
+			and TheSystem.rnclVM->select(VMID.eq(AdtVMID)) = ColclVM
+			and ColclVM->isEmpty() = false}
 		
 		//Post functional
 		postF{let TheSystem: ctState in
@@ -47,13 +57,13 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			
 			self.rnActor.rnSystem =TheSystem
 			
-			
 			//PostF01
-			TheclBackup.init(AdtBackupDescription, AdtVMID, AdtDate)
-			
+			TheclBackup.init(AdtBID, AdtVMID, AdtSysAdminID, AdtBackupDescription, AdtDate)
 			
 			//PostF02
 			AptStringMessageForTheaclAuthenticated.eq('Hot Backup succesfully performed')		
+			and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+		
 		}
 		
 		//Post protocol

@@ -26,7 +26,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreF
 //postFunctional descriptions
 @postF 
-"a collection of all the clComponents instances related with the specified VM id will be returned back to the sysAdmin"
+"a collection of all the clComponents instances related with the specified VM id will be returned back to the sysadmin, the size of that collection must be equal with 6"
 @endPostF
 //postProtocol descriptions
 @postP 

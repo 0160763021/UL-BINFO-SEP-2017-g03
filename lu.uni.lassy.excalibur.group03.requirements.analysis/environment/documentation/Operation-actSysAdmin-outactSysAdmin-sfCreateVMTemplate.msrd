@@ -64,17 +64,16 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 @endPreP
 //preFunctional descriptions
 @preF
-"it is supposed that every attribute is of correct type"
-@preF
 "it is supposed that there cannot exist a clVM instance with the same id attribute as the one that the sysAdmins wants to create"
 @endPreF
 //postFunctional descriptions
 @postF 
-"the system's state has a new instance of clVM initialized with the given values."
-@postF 
-"the system's state has a new instance of clComponentAmount initialized with the given values."
-@postF 
-"the new vm instance will be related with all the clComponents instances where having provided an id as parameters as well related with the clComponentAmount instance"
+"An error message will be sent to the sysAdmin in case he has not specified a name and/or a description for the
+virtual machine else the system's state has a new instance of clVM initialized with the given values.
+The system's state has for every Cid provided a new instance of clComponentAmount initialized with the given values.
+Which component id will be used to initialize the clComponentAmount instance will depend on the answer of the question.
+At then end a notification is sent to the sysAdmin informing that he successfully created a virtual machine.
+"
 @endPostF
 //postProtocol descriptions
 @postP 

@@ -29,15 +29,17 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		
 		//Pre Functional
 		preF{
-			true
+			and etType.is(AetType)
 		}
 		
 		//Post functional
 		postF{let TheSystem: ctState in
 			
-			//PostF01
-			and TheSystem.rnclComponent->select(CType.eq(AetCType) and amount.gt(0))->size().gt(0)
+			let ColclComponents:Bag(clComponent) in 
 			
+			//PostF01
+			and TheSystem.rnclComponent->select(CType.eq(AetCtype) and amount.lt(0)) = ColclComponents
+			and ColclComponents->size().gt(0)
 			
 		}
 		
