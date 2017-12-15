@@ -1,0 +1,8 @@
+/*
+@author nelson
+@date Fri Dec 15 15:27:04 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.associations.assctVMclBackup
+@description "Used to determine which Backups were perform on a certain virtual machine."

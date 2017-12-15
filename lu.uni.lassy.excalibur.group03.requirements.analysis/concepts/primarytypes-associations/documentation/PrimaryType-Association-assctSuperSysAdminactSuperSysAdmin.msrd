@@ -1,0 +1,8 @@
+/*
+@author nelson
+@date Fri Dec 15 17:39:49 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.associations.assctSuperSysAdminactSuperSysAdmin
+@description "Used to relate the ctSuperSysAdmin with the actSuperSysAdmin."

@@ -1,0 +1,8 @@
+/*
+@author nelson
+@date Fri Dec 15 17:38:43 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.associations.assclVMclComponentclComponentAmount
+@description "Used to determine which virtual machine is associated with which component and what is the amount for that component."

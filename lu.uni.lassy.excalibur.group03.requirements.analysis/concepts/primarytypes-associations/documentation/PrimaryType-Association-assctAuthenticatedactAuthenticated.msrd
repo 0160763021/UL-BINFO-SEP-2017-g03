@@ -1,0 +1,8 @@
+/*
+@author nelson
+@date Fri Dec 15 15:26:40 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.associations.assctAuthenticatedactAuthenticated
+@description "Used to relate the ctAuthenticated with the actAuthenticated."

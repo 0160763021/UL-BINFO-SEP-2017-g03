@@ -1,0 +1,8 @@
+/*
+@author nelson
+@date Fri Dec 15 15:26:44 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.associations.assctComponentclRequestComponent
+@description "Used to determine which component is associated with which request"

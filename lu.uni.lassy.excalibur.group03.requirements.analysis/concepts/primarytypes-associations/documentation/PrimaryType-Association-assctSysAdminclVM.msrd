@@ -1,0 +1,8 @@
+/*
+@author nelson
+@date Fri Dec 15 17:41:05 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.associations.assctSysAdminclVM
+@description "Used to determine which sysadmin created which virtual machine."

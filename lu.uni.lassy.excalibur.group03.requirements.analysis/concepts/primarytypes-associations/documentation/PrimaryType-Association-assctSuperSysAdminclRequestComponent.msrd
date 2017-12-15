@@ -1,0 +1,8 @@
+/*
+@author nelson
+@date Fri Dec 15 17:40:02 CET 2017
+*/
+
+
+@@Primary Type Association lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.associations.assctSuperSysAdminclRequestComponent
+@description "Used to determine which superSysAdmin made which request."
