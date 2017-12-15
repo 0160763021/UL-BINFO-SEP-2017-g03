@@ -311,11 +311,15 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			reuse sfCreateVMTemplate[1..*]
 			reuse sfDeleteVM[1..*]
 			reuse sfSetComponent[1..*]
+			reuse sfGetAvailableComponents[1..*]
+			reuse sfGetProposedVM[1..*]
 			
 			step a: actSysAdmin executes sfCreateVMExpert()
 			step b: actSysAdmin executes sfCreateVMTemplate()
 			step c: actSysAdmin executes sfDeleteVM()
 			step d: actSysAdmin executes sfSetComponent()
+			step e: actSysAdmin executes sfGetAvailableComponents()
+			step f: actSysAdmin executes sfGetProposedVM()
 			
 			ordering constraint
 			"step (c) can only be executed if (a) or (b) was executed once before"
