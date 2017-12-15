@@ -1,0 +1,26 @@
+/*
+@author nelson
+@date Fri Dec 15 17:47:55 CET 2017
+*/
+
+
+@@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugBackup
+@description "the actSysAdmin's goal is to manage the deployed virtual machines"
+@protocolCondition
+"
+the VMMS system has been deployed
+"
+@endProtocolConditions
+@preCondition
+"
+the SysAdmin is logged in
+"
+@endPreConditions
+@postCondition
+"
+"
+@endPostConditions
+@additionalInformation
+"
+none
+"

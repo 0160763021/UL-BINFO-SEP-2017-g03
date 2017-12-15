@@ -5,9 +5,12 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.suDeployAndRun
-@description ""
+@description "The goal is to install the VMMS system on its infrastructure and to exploit its
+capacities which are related to the secure administration and management of the virtual machine as well
+as the created sysAdmins."
 @protocolCondition
 "
+the VMMS system has never been deployed and used.
 "
 @endProtocolConditions
 @preCondition
@@ -16,6 +19,7 @@
 @endPreConditions
 @postCondition
 "
+the VMMS system has been created
 "
 @endPostConditions
 @additionalInformation

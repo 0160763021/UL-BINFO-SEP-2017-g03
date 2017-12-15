@@ -6,5 +6,5 @@
 
 @@view ugBackup
 @model Use-Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugBackup 
-@description ""
+@description "ugBackup user goal use case"
 @caption ""
