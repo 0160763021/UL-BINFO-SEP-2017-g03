@@ -27,8 +27,31 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		
 		preF{true}	
 		
-		postF{
+		postF{let TheSystem: ctState in
+			let AetComponent: etComponent in
+			let AMaxCmp: dtAmount in
+			let ACmpUsed: dtAmount in
+			let ColclCmp:Bag(clComponent) in
+			let ColclCmpAmt:Bag(clComponentAmount) in
+			let ColclVM: Bag(clVM) in
+			let VirtualMachine: clVM in
+			let ACmpAvailable: dtAmount in
+			
+			self.rnActor.rnSystem = TheSystem
+			
+			TheSystem.clComponent->select(CType.eq(AetComponent)) = ColclCmp
+			TheSystem.clComponentAmount->select(Cid.eq(ColclCmp)) = ColclCmpAmt
+			
+			self.ColclCmpAmt.dtAmount->sum() = AMaxCmp
+			
+			TheSystem.clVM->select(Vid) = ColclVM
+			TheSystem.clComponentAmount->select(Vid.eq(ColclVM)) = ColclCmpAmt
+			
+			self.ColclCmpAmt.dtAmount->sum() = ACmpUsed
+			
+			AMaxCmp-ACmpUsed = ACmpAvailable
 		}
+
 		
 		postP{true}	
 		
