@@ -32,11 +32,11 @@ Environment Model {
 			operation sfGetAvailableComponents(AetComponent: etComponent):ptBoolean
 			operation sfHotBackupVM(AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
 			operation sfScheduledBackupVM(AdtBackupDescription: dtBackupDescription, AdtVMID: dtVMID, AdtDate: dtDate):ptBoolean
-			operation sfInitVM(AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription):ptBoolean
+			
 			operation sfSetComponent(AdtVMID: dtVMID, AdtCID: dtComponentID, AdtAmount: dtAmount):ptBoolean
-			operation sfGenerateComponent(AdtQID: dtQuestionID, AetAnswer: etAnswer, AdtVID: dtVMID):ptBoolean
+			
 			operation sfGetProposedVM(AdtVMID: dtVMID):ptBoolean
-			operation sfValidateVM(adtVMID: dtVMID):ptBoolean
+			
 			operation sfConfirmDelete(AetConfirmDelete:etConfirmDelete):ptBoolean
 			operation sfCreateVMExpert(AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription, 
 				AdtCID1: dtComponentID, AdtAmount1: dtAmount,

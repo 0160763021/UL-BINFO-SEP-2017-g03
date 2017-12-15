@@ -22,18 +22,15 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfScheduledBackupVM
 "sent to perform a scheduled backup on a selected virtual machine"
 @outputEvent
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfInitVM
-"sent to initialize a virtual machine"
-@outputEvent
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfSetComponent
 "sent to specify a component for the virtual machine given as parameter"
-@outputEvent
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGenerateComponent
-"sent to generate a component depending on the answer of the question for the virtual machine given as parameter"
 @outputEvent
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfGetProposedVM
 "sent to return the generated virtual machine"
 @outputEvent
-lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfValidateVM
-"sent to validate the creation of the virtual machine"
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMExpert
+"sent to create a virtual machine using expert mode"
+@outputEvent
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfCreateVMTemplate
+"sent to create a virtual machine using template mode"
 @endOutputEvents
