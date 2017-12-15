@@ -45,43 +45,93 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
-
-
-
-
-\section{InitVM}
-\label{operation:InitVM}
-This software operation initializes a virtual machine with a name, desription
-and a unique identifier.
+\section{CreateVMExpert}
+\label{operation:CreateVMExpert}
+This software operation creates a virtual machine by selecting your own
+components
 \begin{description}
 
-\item \textbf{Parameters:} VMID, VMName, VMDescription
-\item \textbf{Precondition:} Inorder to create a virtual machine the sysAdmin
-has to be logged in.
-\item \textbf{Post-condition:} The sysAdmin will be allowed to proceed to the
-next screen under the condition that he has specified a name and a description
-for the virtual machine which allows him to choose the components of the virtual
-machine that he wants to create. In case an information is missing an error
-message will be displayed.
-\item \textbf{Output messages:} The operation will send a notification in form
-of an error message in case the sysAdmin has not specified a name or/and a
-description for the virtual machine.
+\item \textbf{Parameters:} VMID, VMName, VMDescription, ComponentIDOne,
+AmountOne, ComponentIDTwo, AmountTwo, ComponentIDThree, AmountThree,
+ComponentIDFour, AmountFour, ComponentIDFive, AmountFive,
+ComponentIDSix, SysAdminID
+\item \textbf{Precondition:} the sysadmin must be logged in.
+\item \textbf{Post-condition:} A virtual machine using expert mode will be
+created in case the sysadmin has correctly provided the necessary parameters
+which means that the VID and all the CID must be already defined in the System
+and the amount for the requested component just be less or equal to the
+available quantity for that specific component. If this is the case the VM will
+be created and a notification will be sent to the sysadmin else an error message
+will be sent to the sysadmin.
+\item \textbf{Output messages:} The operation will send at the end one
+notification informing the sysadmin that he successfully created a virtual
+machine or in case the name and/or description for the virtual machine is
+missing then an error message will be sent to the sysadmin.
 
 \item \textbf{Triggering:}
 \begin{enumerate}
-\item Click on the button called 'NEXT'.
+\item Click on the green check mark
 \end{enumerate}
 
  
 \end{description}
 
-\subsection{InitVM}
+\subsection{CreateVMExpert}
 Examples should illustrate the use of \textbf{complex operations}.
 
 Each example must show how the actor uses the software operation under
 description to achieve (at least one of) its expected outcome.
 
 It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+\section{CreateVMTemplate}
+\label{operation:CreateVMTemplate}
+This software operation creates a virtual machine by using a template
+components
+\begin{description}
+
+\item \textbf{Parameters:} VMID, VMName, VMDescription, QuestionIDOne,
+AnswerOne, QuestionIDTwo, AnswerTwo, QuestionIDThree, AnswerThree,
+QuestionIDFour, AnswerFour, QuestionIDFive, AnswserFive, QuestionIDSix,
+AnswerSix, SysAdminID
+\item \textbf{Precondition:} the sysadmin must be logged in.
+\item \textbf{Post-condition:} A new virtual machine will be created with some
+components. The name and model of the component will depend on the answer of
+each question specified by the sysadmin. At the end the software operation will
+send a notification back to the sysadmin. In case of an error an error message
+will be sent to the sysadmin.
+\item \textbf{Output messages:} The operation will send at the end a
+notification to the sysadmin informing that he correctly created the desired
+virtual machine. In case the name/description is missing then an error message
+will be sent to the sysadmin.
+
+\item \textbf{Triggering:}
+\begin{enumerate}
+\item Click on the button called 'FINISH'
+\end{enumerate}
+
+ 
+\end{description}
+
+\subsection{CreateVMTemplate}
+Examples should illustrate the use of \textbf{complex operations}.
+
+Each example must show how the actor uses the software operation under
+description to achieve (at least one of) its expected outcome.
+
+It might be required to include GUI screenshots to illustrate the example.
+
+
+
+
+
+
+
+
 
 
 
@@ -128,38 +178,6 @@ It might be required to include GUI screenshots to illustrate the example.
 
 
 
-\section{ValidateVM}
-\label{operation:ValidateVM}
-This software operation allows a SysAdmin to create a virtual machine, but
-before doing that the sysAdmin must validate the creation.
-
-\begin{description}
-
-\item \textbf{Parameters:} VMID
-\item \textbf{Precondition:} It is supposed that a virtual machine with the
-specified id exists. The sysAdmin must be logged in.
-\item \textbf{Post-condition:} A notification will be sent to the sysAdmin
-informing about the creation of the virtual machine.
-\item \textbf{Output messages:} The operation will send at the end one
-notification telling the SysAdmin that he succefully created the desired virtual
-machine.
-
-\item \textbf{Triggering:}
-\begin{enumerate}
-\item Click on the green arrow to accept the creation of the virtual machine.
-\end{enumerate}
-
- 
-\end{description}
-
- 
-\subsection{ValidateVM}
-Examples should illustrate the use of \textbf{complex operations}.
-
-Each example must show how the actor uses the software operation under
-description to achieve (at least one of) its expected outcome.
-
-It might be required to include GUI screenshots to illustrate the example.
 
 
 
@@ -285,7 +303,6 @@ component of the specified type.
 
  
 \end{description}
-
  
 \subsection{SetComponent}
 Examples should illustrate the use of \textbf{complex operations}.
