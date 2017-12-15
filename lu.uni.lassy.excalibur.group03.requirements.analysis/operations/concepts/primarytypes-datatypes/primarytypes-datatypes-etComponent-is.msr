@@ -1,0 +1,31 @@
+package lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.operations.datatypes.etComponent.is {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etComponent.is():ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+
+		postF{let TheResult: ptBoolean in
+ 			( if
+ 			( self = CPU
+ 			or self = RAM
+ 			or self = GPU
+ 			or self = HDD
+ 			or self = SSD
+ 			or self = Software
+ 			)
+ 			then (TheResult = true)
+ 			else (TheResult = false)
+ 			endif
+ 			result = TheResult
+ 			)}
+
+
+		}
+	}
+}

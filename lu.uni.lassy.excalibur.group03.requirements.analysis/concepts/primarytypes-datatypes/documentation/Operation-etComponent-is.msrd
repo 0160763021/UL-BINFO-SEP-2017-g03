@@ -10,7 +10,7 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datat
  "
 //postFunctional descriptions
 @postF 
-"the operation returns true if the value corresponds to the defined enumeration type"
+"true if the value is equal to one of the following values: CPU, RAM, GPU, HDD, SSD, Software"
 @endPostF
 //example
 @example" "
