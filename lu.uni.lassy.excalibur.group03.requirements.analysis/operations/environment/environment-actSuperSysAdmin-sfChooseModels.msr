@@ -26,10 +26,22 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		
 		preF{true}
 		
-		postF{
+		postF{let TheSystem: ctState in
+			let AdtReqID: dtReqID in
+			let AdtCID: dtComponentID in
+			let AdtAmount: dtAmount in
+			let TheclRequestComponent: clRequestComponent in
+			let TheclComponentAmount: clComponentAmount in 
 			
+			self.rnActor.rnSystem = TheSystem	
+			
+			if(TheclComponentAmount.Cid.is(AdtCID))
+			then (TheclComponentAmount.Amount = TheclComponentAmount.Amount + AdtAmount) else (true)
+			endif
+			
+			TheclRequestComponent.init(AdtReqID)
 		}
-		
+
 		postP{true}
 		
 		

@@ -24,23 +24,22 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			//Prep02
 			and TheActor.rnclAuthenticated.vpIsLogged = true}
 		
-		preF{
-			
-		}
+		preF{let TheSystem: ctState in
+ 			let TheclRequestComponent: clRequestComponent in
+
+ 			self.rnActor.rnSystem = TheSystem
+ 			
+			and TheclRequestComponent->isEmpty() = false}
 		
 		postF{let TheSystem: ctState in
-			let TheaclBackup: clBackup in
-			let AptStringMessageForTheDatacenter: ptString in
-			
-			self.rnActor.rnSystem =TheSystem
-			
-			//PostF01
-			TheclRequestComponent.init(AdtReqID)
-			
-			
-			//PostF02
-			AptStringMessageForTheDatacenter.eq('A request has been successfully sent to the datacenter!')
-		}
+ 			let TheactAuthenticated:actAuthenticated in
+ 			let AptStringMessageForTheactAuthenticated: ptString in
+ 			
+ 			self.rnActor.rnSystem = TheSystem
+ 			and self.rnActor = TheactAuthenticated
+
+			AptStringMessageForTheactAuthenticated.eq('A request has been successfully send to the datacenter!')
+ 			and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)}
 		
 		postP{true}
 		
