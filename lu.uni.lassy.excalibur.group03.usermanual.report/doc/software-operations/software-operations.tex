@@ -502,15 +502,17 @@ It might be required to include GUI screenshots to illustrate the example.
 \section{OverviewComponent}
 \label{operation:overviewcomponent}
 This system operation allows the super-SysAdmin to have an overview of the
-datacenter.
+datacenter's current resource state.
 
 \begin{description}
 
 \item \textbf{Parameters:} etComponent
 \item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
 in with the super-SysAdmin's account.
-\item \textbf{Post-condition:} The super-SysAdmin will know the usage of each
-component he chose to overview.
+\item \textbf{Post-condition:} The super-SysAdmin will obtain from the system
+the status of the chosen resource. This includes the usage and
+availability for the overall component aswell as for the models that were
+initialized in the system's creation.
 \item \textbf{Output messages:}
 
 \item \textbf{Triggering:}
@@ -536,16 +538,17 @@ It might be required to include GUI screenshots to illustrate the example.
 
 \section{ChooseModels}
 \label{operation:choosemodels}
-This system operation allows the super-SysAdmin to choose between the different
-models of the component he want to request to the datacenter.
+This system operation allows the super-SysAdmin to choose a model of the
+component he wants to request to the datacenter.
 
 \begin{description}
 
-\item \textbf{Parameters:} ComponentID, Amount
+\item \textbf{Parameters:} ReqID, ComponentID, Amount
 \item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
 in with the super-SysAdmin's account.
-\item \textbf{Post-condition:} The SysAdmin will have more components/models
-available to create virtual machines.
+\item \textbf{Post-condition:} The super-SysAdmin will create a request for that
+model with a unique ReqID. The system's resource state for that model is also
+updated accordingly to the amount.
 \item \textbf{Output messages:}
 
 \item \textbf{Triggering:}
@@ -584,12 +587,12 @@ he chose before to send a request to the datacenter.
 \item \textbf{Parameters:} /
 \item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
 in with the super-SysAdmin's account.
-\item \textbf{Post-condition:} The SysAdmin will send a request to the
-datacenter for more components.
+\item \textbf{Post-condition:} The super-SysAdmin will confirm the request to
+the datacenter and a notification will be send back to the super-SysAdmin
+confirming the request.
 \item \textbf{Output messages:} A request has been successfully send to the
 datacenter receiver.
-
-\item \textbf{Triggering:}
+\item \textbf{Triggering:} 
 \begin{enumerate}
 \item Click the yes button to confirm the request.
 \item When you click on the X button you abort the request.
