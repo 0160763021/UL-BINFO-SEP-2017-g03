@@ -13,6 +13,17 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytype
 		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSuperSysAdmin.init(ASuperSysID:dtSuperSysID):ptBoolean{
 		// include below the specification information (pre,post or ocl or prolog)
 
+		postF{
+			if
+			(
+			let Self:lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes.clSuperSysAdmin in
+			Self.SuperSysID = ARSuperSysID
+			
+			and (Self.oclIsNew and self = Self)
+			)
+			then (result = true)
+			else (result = false)
+			endif}
 		}
 	}
 }

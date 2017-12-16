@@ -6,8 +6,7 @@
 
 @@Operation
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actCreator.outactCreator.sfCreateSystemAndEnvironment
-@description "
- "
+@description "sent to request the initialization of the system’s class instances and the environment actors instances."
 //preProtocol descriptions
 @preP
 " "
