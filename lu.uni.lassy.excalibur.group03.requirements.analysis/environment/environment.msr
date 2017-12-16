@@ -88,6 +88,7 @@ Environment Model {
 			operation sfConfirmPassword( AdtPassword: dtPassword):ptBoolean
 			operation sfNewEmail(AdtNewEmail: dtEmail):ptBoolean
 			operation sfNewId(AdtNewId: dtUserName):ptBoolean
+		    operation sfNewPw(AdtNewPw: dtPassword):ptBoolean
 			}
 		}
 	actor actCreator role rnactCreator cardinality[0 .. *] {

@@ -1,0 +1,58 @@
+package lu.uni.lassy.excalibur.group03.requirements.analysis.environment.operations.actAuthenticated.outactAuthenticated.sfNewId {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actAuthenticated.outactAuthenticated.sfNewId(AdtNewId:dtUserName):ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+preP{let TheSystem:ctState in
+					let TheActor: actSuperSysAdmin in 
+					let TheActor2: actSysAdmin in
+					self.rnActor.rnSystem = TheSystem
+					and self.rnActor = TheActor
+					
+					//Prep01
+					and TheSystem.vpStarted = true
+					//Prep02
+					and TheActor.rnclAuthenticated.vpIsLogged = true}
+					
+			preF{let TheSystem: ctState in
+					let TheActor: actSuperSysAdmin in
+					let ColclSuperSysAdmin:Bag(clSuperSysAdmin) in
+					let ColclSysAdmin:Bag(clSysAdmin) in
+					
+					self.rnActor.rnSystem = TheSystem
+					and self.rnActor = TheActor
+					
+					//PreF01
+					and TheSystem.rnclSuperSysAdmin->select(UserName.eq(AdtNewId)) = ColclSuperSysAdmin
+					and ColclSysAdmin->isEmpty() = true
+					
+					and TheSystem.rnclSysAdmin->select(UserNAme.eq(AdtNewId)) = ColclSysAdmin
+					and ColclSysAdmin->isEmpty() = true
+					}
+					
+			postF{let TheSystem: ctState in
+				let TheclSuperSysAdmin: clSuperSysAdmin in
+				let TheclSysAdmin: clSysAdmin in
+				self.rnActor.rnSystem =TheSystem
+				
+				
+				//PostF01
+				TheclSuperSysAdmin.init(AdtFirstName,AdtLastName,AdtNewId,AdtEmail,AdtBirthdate,AdtPassword,AdtConfirmPassword,AdtPhoneNumber)
+				//PostF02
+				TheclSysAdmin.init(AdtFirstName,AdtLastName,AdtNewId,AdtEmail,AdtBirthdate,AdtPassword,AdtConfirmPassword,AdtPhoneNumber)
+			}
+			
+			postP{true}
+		}
+	}
+}
