@@ -14,14 +14,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 
 
 	Use Case Model {
-	use case system subfunction sfModifyVM() {
-			actor actSysAdmin[primary, active]
-			
-			returned messages {
-				ieModifyVM() returned to actSysAdmin
-				ieMessage() returned to actSysAdmin
-			}
-		}	
+		
 		
 	use case system usergoal ugSecurelyUseSystem() {
 		actor actSysAdmin[primary, active]
