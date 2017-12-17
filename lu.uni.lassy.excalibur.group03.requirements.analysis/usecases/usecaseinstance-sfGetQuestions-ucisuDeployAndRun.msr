@@ -33,12 +33,6 @@ package usecases.ucisuDeployAndRun {
 				}
 
 
-				John executed instanceof subfunction sfSetComponent("1234", "61", "1") {}
-
-				John executed instanceof subfunction sfValidateVM("1234") {
-						ieMessage("VM succesfully created!") returned to John
-					}
-				
 				John executed instanceof subfunction sfCreateVMTemplate("4321", "VM2", "VM2 for SEP",
 					"1","YES","2","YES","3","NO","4","Yes","5","NO","6","YES","123456789") {
 						ieMessage("VM successfully created") returned to John
