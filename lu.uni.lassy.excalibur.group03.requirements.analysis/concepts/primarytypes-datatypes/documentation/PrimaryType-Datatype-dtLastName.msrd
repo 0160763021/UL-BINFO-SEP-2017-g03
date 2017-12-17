@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:14 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLastName
+@description "a string which represents the last name of the authenticate actor"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtLastName.is
+"used to determine if the provided string is considered as a valid one"
+@endOperations

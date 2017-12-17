@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:09 CET 2017
+*/
+
+
+@@Primary Type Enumeration lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etAnswer
+@description "represents the answer for a question"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etAnswer.is
+"used to check if the provided answer is considered as a valid one"
+@endOperations

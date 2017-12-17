@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:17 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtUserName
+@description "represents the user name of the authenticate actor"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtUserName.is
+"used to check if the provided user name is considered as a valid one"
+@endOperations

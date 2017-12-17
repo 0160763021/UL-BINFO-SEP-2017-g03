@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:22 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtBirtthdtae
+@description "a string which represents the birthdate"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtBirtthdtae.is
+"used to determine which birthdates are considered as valid"
+@endOperations

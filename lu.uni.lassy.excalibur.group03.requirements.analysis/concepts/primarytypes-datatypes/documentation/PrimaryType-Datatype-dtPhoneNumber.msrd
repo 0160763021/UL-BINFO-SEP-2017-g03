@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:24 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtPhoneNumber
+@description "represents the phone number of the authenticate actor"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtPhoneNumber.is
+"used to determine if the provided phone number is considered as a valid one"
+@endOperations

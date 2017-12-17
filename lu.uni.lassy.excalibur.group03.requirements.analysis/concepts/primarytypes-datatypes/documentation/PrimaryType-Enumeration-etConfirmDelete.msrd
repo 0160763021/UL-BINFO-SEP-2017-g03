@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:29 CET 2017
+*/
+
+
+@@Primary Type Enumeration lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etConfirmDelete
+@description "represents the answer for the deletion"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etConfirmDelete.is
+"used to determine if the provided answer is considered as a valid one"
+@endOperations

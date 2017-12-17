@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:19 CET 2017
+*/
+
+
+@@Primary Type Datatype lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtEmail
+@description "a string which represents the email of the authenticated actor"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtEmail.is
+"used to determine if the email is considered as a valid one"
+@endOperations

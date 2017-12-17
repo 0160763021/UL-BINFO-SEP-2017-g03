@@ -1,0 +1,12 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:26 CET 2017
+*/
+
+
+@@Primary Type Enumeration lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etRight
+@description "represents the value which tells if the sysAdmin has or not the right"
+@operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etRight.is
+"used to determine if the provided value is considered as a valid one"
+@endOperations
