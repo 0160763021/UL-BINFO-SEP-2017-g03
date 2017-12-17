@@ -5,9 +5,10 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugChangeEmail
-@description ""
+@description "the actSysAdmin's goal is to changes his email address"
 @protocolCondition
 "
+the VMMS system has been deployed
 "
 @endProtocolConditions
 @preCondition

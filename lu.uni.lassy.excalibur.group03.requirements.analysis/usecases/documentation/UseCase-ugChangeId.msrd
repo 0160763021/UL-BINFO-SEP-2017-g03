@@ -5,7 +5,7 @@
 
 
 @@Use Case lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.ugChangeId
-@description ""
+@description "the actor sysAdmin's goal is to change his id"
 @protocolCondition
 "
 "
