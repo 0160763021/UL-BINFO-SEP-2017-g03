@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfConfirmDelete
-@description ""
+@description "makes sure if the sysadmin really wants to delete his account"
 @protocolCondition
 "
 "

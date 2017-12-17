@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfNewPw
-@description ""
+@description "changes the actual password with a new one given by the actor"
 @protocolCondition
 "
 "

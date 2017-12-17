@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfNewId
-@description ""
+@description "changes the actual id with a new one given by the actor"
 @protocolCondition
 "
 "
