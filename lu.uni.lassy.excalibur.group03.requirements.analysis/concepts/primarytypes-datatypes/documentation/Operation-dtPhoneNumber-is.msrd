@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:25 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtPhoneNumber.is
+@description "used to determine if the provided phone number is considered as a valid one
+ "
+//postFunctional descriptions
+@postF 
+"the operation returns true if the length of the string is larger then 8 and smaller then 12"
+@endPostF
+//example
+@example" "

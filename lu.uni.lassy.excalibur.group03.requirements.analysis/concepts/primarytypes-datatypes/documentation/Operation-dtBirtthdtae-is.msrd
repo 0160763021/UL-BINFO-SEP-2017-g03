@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:23 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtBirtthdtae.is
+@description "used to determine if the provided birthdate is considered as a valid one
+ "
+//postFunctional descriptions
+@postF 
+"the operation returns true if the date is not in the future"
+@endPostF
+//example
+@example" "

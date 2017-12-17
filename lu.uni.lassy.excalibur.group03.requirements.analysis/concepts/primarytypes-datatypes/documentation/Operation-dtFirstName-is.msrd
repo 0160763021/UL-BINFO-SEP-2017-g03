@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:13 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtFirstName.is
+@description "used to determine if the provided string for the first name is considered as a valid one
+ "
+//postFunctional descriptions
+@postF 
+"the operation returns true if the length of the string is larger then 0 and smaller then 20"
+@endPostF
+//example
+@example" "

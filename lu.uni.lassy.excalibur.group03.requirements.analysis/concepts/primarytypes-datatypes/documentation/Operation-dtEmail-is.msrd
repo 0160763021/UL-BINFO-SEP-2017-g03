@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:20 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.dtEmail.is
+@description "used to determine if the provided email is considered as a valid one
+ "
+//postFunctional descriptions
+@postF 
+"the operation returns true if the length of the string is larger then 10 and smaller then 25"
+@endPostF
+//example
+@example" "

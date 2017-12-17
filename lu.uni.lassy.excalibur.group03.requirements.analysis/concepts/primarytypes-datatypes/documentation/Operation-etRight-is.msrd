@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:28 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etRight.is
+@description "used to determine if the provided value matches the enumeration
+ "
+//postFunctional descriptions
+@postF 
+"the operation returns true if the value provided is equel to YES or NO"
+@endPostF
+//example
+@example" "

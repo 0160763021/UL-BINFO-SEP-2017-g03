@@ -1,0 +1,16 @@
+/*
+@author nelson
+@date Sun Dec 17 12:50:10 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes.etAnswer.is
+@description "used to determine if the provided value is considered as a valid etAnswer
+ "
+//postFunctional descriptions
+@postF 
+"the operation returns true if the value for the answer is equal to YES or NO"
+@endPostF
+//example
+@example" "
