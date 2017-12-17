@@ -1,0 +1,80 @@
+/*
+@author dylan
+@date Sun Dec 17 17:39:32 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtFirstName
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtLastName
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtUserName
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtEmail
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtBirthdate
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtPassword
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtConfirmPassword
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtPhoneNumber
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight1
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight2
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight3
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight4
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight5
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight6
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight7
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight8
+""
+@endParameters
+
+@description "sent to initialize a SysAdmin with unique personal information and rights."
+//preProtocol descriptions
+@preP"the system is started "
+@preP"the superSysAdmin is logged in"
+
+@endPreP
+//preFunctional descriptions
+@preF
+"it is supposed that there cannot exist a clCreateSysAdmin instance with exactly the same attributes as the one that the supersysAdmins wants to create "
+@endPreF
+//postFunctional descriptions
+@postF 
+" the system's state has a new instance of clCreateSysAdmin initialized with the given values."
+@postF "the superSysAdmin actor is informed about the satisfaction of its request "
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "

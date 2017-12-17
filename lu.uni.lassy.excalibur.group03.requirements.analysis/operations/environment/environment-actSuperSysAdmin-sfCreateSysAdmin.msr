@@ -1,0 +1,54 @@
+package lu.uni.lassy.excalibur.group03.requirements.analysis.environment.operations.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin {
+
+import lu.uni.lassy.messir.libraries.primitives
+import lu.uni.lassy.messir.libraries.math
+import lu.uni.lassy.messir.libraries.string
+import lu.uni.lassy.messir.libraries.calendar
+
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.datatypes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.concepts.primarytypes.classes
+import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
+
+	Operation Model {
+
+		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin(AdtFirstName:dtFirstName, AdtLastName:dtLastName, AdtUserName:dtUserName, AdtEmail:dtEmail, AdtBirthdate:dtDate, AdtPassword:dtPassword, AdtConfirmPassword:dtPassword, AdtPhoneNumber:dtPhoneNumber, AetRight1:etRight, AetRight2:etRight, AetRight3:etRight, AetRight4:etRight, AetRight5:etRight, AetRight6:etRight, AetRight7:etRight, AetRight8:etRight):ptBoolean{
+		// include below the specification information (pre,post or ocl or prolog)
+ 	preP{let TheSystem:ctState in
+			let TheActor: actSuperSysAdmin in 
+			self.rnActor.rnSystem = TheSystem
+			and self.rnActor = TheActor
+			
+			//Prep01
+			and TheSystem.vpStarted = true
+			//Prep02
+			and TheActor.rnclAuthenticated.vpIsLogged = true}
+	
+	
+	
+		preF{let TheSystem: ctState in
+			let TheActor: actSuperSysAdmin in
+			let ColclSysAdmin:Bag(clSysAdmin) in
+			
+			self.rnActor.rnSystem = TheSystem
+			and self.rnActor = TheActor
+			
+			//PreF01
+			and TheSystem.rnclSysAdmin->select(UserName.eq(AdtUserName)) = ColclAuthenticated
+			and ColclSysAdmin->isEmpty() = true}
+		
+		postF{let TheSystem: ctState in
+			let TheclSysAdmin: clSysAdmin in
+			
+			self.rnActor.rnSystem =TheSystem
+			
+			
+			//PostF01
+			TheclSysAdmin.init(AdtFirstName,AdtLastName,AdtUserName,AdtEmail,AdtBirthdate,AdtPassword,AdtConfirmPassword,
+				AdtPhoneNumber,AetRight1,AetRight2,AetRight3,AetRight4,AetRight5,AetRight6,AetRight7,AetRight8)
+			
+		}
+		
+		postP{true}
+		}
+	}
+}

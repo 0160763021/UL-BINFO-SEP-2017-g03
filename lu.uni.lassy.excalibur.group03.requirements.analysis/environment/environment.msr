@@ -71,8 +71,13 @@ Environment Model {
 			operation sfOverviewComponent(AetComponent: etComponent): ptBoolean
 			operation sfChooseModels(AdtReqID: dtReqID, AdtCID: dtComponentID, AdtAmount: dtAmount): ptBoolean
 			operation sfConfirmChoice(AdtReqID: dtReqID): ptBoolean
-			operation sfAtributeRights(AetRight1: etRight,AetRight2: etRight,AetRight3: etRight,AetRight4: etRight,AetRight5: etRight,AetRight6: etRight,AetRight7: etRight,AetRight8: etRight):ptBoolean
-			operation sfPersonalInformation(AdtFirstName:dtFirstName,AdtLastName:dtLastName,AdtUserName:dtUserName,AdtEmail:dtEmail,AdtBirthdate:dtDate,AdtPassword:dtPassword,AdtConfirmPassword:dtPassword,AdtPhoneNumber:dtPhoneNumber):ptBoolean
+			operation sfCreateSysAdmin(AdtFirstName:dtFirstName,AdtLastName:dtLastName,
+				AdtUserName:dtUserName,AdtEmail:dtEmail,AdtBirthdate:dtDate,
+				AdtPassword:dtPassword,AdtConfirmPassword:dtPassword,AdtPhoneNumber:dtPhoneNumber,
+				AetRight1: etRight,AetRight2: etRight,AetRight3: etRight,AetRight4: etRight,
+				AetRight5: etRight,AetRight6: etRight,AetRight7: etRight,AetRight8: etRight):ptBoolean
+			
+			
 			}
 		}
 	actor actAuthenticated role rnactAuthenticated cardinality[0 .. *] {
