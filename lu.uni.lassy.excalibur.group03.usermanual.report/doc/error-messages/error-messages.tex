@@ -162,13 +162,17 @@ section\ldots
 The problem occurs when a SuperSysAdmin cannot send a component request to the
 datacenter.
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm]{images/requestComponent_error.eps}
+\caption{\label{overflow}}
+\end{figure}
+
 \subsection{Probable cause}
 
 The reason why such a problem has been raised is:\\
 \begin{description}
 \item[$\bullet$] The SuperSysAdmin has not choosen any components to request.
-\item[$\bullet$] To many components of that particular model are already
-available making it no sense to request more.
 \end{description}
 
 
@@ -178,8 +182,6 @@ A correction for the problem is to:\\
 \begin{description}
 \item[$\bullet$] The SuperSysAdmin makes sure that he has selected at least a
 component model with a quantity.
-\item[$\bullet$] Use more of that particular model to make it possible to
-request it.
 \end{description}
 
 
