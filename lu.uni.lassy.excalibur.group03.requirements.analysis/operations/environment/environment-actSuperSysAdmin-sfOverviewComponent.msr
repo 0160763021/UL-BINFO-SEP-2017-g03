@@ -46,7 +46,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			self.ColclCmpAmt.dtAmount->sum() = AMaxCmp
 			
 			TheSystem.clVM->select(Vid) = ColclVM
-			TheSystem.clComponentAmount->select(Vid.eq(ColclVM)) = ColclCmpAmt
+			TheSystem.clComponentAmount->select(Vid.eq(ColclVM)) = ColclVMComponent
 			TheSystem.clComponentAmount->select(ColclCmp.eq(ColclVMComponent)) = ColclCmpAmt
 			
 			self.ColclCmpAmt.dtAmount->sum() = ACmpUsed
