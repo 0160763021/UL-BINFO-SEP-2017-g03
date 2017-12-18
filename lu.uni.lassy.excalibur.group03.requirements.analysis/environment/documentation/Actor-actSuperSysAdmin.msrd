@@ -9,4 +9,15 @@
 //input events
 
 //output events
+@outputEvent
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfOverviewComponent
+"sent to get the current resources state of a component from the system"
+@outputEvent
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfChooseModels
+"sent to request a component model from the datacenter"
+@outputEvent
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfConfirmChoice
+"sent to send a message to the datacenter confirming a request"
 
+
+@endOutputEvents

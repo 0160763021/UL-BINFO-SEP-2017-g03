@@ -113,14 +113,6 @@ Environment Model {
 			):ptBoolean
 			}
 		}
-	actor actDatacenter role rnactDatacenter cardinality[0 .. *] {
-			
-			operation init():ptBoolean
-			
-			input interface inactDatacenter {
-			}
-			output interface outactDatacenter {
-			}
-		}
+	
 	}
 }
