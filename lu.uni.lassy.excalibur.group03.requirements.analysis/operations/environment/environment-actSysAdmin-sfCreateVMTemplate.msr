@@ -47,6 +47,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			//Post functional
 		postF{let TheSystem: ctState in
 			let TheclVM: clVM in
+			let TheSysAdmin: actSysAdmin in
 	
 			let TheclComponentCPU: clComponent in
 			let TheclComponentGPU: clComponent in
@@ -57,7 +58,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 
 			let TheclComponentAmount1: clComponentAmount in
 			
-			let AptStringMessageForTheactAuthenticated: ptString in
+			let AptStringMessageForSysAdmin: ptString in
 			
 			self.rnActor.rnSystem =TheSystem
 			
@@ -138,14 +139,14 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 						true
 					)endif
 																
-					AptStringMessageForactAuthenticated.eq("VM succesfully created")
-					and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+					AptStringMessageForSysAdmin.eq("VM succesfully created")
+					and TheSysAdmin.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 					
 				
 			)else(
 				
-				AptStringMessageForactAuthenticated.eq("Name/Description is missing")
-				and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+				AptStringMessageForSysAdmin.eq("Name/Description is missing")
+				and TheSysAdmin.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 				
 			)endif
 			

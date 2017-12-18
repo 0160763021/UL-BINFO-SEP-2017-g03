@@ -55,6 +55,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		postF{let TheSystem: ctState in
 			let TheaclBackup: clBackup in
 			let AptStringMessageForTheactAuthenticated: ptString in
+			let TheSysAdmin: actSysAdmin in
 			
 			self.rnActor.rnSystem =TheSystem
 			
@@ -63,13 +64,13 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				//PostF01
 				TheclBackup.init(AdtBID, AdtVMID, AdtSysID, AdtBackupDescription, AdtDate)
 				
-				AptStringMessageForTheaclAuthenticated.eq('Scheduled Backup succesfully performed')		
-				and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+				AptStringMessageForSysAdmin.eq('Scheduled Backup succesfully performed')		
+				and TheSysAdmin.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 				
 				)else(
 			
-					AptStringMessageForTheaclAuthenticated.eq('Date/Description is missing')		
-					and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+					AptStringMessageForSysAdmin.eq('Date/Description is missing')		
+					and TheSysAdmin.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 				
 			)endif
 			

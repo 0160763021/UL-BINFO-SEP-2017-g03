@@ -33,8 +33,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		
 		//Post functional
 		postF{let TheSystem: ctState in
-			let TheactAuthenticated: actAuthenticated in
-			let AptStringMessageForTheactAuthenticated: ptString in
+			let TheSysAdmin: actSysAdmin in
+			let AptStringMessageForSysAdmin: ptString in
 			
 			self.rnActor.rnSystem =TheSystem
 			and self.rnActor = TheactAuthenticated
@@ -47,11 +47,11 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			
 				//PostF02
 				AptStringMessageForTheaclAuthenticated.eq('VM succesfully deleted')
-				and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+				and TheSysAdmin.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 			
 			)else(
 				AptStringMessageForTheaclAuthenticated.eq('Wrong password')
-				and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+				and TheSysAdmin.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 			)endif
 					
 		}

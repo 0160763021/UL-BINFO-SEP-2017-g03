@@ -53,7 +53,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		//Post functional
 		postF{let TheSystem: ctState in
 			let TheaclBackup: clBackup in
-			let AptStringMessageForTheactAuthenticated: ptString in
+			let AptStringMessageForSysAdmin: ptString in
+			let TheSysAdmin: actSysAdmin in
 			
 			self.rnActor.rnSystem =TheSystem
 			
@@ -61,8 +62,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			TheclBackup.init(AdtBID, AdtVMID, AdtSysAdminID, AdtBackupDescription, AdtDate)
 			
 			//PostF02
-			AptStringMessageForTheaclAuthenticated.eq('Hot Backup succesfully performed')		
-			and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+			AptStringMessageForSysAdmin.eq('Hot Backup succesfully performed')		
+			and TheSysAdmin.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 		
 		}
 		

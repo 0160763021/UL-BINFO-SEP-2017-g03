@@ -66,7 +66,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				and ColclComponent1->isEmpty() = false
 				
 				//PreF03
-				and ColclComponent1.CAmount.gt(AdtAmount1)
+				and ColclComponent1.CAvailable.gt(AdtAmount1)
 				
 			)else( true ) endif
 		
@@ -78,7 +78,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				and ColclComponent2->isEmpty() = false
 				
 				//PreF03
-				and ColclComponent2.CAmount.gt(AdtAmount2)
+				and ColclComponent2.CAvailable.gt(AdtAmount2)
 				
 			)else( true ) endif
 			
@@ -89,7 +89,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				and ColclComponent3->isEmpty() = false
 				
 				//PreF03
-				and ColclComponent3.CAmount.gt(AdtAmount3)
+				and ColclComponent3.CAvailable.gt(AdtAmount3)
 				
 			)else( true ) endif
 			
@@ -102,7 +102,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				and ColclComponent4->isEmpty() = false
 				
 				//PreF03
-				and ColclComponent4.CAmount.gt(AdtAmount4)
+				and ColclComponent4.CAvailable.gt(AdtAmount4)
 				
 			)else( true ) endif
 			
@@ -113,7 +113,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				and ColclComponent5->isEmpty() = false
 				
 				//PreF03
-				and ColclComponent5.CAmount.gt(AdtAmount5)
+				and ColclComponent5.CAvailable.gt(AdtAmount5)
 				
 				
 				
@@ -126,7 +126,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				and ColclComponent6->isEmpty() = false
 				
 				//PreF03
-				and ColclComponent6.CAmount.gt(AdtAmount6)
+				and ColclComponent6.CAvailable.gt(AdtAmount6)
 				
 			)else( true ) endif
 			
@@ -136,6 +136,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 		//Post functional
 		postF{let TheSystem: ctState in
 			let TheclVM: clVM in
+			let TheActor: actSysAdmin in
 	
 			let TheclComponentAmount1: clComponentAmount in
 			let TheclComponentAmount2: clComponentAmount in
@@ -156,8 +157,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			if ((dtVMDescription.is(AdtVMID) = false) or dtVMName.is(AdtVMName) = false)
 			then(
 				
-				AptStringMessageForactAuthenticated.eq("Missing name and/or description")
-				and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+				AptStringMessageForactSysAdmin.eq("Missing name and/or description")
+				and TheActor.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
 				
 			)else(
 			
@@ -170,8 +171,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				if(dtCid.is(AdtCID5)) then (TheclComponentAmount1.init(AdtVMID, AdtCID5, AdtAmount5)) else (true) endif
 				if(dtCid.is(AdtCID6)) then (TheclComponentAmount1.init(AdtVMID, AdtCID6, AdtAmount6)) else (true) endif
 				
-				AptStringMessageForactAuthenticated.eq("VM successfully created!")
-				and TheactAuthenticated.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+				AptStringMessageForSysAdmin.eq("VM successfully created!")
+				and TheActor.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 				
 			)endif
 
