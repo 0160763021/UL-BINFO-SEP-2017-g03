@@ -1,0 +1,13 @@
+/*
+@author nelson
+@date Mon Dec 18 19:58:47 CET 2017
+*/
+
+
+@@view cm-view-11
+@model Concept 
+@level Global
+@sublevel Primary Class
+@number 20
+@description "Concept Model - PrimaryTypes-DataTypes global view 11. global view of primary types datatype types"
+@caption ""
