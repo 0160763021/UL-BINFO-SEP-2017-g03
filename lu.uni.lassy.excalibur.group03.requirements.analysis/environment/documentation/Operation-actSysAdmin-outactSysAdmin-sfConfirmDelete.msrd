@@ -9,10 +9,10 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.out
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfConfirmDelete.AetConfirmDelete
-""
+"used as a confirmation before deleting the sysAdmin"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfConfirmDelete.AdtUserId
-""
+"used to uniquely identify the sysAdmin"
 @endParameters
 
 @description "This system operation allows the SysAdmin to delete his account.

@@ -9,52 +9,52 @@ lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmi
 //parameters
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtFirstName
-""
+"used to give the SysAdmin a firstName"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtLastName
-""
+"used to give the SysAdmin a lastName"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtUserName
-""
+"used to uniquely identify a SysAdmin"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtEmail
-""
+"used to give the SysAdmin an email"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtBirthdate
-""
+"used to give the SysAdmin a birth-date"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtPassword
-""
+"used to give the SysAdmin a password"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtConfirmPassword
-""
+"used to confirm the password"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AdtPhoneNumber
-""
+"used to give the SysAdmin a phoneNumer"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight1
-""
+"used to attribute the sysAdmin a right1"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight2
-""
+"used to attribute the sysAdmin a right2"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight3
-""
+"used to attribute the sysAdmin a right3"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight4
-""
+"used to attribute the sysAdmin a right4"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight5
-""
+"used to attribute the sysAdmin a right5"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight6
-""
+"used to attribute the sysAdmin a right6"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight7
-""
+"used to attribute the sysAdmin a right7"
 @parameter
 lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSuperSysAdmin.outactSuperSysAdmin.sfCreateSysAdmin.AetRight8
-""
+"used to attribute the sysAdmin a right8"
 @endParameters
 
 @description "sent to initialize a SysAdmin with unique personal information and rights."
