@@ -415,7 +415,7 @@ This system operation allows the SysAdmin to delete his account.
 
 \begin{description}
 
-\item \textbf{Parameters:} SysadminAccount
+\item \textbf{Parameters:} UserName
 \item \textbf{Precondition:} The person must be a SysAdmin or a super-sysAdmin
 and be logged in with his SysAdmin's account. Before to be able to delete the
 account, the person has to confirm his password.
@@ -451,14 +451,16 @@ operation will finish.
 
  
 \subsection{DeleteAccount}
-Examples should illustrate the use of \textbf{complex operations}.
 
-Each example must show how the actor uses the software operation under
-description to achieve (at least one of) its expected outcome.
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm]{images/deletAcc2.eps}
+\caption{\label{overflow}}
+\end{figure}
 
-It might be required to include GUI screenshots to illustrate the example.
 
-
+\hrule
+\vspace{0.5cm}
 
 
 \section{OverviewComponent}
@@ -592,8 +594,8 @@ This system operation allows the super-SysAdmin to create a SysAdmin.
 
 \begin{description}
 
-\item \textbf{Parameters:} Name, Username, E-mail, Password,ConfirmPassword,
-Birth date, Phone number, right1,right2,right3,right4,right5,right6,right7,right8
+\item \textbf{Parameters:} FirstName,LastName, Username, E-mail,
+Password,ConfirmPassword, Birth date, Phone number, right1,right2,right3,right4,right5,right6,right7,right8
 \item \textbf{Precondition:} The person must be the super-SysAdmin and be logged
 in with the super-SysAdmin's account.
 \item \textbf{Post-condition:} A new SysAdmin will be created and this SysAdmin
@@ -615,14 +617,16 @@ User" to create the new SysAdmin.
 \end{description}
 
 \subsection{createSysAdminExample}
-Examples should illustrate the use of \textbf{complex operations}.
-
-Each example must show how the actor uses the software operation under
-description to achieve (at least one of) its expected outcome.
-
-It might be required to include GUI screenshots to illustrate the example.
 
 
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm]{images/CreateSysTrigger1.eps}
+\caption{\label{overflow}}
+\end{figure}
+
+\hrule
+\vspace{0.5cm}
 
 
 
@@ -644,7 +648,7 @@ one. It compares the given password with the right password.
 
 \begin{description}
 
-\item \textbf{Parameters:} inputPassword
+\item \textbf{Parameters:} inputPassword, UserName
 \item \textbf{Precondition:} The person must be the super-SysAdmin or the
 SysAdmin and be logged in.
 \item \textbf{Post-condition:}A comparation is made between the actor's given
@@ -666,14 +670,15 @@ pasword with the right password.
 
  
 \subsection{ConfirmPassword}
-Examples should illustrate the use of \textbf{complex operations}.
 
-Each example must show how the actor uses the software operation under
-description to achieve (at least one of) its expected outcome.
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm]{images/CinfrimPasswordTrigger.eps}
+\caption{\label{overflow}}
+\end{figure}
 
-It might be required to include GUI screenshots to illustrate the example.
-
-
+\hrule
+\vspace{0.5cm}
 
 
 
@@ -686,7 +691,7 @@ their E-mail.
 
 \begin{description}
 
-\item \textbf{Parameters:} newEmail
+\item \textbf{Parameters:} newEmail, UserName
 \item \textbf{Precondition:} The person must be the super-SysAdmin or the
 SysAdmin and be logged in. Before to be able to change the e-mail, the person
 has to confirm his password.
@@ -714,15 +719,15 @@ insert a new e-mail in the input text field.
 
  
 \subsection{changeEmailExample}
-Examples should illustrate the use of \textbf{complex operations}.
 
-Each example must show how the actor uses the software operation under
-description to achieve (at least one of) its expected outcome.
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm]{images/EmailTrigger.eps}
+\caption{\label{overflow}}
+\end{figure}
 
-It might be required to include GUI screenshots to illustrate the example.
-
-
-
+\hrule
+\vspace{0.5cm}
 
 \section{Change Id}
 \label{operation:NewId}
@@ -731,7 +736,7 @@ their Id.
 
 \begin{description}
 
-\item \textbf{Parameters:} newId
+\item \textbf{Parameters:} newId, UserName
 \item \textbf{Precondition:} The person must be the super-SysAdmin or the
 SysAdmin and be logged in. Before to be able to change the id, the person has to
 confirm his password.
@@ -759,14 +764,15 @@ insert a new Id in the input text field.
 
  
 \subsection{changeIdExample}
-Examples should illustrate the use of \textbf{complex operations}.
 
-Each example must show how the actor uses the software operation under
-description to achieve (at least one of) its expected outcome.
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm]{images/IdTrigger.eps}
+\caption{\label{overflow}}
+\end{figure}
 
-It might be required to include GUI screenshots to illustrate the example.
-
-
+\hrule
+\vspace{0.5cm}
 
 \section{Change Password}
 \label{operation:NewPw}
@@ -775,7 +781,7 @@ their Password.
 
 \begin{description}
 
-\item \textbf{Parameters:} newPassword
+\item \textbf{Parameters:} newPassword, UserName
 \item \textbf{Precondition:} The person must be the super-SysAdmin or the
 SysAdmin and be logged in. Before to be able to change the password, the person has to confirm his password.
 \item \textbf{Post-condition:}The password that is currently active will be
@@ -804,10 +810,12 @@ one.
 
  
 \subsection{changePasswordExample}
-Examples should illustrate the use of \textbf{complex operations}.
 
-Each example must show how the actor uses the software operation under
-description to achieve (at least one of) its expected outcome.
+\begin{figure}[H]
+\centering
+\includegraphics[width=170mm]{images/PasswordTrigger.eps}
+\caption{\label{overflow}}
+\end{figure}
 
-It might be required to include GUI screenshots to illustrate the example.
-
+\hrule
+\vspace{0.5cm}
