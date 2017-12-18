@@ -145,7 +145,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			let TheclComponentAmount5: clComponentAmount in
 			let TheclComponentAmount6: clComponentAmount in
 			
-			let AptStringMessageForTheactAuthenticated: ptString in
+			let AptStringMessageForSysAdmin: ptString in
 			
 			self.rnActor.rnSystem =TheSystem
 			
@@ -157,8 +157,8 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			if ((dtVMDescription.is(AdtVMID) = false) or dtVMName.is(AdtVMName) = false)
 			then(
 				
-				AptStringMessageForactSysAdmin.eq("Missing name and/or description")
-				and TheActor.rnInterfaceIN^ieMessage(AptStringMessageForTheactAuthenticated)
+				AptStringMessageForSysAdmin.eq("Missing name and/or description")
+				and TheActor.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)
 				
 			)else(
 			
