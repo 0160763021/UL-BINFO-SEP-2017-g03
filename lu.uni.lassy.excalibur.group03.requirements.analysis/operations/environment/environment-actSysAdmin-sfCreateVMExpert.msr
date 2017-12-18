@@ -148,11 +148,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			let AptStringMessageForSysAdmin: ptString in
 			
 			self.rnActor.rnSystem =TheSystem
-			
-			//PreF01
-			and dtVMID.is(AdtVMID) = true
-			and dtVMName.is(AdtVMName) = true
-			
+
 			
 			if ((dtVMDescription.is(AdtVMID) = false) or dtVMName.is(AdtVMName) = false)
 			then(
@@ -165,11 +161,11 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 				TheclVM.init(AdtVMID, AdtVMName, AdtVMDescription)
 				
 				if(dtCid.is(AdtCID1)) then (TheclComponentAmount1.init(AdtVMID, AdtCID1, AdtAmount1)) else (true) endif
-				if(dtCid.is(AdtCID2)) then (TheclComponentAmount1.init(AdtVMID, AdtCID2, AdtAmount2)) else (true) endif
-				if(dtCid.is(AdtCID3)) then (TheclComponentAmount1.init(AdtVMID, AdtCID3, AdtAmount3)) else (true) endif
-				if(dtCid.is(AdtCID4)) then (TheclComponentAmount1.init(AdtVMID, AdtCID4, AdtAmount4)) else (true) endif
-				if(dtCid.is(AdtCID5)) then (TheclComponentAmount1.init(AdtVMID, AdtCID5, AdtAmount5)) else (true) endif
-				if(dtCid.is(AdtCID6)) then (TheclComponentAmount1.init(AdtVMID, AdtCID6, AdtAmount6)) else (true) endif
+				if(dtCid.is(AdtCID2)) then (TheclComponentAmount2.init(AdtVMID, AdtCID2, AdtAmount2)) else (true) endif
+				if(dtCid.is(AdtCID3)) then (TheclComponentAmount3.init(AdtVMID, AdtCID3, AdtAmount3)) else (true) endif
+				if(dtCid.is(AdtCID4)) then (TheclComponentAmount4.init(AdtVMID, AdtCID4, AdtAmount4)) else (true) endif
+				if(dtCid.is(AdtCID5)) then (TheclComponentAmount5.init(AdtVMID, AdtCID5, AdtAmount5)) else (true) endif
+				if(dtCid.is(AdtCID6)) then (TheclComponentAmount6.init(AdtVMID, AdtCID6, AdtAmount6)) else (true) endif
 				
 				AptStringMessageForSysAdmin.eq("VM successfully created!")
 				and TheActor.rnInterfaceIN^ieMessage(AptStringMessageForSysAdmin)

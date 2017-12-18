@@ -38,7 +38,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			let ColclComponents:Bag(clComponent) in 
 			
 			//PostF01
-			and TheSystem.rnclComponent->select(CType.eq(AetCtype) and amount.lt(0)) = ColclComponents
+			and TheSystem.rnclComponent->select(CType.eq(AetCtype) and CAvailable.gt(0)) = ColclComponents
 			and ColclComponents->size().gt(0)
 			
 		}
