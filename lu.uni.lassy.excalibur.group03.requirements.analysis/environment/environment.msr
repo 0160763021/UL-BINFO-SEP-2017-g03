@@ -37,7 +37,7 @@ Environment Model {
 			
 			operation sfGetProposedVM(AdtVMID: dtVMID):ptBoolean
 			
-			operation sfConfirmDelete(AetConfirmDelete:etConfirmDelete):ptBoolean
+			operation sfConfirmDelete(AetConfirmDelete:etConfirmDelete,AdtUserId: dtUserName):ptBoolean
 			operation sfCreateVMExpert(AdtVMID: dtVMID, AdtVMName: dtVMName, AdtVMDescription: dtVMDescription, 
 				AdtCID1: dtComponentID, AdtAmount1: dtAmount,
 				AdtCID2: dtComponentID, AdtAmount2: dtAmount,
@@ -90,10 +90,10 @@ Environment Model {
 			output interface outactAuthenticated {
 			operation sfLogin(AdtLogin: dtLogin, AdtPassword: dtPassword):ptBoolean
 			operation sfLogout():ptBoolean
-			operation sfConfirmPassword( AdtPassword: dtPassword):ptBoolean
-			operation sfNewEmail(AdtNewEmail: dtEmail):ptBoolean
-			operation sfNewId(AdtNewId: dtUserName):ptBoolean
-		    operation sfNewPw(AdtNewPw: dtPassword):ptBoolean
+			operation sfConfirmPassword( AdtPassword: dtPassword,AdtUserId: dtUserName):ptBoolean
+			operation sfNewEmail(AdtNewEmail: dtEmail,AdtUserId: dtUserName):ptBoolean
+			operation sfNewId(AdtNewId: dtUserName,AdtUserId: dtUserName):ptBoolean
+		    operation sfNewPw(AdtNewPw: dtPassword,AdtUserId: dtUserName):ptBoolean
 			}
 		}
 	actor actCreator role rnactCreator cardinality[0 .. *] {

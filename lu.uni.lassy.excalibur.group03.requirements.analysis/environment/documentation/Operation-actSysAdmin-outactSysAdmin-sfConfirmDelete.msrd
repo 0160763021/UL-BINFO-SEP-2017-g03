@@ -1,0 +1,41 @@
+/*
+@author dylan
+@date Mon Dec 18 22:21:14 CET 2017
+*/
+
+
+@@Operation
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfConfirmDelete
+//parameters
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfConfirmDelete.AetConfirmDelete
+""
+@parameter
+lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actSysAdmin.outactSysAdmin.sfConfirmDelete.AdtUserId
+""
+@endParameters
+
+@description "This system operation allows the SysAdmin to delete his account.
+ "
+//preProtocol descriptions
+@preP
+"the system is started "
+@preP
+"the actor is logged in and did not log out "
+@preP"The password is confirmed"
+
+@endPreP
+//preFunctional descriptions
+@preF
+" "
+@endPreF
+//postFunctional descriptions
+@postF 
+" the system's state has no instance of the concerned clSysAdmin anymore"
+@endPostF
+//postProtocol descriptions
+@postP 
+" "
+@endPostP
+//example
+@example" "
