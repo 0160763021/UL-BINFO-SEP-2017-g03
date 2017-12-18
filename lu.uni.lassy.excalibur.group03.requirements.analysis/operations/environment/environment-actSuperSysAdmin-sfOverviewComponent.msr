@@ -36,6 +36,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			let ColclVM: Bag(clVM) in
 			let VirtualMachine: clVM in
 			let ACmpAvailable: dtAmount in
+			let ColclVMComponent:Bag(clComponentAmount) in 
 			
 			self.rnActor.rnSystem = TheSystem
 			
@@ -46,6 +47,7 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 			
 			TheSystem.clVM->select(Vid) = ColclVM
 			TheSystem.clComponentAmount->select(Vid.eq(ColclVM)) = ColclCmpAmt
+			TheSystem.clComponentAmount->select(ColclCmp.eq(ColclVMComponent)) = ColclCmpAmt
 			
 			self.ColclCmpAmt.dtAmount->sum() = ACmpUsed
 			
