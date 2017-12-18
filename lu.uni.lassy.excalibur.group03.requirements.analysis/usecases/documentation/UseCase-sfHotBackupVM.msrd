@@ -5,12 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfHotBackupVM
-@description "
-
-Name		sfHotBackupVM
-Scope       system
-Level		subfunction
-
+@description "used to create a hot backup
 "
 @protocolCondition
 "

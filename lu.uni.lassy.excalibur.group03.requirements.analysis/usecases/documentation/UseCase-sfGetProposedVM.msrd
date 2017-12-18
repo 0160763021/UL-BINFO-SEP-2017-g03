@@ -5,7 +5,7 @@
 
 
 @@Use Case Subfunction lu.uni.lassy.excalibur.group03.requirements.analysis.usecases.sfGetProposedVM
-@description ""
+@description "used to get the generated virtual machine"
 @protocolCondition
 "
 "
