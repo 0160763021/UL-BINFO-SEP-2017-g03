@@ -11,10 +11,10 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 	Operation Model {
 
 		operation: lu.uni.lassy.excalibur.group03.requirements.analysis.environment.actAuthenticated.outactAuthenticated.sfNewPw(AdtNewPw:dtPassword,AdtNewId:dtUserName):ptBoolean{
+		
 		// include below the specification information (pre,post or ocl or prolog)
-
-		preP{let TheSystem:ctState in
-					let TheActor: actSuperSysAdmin in 
+				preP{let TheSystem:ctState in
+					let TheActor:  actSuperSysAdmin in 
 					let TheActor2: actSysAdmin in
 					self.rnActor.rnSystem = TheSystem
 					and self.rnActor = TheActor
@@ -26,32 +26,26 @@ import lu.uni.lassy.excalibur.group03.requirements.analysis.environment
 					//Prep03
 		            and self.rnActor.password.eq(AdtPassword)=true}
 					
-			preF{let TheSystem: ctState in
-					let TheActor: actSuperSysAdmin in
-					let ColclSuperSysAdmin:Bag(clSuperSysAdmin) in
-					let ColclSysAdmin:Bag(clSysAdmin) in
-					
-					self.rnActor.rnSystem = TheSystem
-					and self.rnActor = TheActor
-					
-					//PreF01
-					and TheSystem.rnclSuperSysAdmin->select(Password.eq(AdtNewPw)) = ColclSuperSysAdmin
-					and ColclSysAdmin->isEmpty() = true
-					
-					and TheSystem.rnclSysAdmin->select(Password.eq(AdtNewPw)) = ColclSysAdmin
-					and ColclSysAdmin->isEmpty() = true
-					}
+			preF{true}
 					
 			postF{let TheSystem: ctState in
 				let TheclSuperSysAdmin: clSuperSysAdmin in
 				let TheclSysAdmin: clSysAdmin in
 				self.rnActor.rnSystem =TheSystem
+				let ColclSuperSysAdmin:Bag(clSuperSysAdmin) in
+				let ColclSysAdmin:Bag(clSysAdmin) in
+				
+				
 				
 				
 				//PostF01
-				TheclSuperSysAdmin.init(AdtFirstName,AdtLastName,AdtUserName,AdtNewEmail,AdtBirthdate,AdtNewPw,AdtConfirmPassword,AdtPhoneNumber)
+				and TheSystem.rnclSuperSysAdmin->select(UserName.eq(AdtUserId)) = ColclSuperSysAdmin
+				and	ColclSuperSysAdmin.Password= AdtNewPW
+				
+				
 				//PostF02
-				TheclSysAdmin.init(AdtFirstName,AdtLastName,AdtUserName,AdtNewEmail,AdtBirthdate,AdtNewPw,AdtConfirmPassword,AdtPhoneNumber)
+				and TheSystem.rnclSysAdmin->select(UserName.eq(AdtUserId)) = ColclSysAdmin
+				and	ColclSysAdmin.Password= AdtNewPW
 			}
 			
 			postP{true}
